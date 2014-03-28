@@ -472,7 +472,7 @@ function austin_views_mini_pager($vars) {
 }
 
 function austin_js_alter(&$js) {
-  $path = drupal_get_path('module', 'austin') . '/sites/all/themes/austin/js/jquery.js';
+  $path = drupal_get_path('module', 'austin') . '/sites/all/themes/austin/assets/js/jquery.js';
 
   // Copy the current jQuery file settings and change
   $js[$path] = $js['misc/jquery.js'];

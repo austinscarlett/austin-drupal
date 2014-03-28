@@ -696,6 +696,173 @@ input[type="submit"]:hover, button:hover {
   font-weight: 600;
 }
 
+/* line 1, ../sass/modules/_slider.scss */
+.flex-container a:active, .view-theater .view-content a:active, .flex-container a:focus, .view-theater .view-content a:focus {
+  outline: none;
+}
+
+/* line 2, ../sass/modules/_slider.scss */
+.slides, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 6, ../sass/modules/_slider.scss */
+.view-theater .view-content {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../sass/modules/_slider.scss */
+.view-theater .view-content .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 8, ../sass/modules/_slider.scss */
+.view-theater .view-content .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 9, ../sass/modules/_slider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+/* line 12, ../sass/modules/_slider.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 13, ../sass/modules/_slider.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 14, ../sass/modules/_slider.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* line 15, ../sass/modules/_slider.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 20, ../sass/modules/_slider.scss */
+#block-views-theater-block-1 {
+  border-top: 1px solid #cfcfcf;
+  box-shadow: 0 -1px 0 #fff, 0 -2px 0 #fff, 0 -3px 0 #cfcfcf;
+}
+
+/* line 25, ../sass/modules/_slider.scss */
+#block-views-theater-block-1 .block-title {
+  margin-top: 1em;
+  text-align: center;
+}
+
+/* line 30, ../sass/modules/_slider.scss */
+.view-theater .view-content {
+  position: relative;
+  zoom: 1;
+}
+
+/* line 35, ../sass/modules/_slider.scss */
+.view-theater .slides {
+  padding: 3px;
+  background: #efebe2;
+  border: 1px solid #cecece;
+}
+
+/* line 41, ../sass/modules/_slider.scss */
+.view-theater .ss-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5px 0 0 -10px;
+  padding: 5px 7px 0;
+  background: #fff;
+  border-radius: 17px;
+  color: #dc0032;
+  font-size: 0.875em;
+  line-height: 1.5em;
+}
+
+/* line 55, ../sass/modules/_slider.scss */
+.view-theater li:hover .ss-icon {
+  display: block;
+}
+
+/* line 59, ../sass/modules/_slider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 60, ../sass/modules/_slider.scss */
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+/* line 61, ../sass/modules/_slider.scss */
+.view-theater .view-content .slides {
+  zoom: 1;
+}
+
+/* line 62, ../sass/modules/_slider.scss */
+.carousel li {
+  margin-right: 5px;
+}
+
+/* Direction Nav */
+/* line 65, ../sass/modules/_slider.scss */
+.flex-direction-nav {
+  overflow: hidden;
+  margin-top: 5px;
+  padding: 5px 0;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cfcfcf;
+  box-shadow: 0 1px 0 #fff, 0 2px 0 #fff, 0 3px 0 #cfcfcf;
+}
+
+/* line 73, ../sass/modules/_slider.scss */
+.flex-direction-nav a {
+  width: 21px;
+  height: 13px;
+  display: block;
+  background: url(../images/sprite.png) no-repeat -579px -179px;
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-transition: all .3s ease;
+}
+
+/* line 82, ../sass/modules/_slider.scss */
+.flex-direction-nav .flex-next {
+  float: right;
+}
+
+/* line 83, ../sass/modules/_slider.scss */
+.flex-direction-nav .flex-prev {
+  float: left;
+  background-position: -579px -244px;
+}
+
 /* Pages */
 /* line 2, ../sass/pages/_home.scss */
 .front .content {
@@ -739,11 +906,9 @@ input[type="submit"]:hover, button:hover {
 .view-blog .views-row {
   margin-bottom: 2em;
   padding-bottom: 1em;
-  border-bottom: 1px solid #cfcfcf;
-  box-shadow: 0 1px 0 #fff, 0 2px 0 #fff, 0 3px 0 #cfcfcf;
 }
 
-/* line 16, ../sass/pages/_blog.scss */
+/* line 14, ../sass/pages/_blog.scss */
 .view-blog .category {
   position: relative;
   margin-bottom: 32px;
@@ -752,7 +917,7 @@ input[type="submit"]:hover, button:hover {
   letter-spacing: 2px;
   text-align: center;
 }
-/* line 23, ../sass/pages/_blog.scss */
+/* line 21, ../sass/pages/_blog.scss */
 .view-blog .category:after {
   content: "";
   position: absolute;
@@ -764,23 +929,38 @@ input[type="submit"]:hover, button:hover {
   background: #da0b38;
 }
 
-/* line 35, ../sass/pages/_blog.scss */
+/* line 33, ../sass/pages/_blog.scss */
 .view-blog .post-title {
   margin-bottom: 48px;
   text-align: center;
   letter-spacing: 2px;
   text-transform: none;
 }
-/* line 40, ../sass/pages/_blog.scss */
+/* line 38, ../sass/pages/_blog.scss */
 .view-blog .post-title a {
   color: #fff;
 }
-/* line 42, ../sass/pages/_blog.scss */
+/* line 40, ../sass/pages/_blog.scss */
 .view-blog .post-title a:hover {
   color: #da0b38;
 }
 
-/* line 48, ../sass/pages/_blog.scss */
+/* line 46, ../sass/pages/_blog.scss */
+.view-blog .post-content {
+  *zoom: 1;
+  margin-bottom: 24px;
+}
+/* line 2, ../sass/global/_mixins.scss */
+.view-blog .post-content:before, .view-blog .post-content:after {
+  content: " ";
+  display: block;
+}
+/* line 6, ../sass/global/_mixins.scss */
+.view-blog .post-content:after {
+  clear: both;
+}
+
+/* line 51, ../sass/pages/_blog.scss */
 .view-blog .image {
   float: left;
   margin: 0 1.5em 1em 0;
@@ -788,11 +968,29 @@ input[type="submit"]:hover, button:hover {
   border: 3px solid #efebe2;
 }
 
-/* line 55, ../sass/pages/_blog.scss */
+/* line 58, ../sass/pages/_blog.scss */
 .view-blog .post-date {
   color: #9e9e9e;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/* line 65, ../sass/pages/_blog.scss */
+.view-blog .social-links {
+  border-bottom: 1px solid #9e9e9e;
+  text-align: center;
+}
+/* line 68, ../sass/pages/_blog.scss */
+.view-blog .social-links li {
+  background: #000;
+  display: inline-block;
+  padding: 0 10px;
+}
+/* line 73, ../sass/pages/_blog.scss */
+.view-blog .social-links .ss-icon {
+  color: #9e9e9e;
+  font-size: 20px;
 }
 
 /* line 2, ../sass/pages/_user-login.scss */

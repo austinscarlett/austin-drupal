@@ -17,9 +17,9 @@ regions[footer] = Footer
 
 ; Stylesheets =================================================================
 
-; stylesheets[all][] = assets/css/webfonts/ss-social.css
 ; stylesheets[all][] = assets/css/webfonts/ss-standard.css
 stylesheets[screen][] = assets/css/admin-menu.css
+stylesheets[all][] = assets/css/webfonts/ss-social.css
 stylesheets[all][] = assets/css/application.css
 
 scripts[] = assets/js/plugins.js

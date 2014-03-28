@@ -9,8 +9,6 @@
 .view-blog .views-row {
 	margin-bottom: 2em;
 	padding-bottom: 1em;
-	border-bottom: 1px solid #cfcfcf;
-	box-shadow: 0 1px 0 #fff, 0 2px 0 #fff, 0 3px 0 #cfcfcf;
 }
 
 .view-blog .category {
@@ -45,6 +43,11 @@
     }
 }
 
+.view-blog .post-content {
+    @include cf;
+    margin-bottom: $base;
+}
+
 .view-blog .image {
 	float: left;
 	margin: 0 1.5em 1em 0;
@@ -54,6 +57,21 @@
 
 .view-blog .post-date {
     color: $grey;
+    font-size: 14px;
     font-weight: $bold;
     text-transform: uppercase;
+}
+
+.view-blog .social-links {
+    border-bottom: 1px solid $grey;
+    text-align: center;
+    li {
+        background: #000;
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .ss-icon {
+        color: $grey;
+        font-size: 20px;
+    }
 }

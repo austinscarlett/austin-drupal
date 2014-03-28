@@ -1,0 +1,83 @@
+.flex-container a:active, .view-theater .view-content a:active, .flex-container a:focus, .view-theater .view-content a:focus  {outline: none;}
+.slides, .flex-control-nav, .flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.view-theater .view-content {margin: 0; padding: 0;}
+.view-theater .view-content .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.view-theater .view-content .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+#block-views-theater-block-1 {
+	border-top: 1px solid #cfcfcf;
+	box-shadow: 0 -1px 0 #fff, 0 -2px 0 #fff, 0 -3px 0 #cfcfcf;
+}
+
+#block-views-theater-block-1 .block-title {
+	margin-top: 1em;
+	text-align: center;
+}
+
+.view-theater .view-content {
+	position: relative;
+	zoom: 1;
+}
+
+.view-theater .slides {
+	padding: 3px;
+	background: #efebe2;
+	border: 1px solid #cecece;
+}
+
+.view-theater .ss-icon {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -5px 0 0 -10px;	
+	padding: 5px 7px 0;
+	background: #fff;
+	border-radius: 17px;
+	color: #dc0032;
+	font-size: 0.875em;
+	line-height: 1.5em;
+}
+
+.view-theater li:hover .ss-icon {
+	display: block;
+}
+
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.view-theater .view-content .slides {zoom: 1;}
+.carousel li {margin-right: 5px}
+
+/* Direction Nav */
+.flex-direction-nav {
+	overflow: hidden;
+	margin-top: 5px;
+	padding: 5px 0;
+	border-top: 1px solid #cecece;
+	border-bottom: 1px solid #cfcfcf;
+	box-shadow: 0 1px 0 #fff, 0 2px 0 #fff, 0 3px 0 #cfcfcf;
+}
+.flex-direction-nav a {
+	width: 21px;
+	height: 13px;
+	display: block;
+	background: url(../images/sprite.png) no-repeat -579px -179px;
+	cursor: pointer;
+	text-indent: -9999px;
+	-webkit-transition: all .3s ease;
+}
+.flex-direction-nav .flex-next { float: right; }
+.flex-direction-nav .flex-prev { float: left; background-position: -579px -244px; }
