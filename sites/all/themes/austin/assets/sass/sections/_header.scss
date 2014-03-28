@@ -1,0 +1,74 @@
+.header {
+	height: 70px;
+	.wrapper {
+    	position: relative;
+	}
+}
+
+.logo {
+	position: absolute;
+	top: 0;
+	left: -2px;
+	z-index: 99;
+    a {
+    	display: block;
+    	width: 319px;
+    	height: 179px;
+    	background: url(../images/sprite.png) no-repeat;
+    	text-indent: -9999em;
+    }
+}
+
+.main-nav {
+	position: relative;
+	z-index: 99;
+	float: right;
+	padding-top: 5px;
+}
+
+.main-nav li {
+	float: left;
+	min-height: 56px;
+	padding: 0 20px;
+	border-left: 2px dotted #272727;
+}
+
+.main-nav a {
+	display: block;
+	color: #efebe2;
+	font: $semi 0.813em/4.25em $proxima;
+	text-transform: uppercase;
+}
+
+.menu-208 a:before {
+	content: "the Art of ";
+}
+
+.menu-209 a:before {
+	content: "the World of ";
+}
+
+.main-nav .menu-208 a,
+.main-nav .menu-209 a {
+	line-height: 1em;
+	&:before {
+    	display: block;
+    	padding-top: 16px;
+    	font: $book italic 16px/1.5em $bodoni;
+    	text-align: center;
+    	text-transform: none;
+	}
+}
+
+.main-nav a:hover,
+.main-nav .active {
+	color: #dc0032;
+}
+
+.main-nav .first {
+	border: none;
+}
+
+.main-nav .last {
+    display: none;
+}

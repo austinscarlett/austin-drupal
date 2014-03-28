@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * Returns a link to the next weighted node of the same draggable view
+ * 
+ * @current_nid, int
+ *   - The current nid
+ * @draggable_view_name, string
+ *   - The name of the draggableviews view used to order the nodes
+ * @display, string (optional)
+ *   - The link display
+ */
+function bx_next_link($current_nid, $draggable_view_name, $display = 'Next'){
+
+	$view = views_get_view('gowns');
+	$view->set_display('page_1');
+	$view->execute();
+	$result = $view->result;
+
+	$current_weight = 0;
+	foreach ($result as $key => $record) {
+		if($record->nid == $current_nid) $current_weight = $record->draggableviews_structure_weight;
+	}
+
+	$next_nid = (count($result) == $current_weight + 1) ? $result[0]->nid : $result[$current_weight + 1]->nid;
+
+	return '<a class="next" href="/' . drupal_get_path_alias('node/' . $next_nid) . '">' . $display . '</a>';
+}
+
+/**
+ * Returns a link to the previous weighted node of the same draggable view
+ * 
+ * @current_nid, int
+ *   - The current nid
+ * @draggable_view_name, string
+ *   - The name of the draggableviews view used to order the nodes
+ * @display, string (optional)
+ *   - The link display
+ */
+function bx_prev_link($current_nid, $draggable_view_name, $display = 'Previous'){
+	$view = views_get_view('gowns');
+	$view->set_display('page_1');
+	$view->execute();
+	$result = $view->result;
+
+	$current_weight = 0;
+	foreach ($result as $key => $record) {
+		if($record->nid == $current_nid) $current_weight = $record->draggableviews_structure_weight;
+	}
+
+	$next_nid = ($current_weight == 0) ? $result[count($result) - 1]->nid : $result[$current_weight - 1]->nid;
+
+	return '<a class="prev" href="/' . drupal_get_path_alias('node/' . $next_nid) . '">' . $display . '</a>';
+}

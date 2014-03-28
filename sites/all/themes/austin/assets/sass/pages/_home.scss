@@ -1,0 +1,27 @@
+
+.front .content {
+    width: 588px;
+    margin: $base*4 0;
+    padding-left: 98px
+}
+
+.front .body {
+    h1 {
+        margin-bottom: 12px;
+        font-size: 42px;
+    }
+    p {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    a {
+        display: inline-block;
+        color: #fff;
+        padding: 10px 30px;
+        border: 2px solid #fff;
+        font-weight: $bold;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+}

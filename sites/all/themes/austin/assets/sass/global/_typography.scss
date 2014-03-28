@@ -1,0 +1,99 @@
+$bodoni: "ltc-bodoni-175", Georgia, serif;
+$proxima: "proxima-nova", Helvetica, arial, sans-serif;
+
+$light: 300;
+$book: 400;
+$semi: 600;
+$bold: 700;
+
+$base: 24px;
+
+h1,h2,h3,h4,h5 {
+	font-family: $proxima;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 4em; /* 60px */
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 2.25em; /* 36px */
+	line-height: 1;
+}
+
+h3 {
+}
+
+.page-title {
+	margin-bottom: 0.25em;
+	letter-spacing: 0.2em;
+	text-align: center;
+}
+
+.block-page-content p,
+.views-field-body p,
+.body p {
+	margin-bottom: 1em;
+}
+
+a {
+    @include single-transition(color, 0.15s, ease-in);
+	color: $red;
+	text-decoration: none;
+    &:hover {
+    	color: #323232;
+    }
+}
+
+.btn {
+	padding: 40px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1.111em; /* 20px */
+	line-height: 100px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	background: #492f92;
+	color: #fff;
+}
+
+
+
+/** COMMON TYPE STYLES
+========================================================****/
+
+.red-ital,
+.view-blog .views-field-created,
+.views-field-field-publication {
+	color: #dc0032;
+	font-style: italic;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+.views-field-title  .post-title,
+.node-type-events .post-title {
+	color: #dc0032;
+	font-family: "adobe-caslon-pro", Georgia, serif;
+	font-style: italic;
+	line-height: 1.25em;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+.views-field-title a .post-title:hover {
+	color: #323232;
+}
+
+.read-more {
+	font: 700 0.875em/1em "proxima-nova", Arial, sans-serif;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+

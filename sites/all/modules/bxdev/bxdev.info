@@ -1,0 +1,4 @@
+name = bxdev
+description = Custom module level tweaks. Long live Zep.
+core = 7.x
+package = Funky Shiz

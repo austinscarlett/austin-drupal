@@ -1,0 +1,5 @@
+name = bx Next Previous Links
+description = Provides next and previous links used for node navigation
+package = "bx"
+core = 7.x
+version = 7.x-1.0

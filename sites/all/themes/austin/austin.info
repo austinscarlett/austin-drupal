@@ -1,0 +1,33 @@
+core = 7.x
+description = Austin Scarlett custom theme base off tao 7.x-3.0-beta4.
+engine = phptemplate
+name = Austin Scarlett
+
+; Regions =====================================================================
+
+regions[header] = Header
+regions[top] = Top
+regions[content] = Content
+regions[sidebar_first] = Left Sidebar
+regions[sidebar_second] = Right Sidebar
+regions[footer] = Footer
+;regions[help] = Help
+;regions[page_bottom] = Page bottom
+;regions[highlighted] = Highlighted
+
+; Stylesheets =================================================================
+
+; stylesheets[all][] = assets/css/webfonts/ss-social.css
+; stylesheets[all][] = assets/css/webfonts/ss-standard.css
+stylesheets[screen][] = assets/css/admin-menu.css
+stylesheets[all][] = assets/css/application.css
+
+scripts[] = assets/js/plugins.js
+scripts[] = assets/js/scripts.js
+
+; Information added by drupal.org packaging script on 2011-09-21
+version = "1.0"
+core = "7.x"
+project = "austin"
+datestamp = "1316616407"
+

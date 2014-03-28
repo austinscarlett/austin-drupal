@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * Implements hook_preprocess().
+ */
+function bxdev_preprocess_page(&$vars){
+	
+	if(isset($vars['node']) && $vars['node']->type == 'gown'){
+  
+		$node = $vars['node'];
+		$nid = $node->nid;
+		
+		// get the weighted video nids
+		$results = db_select('draggableviews_structure', 'ds')
+			->fields('ds', array('entity_id'))
+			->condition('view_name', 'gowns')
+			->orderBy('weight')
+			->execute()
+			->fetchAll();
+		
+		// if nids exist
+		if(!empty($results)){
+			
+			// create an array of the video nids
+			$gowns = array();
+			foreach($results as $key => $value){
+				$gowns[] = $value->entity_id;
+			}
+			
+			// get the weight of the supplied nid
+			$weight_index = array_search($nid, $gowns);
+			$next_nid = '';
+			$prev_nid = '';
+			
+			/**
+			 * Next node url
+			 */
+			if(count($results) == 1){
+				$next_nid = $nid;
+			}else{
+				// if the last video
+				if($weight_index == (count($gowns) - 1)){
+					$next_nid = $gowns[0];
+				// if not the last video
+				}else{
+					$next_nid = $gowns[++$weight_index];
+				}
+			}
+			$vars['next_node_url'] = '/' . drupal_lookup_path('alias', 'node/' . $next_nid);
+			
+			/**
+			 * Prev node url
+			 */
+			if(count($results) == 1){
+				$prev_nid = $nid;
+			}else{
+				// if the first video
+				if($weight_index == 0){
+					$prev_nid = $gowns[count($gowns) - 1];
+				// if not the first video
+				}else{
+					$prev_nid = $gowns[--$weight_index];
+				}
+			}
+			$vars['prev_node_url'] = '/' . drupal_lookup_path('alias', 'node/' . $prev_nid);
+			
+		}
+		
+	}
+
+}
+

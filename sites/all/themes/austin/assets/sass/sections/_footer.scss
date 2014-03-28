@@ -1,0 +1,125 @@
+
+.footer .block-title {
+    position: relative;
+    margin-bottom: 38px;
+    color: $grey;
+    font-size: 16px;
+    font-weight: $bold;
+    letter-spacing: 2px;
+	text-transform: uppercase;
+	&:before {
+    	content: "";
+    	position: absolute;
+    	left: 0;
+    	bottom: -16px;
+    	width: 40px;
+    	height: 1px;
+    	background: $red;
+	}
+}
+
+.footer .social-links {
+    position: relative;
+    margin-bottom: 36px;
+	&:before {
+    	content: "";
+    	position: absolute;
+    	left: 0;
+    	bottom: -16px;
+    	width: 40px;
+    	height: 1px;
+    	background: $red;
+	}
+}
+
+.footer .mailing-list {
+    p {
+        margin-bottom: 12px;
+    } 
+    label {
+        position: absolute;
+        top: 6px;
+        left: 0;
+        font: italic $book 18px/1 $bodoni;
+    }
+    .form-text {
+        padding-left: 0;
+        width: 206px;
+        background: #000;
+        border-bottom: 1px solid #fff;
+    }
+    .form-actions {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.footer .contact-form {
+    margin-right: 0;
+    .webform-client-form {
+        padding-top: 4px;
+    }
+}
+
+.footer .copyright {
+	clear: both;
+	padding: 1em 0;
+	color: #727272;
+	font-size: 0.75em;
+}
+
+.footer a {
+	color: #ececec;
+	font: 400 12px/26px "proxima-nova", Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.footer .ss-icon {
+	float: left;
+	margin-right: 10px;
+}
+
+.footer .ss-icon a {
+	padding: 5px 7px 0;
+	background: #dc0032;
+	border-radius: 17px;
+	color: #fff;
+	font-size: 1.25em;
+	line-height: 30px;
+}
+
+.footer .mail-list .webform-component {
+	float: left;
+}
+
+.footer .mail-list .form-actions {
+	float: right;
+	position: relative;
+	right: auto;
+	bottom: auto;
+	padding-top: 10px;
+}
+
+.footer .mail-list label {
+	color: #b0b0b0;
+}
+
+.footer .mail-list label span {
+	font-style: italic;
+}
+
+.footer .mail-list input[type="email"] {
+	position: relative;
+	z-index: 99;
+	width: 120px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #fff;
+	color: #b0b0b0;
+}
+
+.footer .mail-list input[type="submit"] {
+	width: 40px;
+}
+

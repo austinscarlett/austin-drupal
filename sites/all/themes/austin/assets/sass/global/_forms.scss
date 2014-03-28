@@ -1,0 +1,271 @@
+.webform-client-form,
+.form-item {
+    position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+	max-width: 100%;
+	padding: 5px 8px;
+	background: transparent;
+	border: none;
+	color: #fff;
+	font-size: 1em;
+	font-family: Georgia, serif;
+}
+
+select {
+    @include appearance(none);
+	color: #fff;
+	font: $semi 14px/1em $proxima;
+	text-transform: uppercase;
+    text-indent: 0.01px;
+    text-overflow: "";
+}
+
+.webform-component-select:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    z-index: 99;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid $red;
+}
+
+input[type="submit"] {
+    @include single-transition(background, 0.15s, ease-in);
+	padding: 5px 8px;
+	background: $red;
+	border: none;
+	color: #fff;
+	font: $semi 1em/1 $proxima;
+	text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+	background: #ff003a;
+}
+
+.not-front.page-node-done #content {
+	width: 100%;
+	padding: 4em 0;
+	font-size: 3em;
+	font-style: italic;
+	text-align: center;
+}
+
+.node-webform .webform-component {
+	margin-bottom: 1em;
+}
+
+.page-node-done .links {
+	display: none;
+}
+
+.description {
+	font-size: 0.75em;
+}
+
+#user-login .form-item {
+	margin-bottom: 1em;
+}
+
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+	border: 1px solid #dc0032;
+}
+
+.messages.error,
+.form-item label.error {
+    display: none;
+    visibility: hidden;
+}
+
+
+/*
+
+.form-block {
+    margin-bottom: $base;
+}
+
+.form-item,
+.form-item-set {
+	margin-bottom: 12px;
+	&:last-of-type {
+    	margin-bottom: 0;
+	}
+}
+
+.form-item-set .form-item {
+    margin-bottom: 0;
+}
+
+.form-two-col {
+    @include cf;
+    .form-item {
+    	float: left;
+    	width: 42%;
+    	margin-right: 4%;
+
+        @include bp-max-width($xsmall) {
+            float: none;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+label {
+	display: block;
+	margin-bottom: 2px;
+	font-family: $proxima;
+	font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+	width: 100%;
+	max-width: 340px;
+	padding: 8px 12px;
+	background: rgba($lt-grey, 0.3);
+	border: 1px solid $clay;
+	border-radius: 5px;
+	font: 400 1em/1em  $proxima;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	border: 1px solid $dk-clay;
+}
+
+textarea {
+	height: 5em;
+}
+*/
+
+
+/** Fieldset ============**/
+/*
+
+fieldset {
+    margin-bottom: $base*2;
+    &:last-of-type {
+        margin-bottom: $base;
+    }
+}
+
+fieldset .title,
+.order-summary .title {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid $md-grey;
+    font: $book 24px/1 $proxima;
+}
+
+*/
+
+/** Checkboxes ============**/
+
+/*
+.form-checkbox {
+    position: relative;
+    margin-bottom: 0.5em;
+    input {
+        opacity: 0;
+        float: left;
+        width: 20px;
+    }
+}
+
+.form-checkbox label {
+    padding-left: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+    color: $dk-green;
+    font-family: $proxima;
+    font-size: 13px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 13px;
+        height: 13px;
+        background: $md-grey;
+        border-radius: 3px;
+    }
+    
+    .description {
+        display: block;
+        color: $clay;
+        font-size: 12px;
+        line-height: 1;
+    }
+}
+
+.form-checkbox input[type="checkbox"]:checked + label:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 13px;
+    height: 15px;
+    background: $checkmarks no-repeat 0 0;
+}
+
+.checkboxes input {
+    opacity: 0;
+    float: left;
+    width: 20px;
+}
+
+*/
+
+/** Radio ============**/
+
+/*
+.form-radio {
+    label, input {
+        display: inline-block;
+    }
+}
+*/
+
+
+/** Buttons ============**/
+
+/*
+input[type="submit"], button {
+	padding: 0.5em 1em 0.66em;
+	border-radius: 4px;
+	background: $red;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	border: none;
+	font: 400 1em/1.5em $kult;
+	-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-ms-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	cursor: pointer;
+
+    @include bp-max-width($small) {
+        width: 100%;
+    }
+}
+
+input[type="submit"]:hover, button:hover {
+	background: $dk-red;
+	color: #fff;
+}
+*/

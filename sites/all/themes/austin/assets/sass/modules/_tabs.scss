@@ -1,0 +1,19 @@
+.tabs {
+	margin: 1em 0;
+	text-align: center;
+    li {
+	    display: inline-block;
+	    margin: 0 0.5em;
+    }
+}
+
+.tabs a {
+    display: inline-block;
+	padding: 5px 10px;
+	background: $red;
+	border-radius: 5px;
+	color: #fff;
+    &:hover {
+	    background: #aaa;
+    }
+}

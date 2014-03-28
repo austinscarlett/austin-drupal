@@ -1,0 +1,66 @@
+.contact-form {
+    position: relative;
+    .form-item {
+    	border: 1px solid #fff;
+    	border: 1px solid rgba(#fff, 0.4);
+    }
+}
+
+.contact-form label {
+	position: absolute;
+	top: 3px;
+	left: 10px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: $bold;
+	text-transform: uppercase;
+}
+
+.contact-form .description {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.contact-form .webform-component-textfield,
+.contact-form .webform-component-email,
+.contact-form .webform-component-select {
+	float: left;
+	margin-bottom: 10px;
+}
+
+.contact-form .webform-component-textfield {
+    width: 190px;
+	margin-right: 10px;
+}
+
+.contact-form .webform-component-email {
+    width: 190px;
+	margin-right: 10px;
+}
+
+.contact-form .webform-component-select {
+    width: 152px;
+}
+
+.contact-form .webform-component-textarea {
+    clear: both;
+	width: 100%;
+}
+
+.contact-form textarea {
+	height: 138px;
+	resize: none;
+}
+
+.contact-form .form-actions {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+.contact-form input[type="submit"] {
+	text-transform: uppercase;
+	font-size: 0.875em;
+	font-weight: $semi;
+}

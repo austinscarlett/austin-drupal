@@ -1,0 +1,23 @@
+body {
+    background: #000;
+    color: #fff;
+	font: $book 1em/1.5em $proxima;
+}
+
+.wrapper {
+    @include cf;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.main .wrapper {
+    width: 1212px;
+    padding: $base 36px;
+    background: rgba(#000, 0.7);
+}
+
+.right {
+    float: right;
+	width: 228px;
+}
+
