@@ -6,8 +6,8 @@
 @import "global/colors";
 @import "global/typography";
 @import "global/mixins";
-@import "global/base";
 @import "global/images";
+@import "global/base";
 @import "global/icons";
 @import "global/forms";
 @import "global/grid";
@@ -21,9 +21,11 @@
 
 /* Pages */
 @import "pages/home";
+@import "pages/blog";
 @import "pages/user-login";
 
 
 /* Sections */
 @import "sections/header";
 @import "sections/footer";
+@import "sections/sidebar";

@@ -72,7 +72,7 @@
         <?php endif; ?>
 
     	<?php if ($page['sidebar_first']): ?>
-    	<aside id="left" class="left">
+    	<aside id="left-sidebar" class="left-sidebar">
     	    <?php print render($page['sidebar_first']) ?>
         </aside>
     	<?php endif; ?>
@@ -91,7 +91,7 @@
     	</section>
     
     	<?php if ($page['sidebar_second']): ?>
-    	<aside id="right">
+    	<aside id="right-sidebar" class="right-sidebar">
     	    <?php print render($page['sidebar_second']) ?>
         </aside>
     	<?php endif; ?>

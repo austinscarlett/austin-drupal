@@ -1,7 +1,10 @@
 body {
-    background: #000;
+    background: $bg-body no-repeat center top #000;
     color: #fff;
 	font: $book 1em/1.5em $proxima;
+	&.front {
+    	background: #000;
+	}
 }
 
 .wrapper {
@@ -16,7 +19,12 @@ body {
     background: rgba(#000, 0.7);
 }
 
-.right {
+.not-front .content {
+    float: left;
+    width: 846px;
+}
+
+.right-sidebar {
     float: right;
 	width: 228px;
 }

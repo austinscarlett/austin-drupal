@@ -1,0 +1,59 @@
+.page-node-5 .page-title:before {
+	content: "the World of";
+	display: block;	
+	margin-bottom: 16px;
+    font: italic $book 28px/1em $bodoni;
+    text-transform: none;
+}
+
+.view-blog .views-row {
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #cfcfcf;
+	box-shadow: 0 1px 0 #fff, 0 2px 0 #fff, 0 3px 0 #cfcfcf;
+}
+
+.view-blog .category {
+    position: relative;
+    margin-bottom: 32px;
+    color: $grey;
+    font: italic $book 16px/1em $bodoni;
+    letter-spacing: 2px;
+    text-align: center;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -16px;
+        width: 72px;
+        height: 1px;
+        margin-left: -36px;
+        background: $red;
+    }
+}
+
+.view-blog .post-title {
+    margin-bottom: $base*2;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: none;
+    a {
+        color: #fff;
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+.view-blog .image {
+	float: left;
+	margin: 0 1.5em 1em 0;
+	box-shadow: 1px 1px 0 #cecece, -1px -1px 0 #cecece, -1px 1px 0 #cecece, 1px -1px 0 #cecece;
+	border: 3px solid #efebe2;
+}
+
+.view-blog .post-date {
+    color: $grey;
+    font-weight: $bold;
+    text-transform: uppercase;
+}
