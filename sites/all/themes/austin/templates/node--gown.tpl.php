@@ -1,4 +1,4 @@
-<div class="left">
+<div class="gown-images col-1-2">
 	<?php if(!empty($node->field_image['und'])): ?>
 		<ul>
 		<?php foreach($node->field_image['und'] as $image): ?>
@@ -11,7 +11,7 @@
 	<?php endif; ?>
 </div>
 
-<div class="right">
+<div class="gown-info col-1-2">
 
 	<h2 class="post-title"><?php print $title ?></h2>
 	<div class="body">
@@ -26,7 +26,7 @@
 		<?php endforeach; ?>
 			</ul>
 	<?php endif; ?>
-	<div class="share clearfix">
+	<div class="share">
 		<h3>Share this Gown</h3>
 		<ul>
 			<li class="ss-social ss-icon"><a href="" target="_blank">twitter</a></li>

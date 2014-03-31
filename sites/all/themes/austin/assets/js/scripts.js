@@ -38,17 +38,17 @@
 		});
 		
 		// Gowns Thumb Select IMG
-		$('.node-type-gown .left li').hide();
-		$('.node-type-gown .left li:first').show();
-		$('.node-type-gown .thumbs li').click(function(){
+		$('.gown-images li').hide();
+		$('.gown-images li:first').show();
+		$('.gown-info .thumbs li').click(function(){
 			var thumbIndex = $(this).index();
-			var largeIndex = $('.node-type-gown .left li').index();
-			$('.node-type-gown .left li').fadeOut();
-			$('.node-type-gown .left li').eq(thumbIndex).fadeIn();
+			var largeIndex = $('.gown-images li').index();
+			$('.gown-images li').fadeOut();
+			$('.gown-images li').eq(thumbIndex).fadeIn();
 		});
 
 		// Gowns Zoom
-        $('.node-type-gown .left img').wrap('<span style="display:inline-block"></span>').css('display', 'block').parent().zoom();
+        $('.gown-images img').wrap('<span style="display:inline-block"></span>').css('display', 'block').parent().zoom();
         
         // Theater Slider
         $('.view-theater .view-content').flexslider({

@@ -153,7 +153,7 @@ a {
 }
 /* line 49, ../sass/global/_typography.scss */
 a:hover {
-  color: #323232;
+  color: #fff;
 }
 
 /** COMMON TYPE STYLES
@@ -940,18 +940,35 @@ html[xmlns] .slides {
 
 /** GOWN PROFILE ======================**/
 /* line 55, ../sass/pages/_collection.scss */
+.node-type-gown .content {
+  *zoom: 1;
+  float: none;
+  width: 100%;
+}
+/* line 2, ../sass/global/_mixins.scss */
+.node-type-gown .content:before, .node-type-gown .content:after {
+  content: " ";
+  display: block;
+}
+/* line 6, ../sass/global/_mixins.scss */
+.node-type-gown .content:after {
+  clear: both;
+}
+
+/* line 61, ../sass/pages/_collection.scss */
 .node-type-gown .main {
   min-height: 800px;
 }
 
-/* line 59, ../sass/pages/_collection.scss */
+/* line 65, ../sass/pages/_collection.scss */
 .gown-nav {
-  margin-bottom: 1em;
+  max-width: 1212px;
+  margin: 0 auto 1em;
   border-top: 1px solid #c6c6c6;
   border-bottom: 1px solid #c6c6c6;
 }
 
-/* line 65, ../sass/pages/_collection.scss */
+/* line 72, ../sass/pages/_collection.scss */
 .gown-nav a {
   display: block;
   padding: 5px 30px;
@@ -963,14 +980,14 @@ html[xmlns] .slides {
   text-transform: uppercase;
 }
 
-/* line 76, ../sass/pages/_collection.scss */
+/* line 83, ../sass/pages/_collection.scss */
 .gown-nav .next {
   float: right;
   padding-left: 20px;
   border-left: 1px solid #c6c6c6;
 }
 
-/* line 82, ../sass/pages/_collection.scss */
+/* line 89, ../sass/pages/_collection.scss */
 .gown-nav .prev {
   float: left;
   padding-right: 20px;
@@ -978,18 +995,18 @@ html[xmlns] .slides {
   border-right: 1px solid #c6c6c6;
 }
 
-/* line 89, ../sass/pages/_collection.scss */
-.node-type-gown .left {
+/* line 96, ../sass/pages/_collection.scss */
+.gown-images {
   position: relative;
-  width: 480px;
+  min-height: 760px;
 }
 
-/* line 94, ../sass/pages/_collection.scss */
-.node-type-gown .right {
-  width: 480px;
+/* line 101, ../sass/pages/_collection.scss */
+.gown-info {
+  margin-right: 0;
 }
 
-/* line 98, ../sass/pages/_collection.scss */
+/* line 105, ../sass/pages/_collection.scss */
 .zoom-label {
   position: absolute;
   right: 3px;
@@ -1001,58 +1018,54 @@ html[xmlns] .slides {
   z-index: 99;
 }
 
-/* line 109, ../sass/pages/_collection.scss */
-.node-type-gown .left li {
+/* line 116, ../sass/pages/_collection.scss */
+.gown-images li {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 115, ../sass/pages/_collection.scss */
-.node-type-gown .left img {
+/* line 122, ../sass/pages/_collection.scss */
+.gown-images img {
   max-width: 480px;
   box-shadow: 1px 1px 0 #cecece, -1px -1px 0 #cecece, -1px 1px 0 #cecece, 1px -1px 0 #cecece;
   border: 3px solid #efebe2;
 }
 
-/* line 121, ../sass/pages/_collection.scss */
-.node-type-gown .post-title {
-  color: #DC0032;
-  font-family: "adobe-caslon-pro",Georgia,serif;
-  font-style: italic;
-  letter-spacing: 0.1em;
-  line-height: 1.25em;
+/* line 128, ../sass/pages/_collection.scss */
+.gown-info .post-title {
+  font: 400 45px/1.25em "ltc-bodoni-175", Georgia, serif;
 }
 
-/* line 129, ../sass/pages/_collection.scss */
-.node-type-gown .thumbs {
+/* line 132, ../sass/pages/_collection.scss */
+.gown-info .thumbs {
   margin-bottom: 1em;
   padding: 1em 0 0.5em;
   border-top: 1px solid #CFCFCF;
   border-bottom: 1px solid #CFCFCF;
 }
 
-/* line 136, ../sass/pages/_collection.scss */
-.node-type-gown .thumbs li {
+/* line 139, ../sass/pages/_collection.scss */
+.gown-info .thumbs li {
   float: left;
   margin: 0 14px 14px 0;
   box-shadow: 1px 1px 0 #cecece, -1px -1px 0 #cecece, -1px 1px 0 #cecece, 1px -1px 0 #cecece;
   border: 3px solid #efebe2;
 }
 
-/* line 143, ../sass/pages/_collection.scss */
-.node-type-gown .thumbs li:nth-child(3n) {
+/* line 146, ../sass/pages/_collection.scss */
+.gown-info .thumbs li:nth-child(3n) {
   margin-right: 0;
 }
 
-/* line 147, ../sass/pages/_collection.scss */
-.node-type-gown .right .ss-icon {
+/* line 150, ../sass/pages/_collection.scss */
+.gown-info .ss-icon {
   float: left;
   margin-right: 10px;
 }
 
-/* line 152, ../sass/pages/_collection.scss */
-.node-type-gown .right .ss-icon a {
+/* line 155, ../sass/pages/_collection.scss */
+.gown-info .ss-icon a {
   padding: 5px 7px 0;
   background: #dc0032;
   border-radius: 17px;
@@ -1061,18 +1074,18 @@ html[xmlns] .slides {
   line-height: 30px;
 }
 
-/* line 161, ../sass/pages/_collection.scss */
-.node-type-gown .right .ss-icon a:hover {
+/* line 164, ../sass/pages/_collection.scss */
+.gown-info .ss-icon a:hover {
   background: #323232;
 }
 
-/* line 165, ../sass/pages/_collection.scss */
-.node-type-gown .share {
+/* line 168, ../sass/pages/_collection.scss */
+.gown-info .share {
   margin-bottom: 2em;
 }
 
-/* line 169, ../sass/pages/_collection.scss */
-.node-type-gown .share h3 {
+/* line 172, ../sass/pages/_collection.scss */
+.gown-info .share h3 {
   margin-bottom: 1em;
   font-size: 0.875em;
   font-weight: 700;
@@ -1278,6 +1291,11 @@ html[xmlns] .slides {
 }
 
 /* line 2, ../sass/sections/_footer.scss */
+.footer {
+  padding-top: 24px;
+}
+
+/* line 6, ../sass/sections/_footer.scss */
 .footer .block-title {
   position: relative;
   margin-bottom: 38px;
@@ -1287,7 +1305,7 @@ html[xmlns] .slides {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-/* line 10, ../sass/sections/_footer.scss */
+/* line 14, ../sass/sections/_footer.scss */
 .footer .block-title:before {
   content: "";
   position: absolute;
@@ -1298,12 +1316,12 @@ html[xmlns] .slides {
   background: #da0b38;
 }
 
-/* line 21, ../sass/sections/_footer.scss */
+/* line 25, ../sass/sections/_footer.scss */
 .footer .social-links {
   position: relative;
   margin-bottom: 36px;
 }
-/* line 24, ../sass/sections/_footer.scss */
+/* line 28, ../sass/sections/_footer.scss */
 .footer .social-links:before {
   content: "";
   position: absolute;
@@ -1314,41 +1332,41 @@ html[xmlns] .slides {
   background: #da0b38;
 }
 
-/* line 36, ../sass/sections/_footer.scss */
+/* line 40, ../sass/sections/_footer.scss */
 .footer .mailing-list p {
   margin-bottom: 12px;
 }
-/* line 39, ../sass/sections/_footer.scss */
+/* line 43, ../sass/sections/_footer.scss */
 .footer .mailing-list label {
   position: absolute;
   top: 6px;
   left: 0;
   font: italic 400 18px/1 "ltc-bodoni-175", Georgia, serif;
 }
-/* line 45, ../sass/sections/_footer.scss */
+/* line 49, ../sass/sections/_footer.scss */
 .footer .mailing-list .form-text {
   padding-left: 0;
   width: 206px;
   background: #000;
   border-bottom: 1px solid #fff;
 }
-/* line 51, ../sass/sections/_footer.scss */
+/* line 55, ../sass/sections/_footer.scss */
 .footer .mailing-list .form-actions {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-/* line 58, ../sass/sections/_footer.scss */
+/* line 62, ../sass/sections/_footer.scss */
 .footer .contact-form {
   margin-right: 0;
 }
-/* line 60, ../sass/sections/_footer.scss */
+/* line 64, ../sass/sections/_footer.scss */
 .footer .contact-form .webform-client-form {
   padding-top: 4px;
 }
 
-/* line 65, ../sass/sections/_footer.scss */
+/* line 69, ../sass/sections/_footer.scss */
 .footer .copyright {
   clear: both;
   padding: 1em 0;
@@ -1356,20 +1374,20 @@ html[xmlns] .slides {
   font-size: 0.75em;
 }
 
-/* line 72, ../sass/sections/_footer.scss */
+/* line 76, ../sass/sections/_footer.scss */
 .footer a {
   color: #ececec;
   font: 400 12px/26px "proxima-nova", Arial, sans-serif;
   text-transform: uppercase;
 }
 
-/* line 78, ../sass/sections/_footer.scss */
+/* line 82, ../sass/sections/_footer.scss */
 .footer .ss-icon {
   float: left;
   margin-right: 10px;
 }
 
-/* line 83, ../sass/sections/_footer.scss */
+/* line 87, ../sass/sections/_footer.scss */
 .footer .ss-icon a {
   padding: 5px 7px 0;
   background: #dc0032;
@@ -1379,12 +1397,12 @@ html[xmlns] .slides {
   line-height: 30px;
 }
 
-/* line 92, ../sass/sections/_footer.scss */
+/* line 96, ../sass/sections/_footer.scss */
 .footer .mail-list .webform-component {
   float: left;
 }
 
-/* line 96, ../sass/sections/_footer.scss */
+/* line 100, ../sass/sections/_footer.scss */
 .footer .mail-list .form-actions {
   float: right;
   position: relative;
@@ -1393,17 +1411,17 @@ html[xmlns] .slides {
   padding-top: 10px;
 }
 
-/* line 104, ../sass/sections/_footer.scss */
+/* line 108, ../sass/sections/_footer.scss */
 .footer .mail-list label {
   color: #b0b0b0;
 }
 
-/* line 108, ../sass/sections/_footer.scss */
+/* line 112, ../sass/sections/_footer.scss */
 .footer .mail-list label span {
   font-style: italic;
 }
 
-/* line 112, ../sass/sections/_footer.scss */
+/* line 116, ../sass/sections/_footer.scss */
 .footer .mail-list input[type="email"] {
   position: relative;
   z-index: 99;
@@ -1414,7 +1432,7 @@ html[xmlns] .slides {
   color: #b0b0b0;
 }
 
-/* line 122, ../sass/sections/_footer.scss */
+/* line 126, ../sass/sections/_footer.scss */
 .footer .mail-list input[type="submit"] {
   width: 40px;
 }
