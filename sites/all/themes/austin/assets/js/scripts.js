@@ -51,9 +51,14 @@
         $('.gown-images img').wrap('<span style="display:inline-block"></span>').css('display', 'block').parent().zoom();
         
         // Theater Slider
+        $('.sidebar-slider .slides').bxSlider({
+            pager: false
+        });
+/*
         $('.view-theater .view-content').flexslider({
 	        controlNav: false
         });
+*/
 
 		
 	});  	

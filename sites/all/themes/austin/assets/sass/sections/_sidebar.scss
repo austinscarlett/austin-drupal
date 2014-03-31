@@ -1,36 +1,55 @@
-.sidebar-right .block-title {
-	margin-bottom: 1em;
-	font-size: 1em;
-	font-weight: 700;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
+.right-sidebar .block {
+    border-bottom: 1px solid rgba(#fff, 0.4);
 }
 
-#block-block-2, /* About Text */
-#block-block-3 { /* About Pic */
+.right-sidebar .block-title {
+	margin-bottom: 12px;
+	font-size: 1em;
+	font-weight: $semi;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.right-sidebar p:last-of-type a {
+    display: inline-block;
+    color: #fff;
+    padding: 3px 20px;
+    border: 2px solid #fff;
+    font-size: 12px;
+    font-weight: $bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.right-sidebar .sidebar-about-thumb {
+    margin-bottom: 1em;
+    border-bottom: none;
+    text-align: center;
+    img {
+    	width: 166px;
+    	height: 166px;
+    	border-radius: 50%;
+    	text-align: center;
+    }
+}
+
+.sidebar-about-content {
 	margin-bottom: 1em;
 	text-align: center;
 }
 
-#block-block-2 {
+.sidebar-about-content {
 	margin-bottom: 2em;
 	padding-bottom: 1em;
 }
 
-#block-block-3 .block-content img {
-	width: 166px;
-	height: 166px;
-	border-radius: 166px;
-	text-align: center;
-}
 
-#block-block-2 .block-content {
-	font-size: 0.875em;
-	line-height: 1.4em;
-}
 
-#block-block-2 p:first-child {
+.sidebar-about-content p:first-of-type {
 	margin-bottom: 1em;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 #block-aggregator-feed-1 {
@@ -67,30 +86,6 @@
 	font: 700 0.875em/1.5em "proxima-nova", Arial, sans-serif;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-}
-
-#block-block-4 .follow-us,
-#block-block-2 a {
-	display: block;
-	padding: 2px 20px 0 0;
-	line-height: 2em;
-	background: url(../images/sprite.png) no-repeat -424px -174px;
-	border-top: 1px solid #cfcfcf;
-	border-bottom: 1px solid #cfcfcf;
-	box-shadow: 0 1px 0 #fff, 0 2px 0 #fff, 0 3px 0 #cfcfcf;
-	color: #323232;
-	font: 700 0.875em/1.5em "proxima-nova", Arial, sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-}
-
-#block-block-2 a {
-	font-size: 1em;
-}
-
-#block-block-4 .follow-us:hover,
-#block-block-2 a:hover {
-	color: #dc0032;
 }
 
 #block-webform-client-block-10 {

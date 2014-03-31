@@ -51,7 +51,6 @@
 .view-blog .image {
 	float: left;
 	margin: 0 1.5em 1em 0;
-	box-shadow: 1px 1px 0 #cecece, -1px -1px 0 #cecece, -1px 1px 0 #cecece, 1px -1px 0 #cecece;
 	border: 3px solid #efebe2;
 }
 
@@ -64,6 +63,7 @@
 
 .view-blog .social-links {
     border-bottom: 1px solid $grey;
+    border-bottom: 1px solid rgba(#fff, 0.4);
     text-align: center;
     li {
         background: #000;
