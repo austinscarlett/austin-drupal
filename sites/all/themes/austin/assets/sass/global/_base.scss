@@ -19,7 +19,9 @@ body {
     background: rgba(#000, 0.7);
 }
 
-.not-front .content {
+.page-node-4 .content,
+.page-node-5 .content,
+.node-type-blog-post .content {
     float: left;
     width: 846px;
 }

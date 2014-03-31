@@ -26,7 +26,8 @@ select {
     text-overflow: "";
 }
 
-.webform-component-select:before {
+.webform-component-select:before,
+.form-type-select:before {
     content: "";
     position: absolute;
     top: 12px;

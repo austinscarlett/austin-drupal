@@ -1,0 +1,16 @@
+
+[class*="icon-"] {
+    display: inline-block;
+    background: $sprite no-repeat 0 0;
+}
+
+.icon-marker {
+    width: 11px;
+    height: 16px;
+}
+
+.icon-visit {
+    width: 16px;
+    height: 13px;
+    background-position: 0 -19px;
+}

@@ -1,13 +1,9 @@
 
-.page-node-2 .content {
-	width: 100%;
-}
-
-.view-display-id-block_2 {
+#block-views-gowns-block-2 {
     margin: 0 -18px;
 }
 
-.view-display-id-block_2 .views-row {
+#block-views-gowns-block-2 .views-row {
 	float: left;
 	width: 258px;
 	margin: 0 18px 18px;
@@ -15,7 +11,7 @@
 
 }
 
-.view-display-id-block_2 .views-row a .view-gown {
+#block-views-gowns-block-2 .views-row a .view-gown {
     @include single-transition(opacity, 0.15s, ease-in);
     opacity: 0;
     position: absolute;
@@ -44,7 +40,7 @@
     }
 }
 
-.view-display-id-block_2 .views-row a:hover .view-gown {
+#block-views-gowns-block-2 .views-row a:hover .view-gown {
     opacity: 1;
 }
 

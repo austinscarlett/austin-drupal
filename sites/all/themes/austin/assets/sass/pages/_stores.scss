@@ -1,0 +1,55 @@
+
+.view-stores .views-row {
+    @include cf;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(#fff, 0.4);
+    &:first-of-type {
+        border-top: 1px solid rgba(#fff, 0.4);
+    }
+}
+
+.view-stores .col {
+    float: left;
+}
+
+.view-stores .store-title {
+    width: 40%;
+    font-size: 18px;
+    font-weight: $book;
+}
+
+.view-stores .store-state {
+    width: 20%;
+    min-height: 1px;
+    font-size: 14px;
+    font-weight: $bold;
+    text-transform: uppercase;    
+}
+
+.view-stores .store-city {
+    width: 20%;
+    font-size: 14px;
+    font-weight: $bold;
+    text-transform: uppercase;    
+}
+
+.view-stores .store-map {
+    font-size: 14px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    .icon-marker {
+        margin-left: 4px;
+        vertical-align: -3px;
+    }
+}
+
+.view-stores .store-website {
+    float: right;
+    font-size: 14px;
+    font-weight: $bold;
+    text-transform: uppercase;    
+    .icon-visit {
+        margin-left: 4px;
+        vertical-align: -1px;
+    }
+}
