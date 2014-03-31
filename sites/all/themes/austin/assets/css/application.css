@@ -156,27 +156,9 @@ a:hover {
   color: #323232;
 }
 
-/* line 54, ../sass/global/_typography.scss */
-.btn {
-  padding: 40px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 1.111em;
-  /* 20px */
-  line-height: 100px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-/* line 64, ../sass/global/_typography.scss */
-.btn:hover {
-  background: #492f92;
-  color: #fff;
-}
-
 /** COMMON TYPE STYLES
 ========================================================****/
-/* line 76, ../sass/global/_typography.scss */
+/* line 60, ../sass/global/_typography.scss */
 .red-ital,
 .view-blog .views-field-created,
 .views-field-field-publication {
@@ -186,7 +168,7 @@ a:hover {
   text-align: center;
 }
 
-/* line 84, ../sass/global/_typography.scss */
+/* line 68, ../sass/global/_typography.scss */
 .views-field-title .post-title,
 .node-type-events .post-title {
   color: #dc0032;
@@ -197,12 +179,12 @@ a:hover {
   text-align: center;
 }
 
-/* line 93, ../sass/global/_typography.scss */
+/* line 77, ../sass/global/_typography.scss */
 .views-field-title a .post-title:hover {
   color: #323232;
 }
 
-/* line 97, ../sass/global/_typography.scss */
+/* line 81, ../sass/global/_typography.scss */
 .read-more {
   font: 700 0.875em/1em "proxima-nova", Arial, sans-serif;
   letter-spacing: 0.1em;
@@ -890,6 +872,211 @@ html[xmlns] .slides {
   border: 2px solid #fff;
   font-weight: 700;
   letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* line 2, ../sass/pages/_collection.scss */
+.page-node-2 .content {
+  width: 100%;
+}
+
+/* line 6, ../sass/pages/_collection.scss */
+.view-display-id-block_2 {
+  margin: 0 -18px;
+}
+
+/* line 10, ../sass/pages/_collection.scss */
+.view-display-id-block_2 .views-row {
+  float: left;
+  width: 258px;
+  margin: 0 18px 18px;
+  border: 2px solid #efebe2;
+}
+
+/* line 18, ../sass/pages/_collection.scss */
+.view-display-id-block_2 .views-row a .view-gown {
+  -webkit-transition: opacity 0.15s ease-in;
+  -moz-transition: opacity 0.15s ease-in;
+  -o-transition: opacity 0.15s ease-in;
+  transition: opacity 0.15s ease-in;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+/* line 28, ../sass/pages/_collection.scss */
+.view-display-id-block_2 .views-row a .view-gown .title-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 34, ../sass/pages/_collection.scss */
+.view-display-id-block_2 .views-row a .view-gown .title {
+  margin-bottom: 24px;
+  color: #fff;
+  font: 400 28px/1 "ltc-bodoni-175", Georgia, serif;
+}
+/* line 39, ../sass/pages/_collection.scss */
+.view-display-id-block_2 .views-row a .view-gown .btn {
+  width: 120px;
+  padding: 0;
+  border-width: 1px;
+  font-size: 12px;
+}
+
+/* line 47, ../sass/pages/_collection.scss */
+.view-display-id-block_2 .views-row a:hover .view-gown {
+  opacity: 1;
+}
+
+/** GOWN PROFILE ======================**/
+/* line 55, ../sass/pages/_collection.scss */
+.node-type-gown .main {
+  min-height: 800px;
+}
+
+/* line 59, ../sass/pages/_collection.scss */
+.gown-nav {
+  margin-bottom: 1em;
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+/* line 65, ../sass/pages/_collection.scss */
+.gown-nav a {
+  display: block;
+  padding: 5px 30px;
+  background: url(../images/sprite.png) no-repeat -489px -169px;
+  font-family: "proxima-nova",Arial,sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* line 76, ../sass/pages/_collection.scss */
+.gown-nav .next {
+  float: right;
+  padding-left: 20px;
+  border-left: 1px solid #c6c6c6;
+}
+
+/* line 82, ../sass/pages/_collection.scss */
+.gown-nav .prev {
+  float: left;
+  padding-right: 20px;
+  background-position: -579px -234px;
+  border-right: 1px solid #c6c6c6;
+}
+
+/* line 89, ../sass/pages/_collection.scss */
+.node-type-gown .left {
+  position: relative;
+  width: 480px;
+}
+
+/* line 94, ../sass/pages/_collection.scss */
+.node-type-gown .right {
+  width: 480px;
+}
+
+/* line 98, ../sass/pages/_collection.scss */
+.zoom-label {
+  position: absolute;
+  right: 3px;
+  bottom: 10px;
+  display: block;
+  padding: 5px 10px;
+  background: #fff;
+  color: #adadad;
+  z-index: 99;
+}
+
+/* line 109, ../sass/pages/_collection.scss */
+.node-type-gown .left li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 115, ../sass/pages/_collection.scss */
+.node-type-gown .left img {
+  max-width: 480px;
+  box-shadow: 1px 1px 0 #cecece, -1px -1px 0 #cecece, -1px 1px 0 #cecece, 1px -1px 0 #cecece;
+  border: 3px solid #efebe2;
+}
+
+/* line 121, ../sass/pages/_collection.scss */
+.node-type-gown .post-title {
+  color: #DC0032;
+  font-family: "adobe-caslon-pro",Georgia,serif;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  line-height: 1.25em;
+}
+
+/* line 129, ../sass/pages/_collection.scss */
+.node-type-gown .thumbs {
+  margin-bottom: 1em;
+  padding: 1em 0 0.5em;
+  border-top: 1px solid #CFCFCF;
+  border-bottom: 1px solid #CFCFCF;
+}
+
+/* line 136, ../sass/pages/_collection.scss */
+.node-type-gown .thumbs li {
+  float: left;
+  margin: 0 14px 14px 0;
+  box-shadow: 1px 1px 0 #cecece, -1px -1px 0 #cecece, -1px 1px 0 #cecece, 1px -1px 0 #cecece;
+  border: 3px solid #efebe2;
+}
+
+/* line 143, ../sass/pages/_collection.scss */
+.node-type-gown .thumbs li:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* line 147, ../sass/pages/_collection.scss */
+.node-type-gown .right .ss-icon {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 152, ../sass/pages/_collection.scss */
+.node-type-gown .right .ss-icon a {
+  padding: 5px 7px 0;
+  background: #dc0032;
+  border-radius: 17px;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 30px;
+}
+
+/* line 161, ../sass/pages/_collection.scss */
+.node-type-gown .right .ss-icon a:hover {
+  background: #323232;
+}
+
+/* line 165, ../sass/pages/_collection.scss */
+.node-type-gown .share {
+  margin-bottom: 2em;
+}
+
+/* line 169, ../sass/pages/_collection.scss */
+.node-type-gown .share h3 {
+  margin-bottom: 1em;
+  font-size: 0.875em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
