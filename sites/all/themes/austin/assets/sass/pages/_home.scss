@@ -19,9 +19,14 @@
         display: inline-block;
         color: #fff;
         padding: 10px 30px;
+        background: transparent;
         border: 2px solid #fff;
         font-weight: $bold;
         letter-spacing: 3px;
         text-transform: uppercase;
+        &:hover {
+            background: #fff;
+            color: $red;
+        }
     }
 }

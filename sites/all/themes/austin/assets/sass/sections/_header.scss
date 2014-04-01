@@ -12,11 +12,17 @@
 	z-index: 99;
     a {
     	display: block;
-    	width: 319px;
-    	height: 179px;
-    	background: url(../images/sprite.png) no-repeat;
+    	width: 185px;
+    	height: 102px;
+    	background: $logos no-repeat 0 -196px;
     	text-indent: -9999em;
     }
+}
+
+.front .logo a {
+    width: 335px;
+    height: 185px;
+    background-position: 0 0;
 }
 
 .main-nav {

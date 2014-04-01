@@ -11,25 +11,6 @@
 	padding-bottom: 1em;
 }
 
-.view-blog .category {
-    position: relative;
-    margin-bottom: 32px;
-    color: $grey;
-    font: italic $book 16px/1em $bodoni;
-    letter-spacing: 2px;
-    text-align: center;
-    &:after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: -16px;
-        width: 72px;
-        height: 1px;
-        margin-left: -36px;
-        background: $red;
-    }
-}
-
 .view-blog .post-title {
     margin-bottom: $base*2;
     text-align: center;

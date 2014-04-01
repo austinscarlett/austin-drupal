@@ -27,6 +27,14 @@ h2 {
 h3 {
 }
 
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: $bold;
+}
+
 .title-bar {
     padding: $base*3 0 $base;
 }
@@ -37,17 +45,20 @@ h3 {
 }
 
 .post-title {
-    font: $book 45px/1.1em $bodoni;        
+/*     font: $book 48px/1.1em $bodoni;         */
+    font-size: 48px;
+    line-height: 1.1em;
+    letter-spacing: 2px;
+    text-transform: none;
 }
 
 .block-page-content p,
-.views-field-body p,
 .body p {
 	margin-bottom: 1em;
 }
 
 a {
-    @include single-transition(color, 0.15s, ease-in);
+    @include single-transition(all, 0.15s, ease-in);
 	color: $red;
 	text-decoration: none;
     &:hover {
@@ -58,6 +69,25 @@ a {
 
 /** COMMON TYPE STYLES
 ========================================================****/
+
+.category {
+    position: relative;
+    margin-bottom: 32px;
+    color: $grey;
+    font: italic $book 16px/1em $bodoni;
+    letter-spacing: 2px;
+    text-align: center;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -16px;
+        width: 72px;
+        height: 1px;
+        margin-left: -36px;
+        background: $red;
+    }
+}
 
 .views-field-title a .post-title:hover {
 	color: #323232;
