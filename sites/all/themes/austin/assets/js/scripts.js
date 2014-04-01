@@ -54,12 +54,6 @@
         $('.sidebar-slider .slides').bxSlider({
             pager: false
         });
-/*
-        $('.view-theater .view-content').flexslider({
-	        controlNav: false
-        });
-*/
-
 		
 	});  	
 

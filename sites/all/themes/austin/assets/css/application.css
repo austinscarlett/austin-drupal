@@ -194,7 +194,7 @@ a:hover {
 /* $sprite: image-url("sprite.svg"); */
 /* line 1, ../sass/global/_base.scss */
 body {
-  background: url('../images/bg-body-int.jpg?1396021925') no-repeat center top black;
+  background: fixed url('../images/bg-body-int.jpg?1396021925') no-repeat center top black;
   color: #fff;
   font: 400 1em/1.5em "proxima-nova", Helvetica, arial, sans-serif;
 }
@@ -721,21 +721,25 @@ input[type="submit"]:hover, button:hover {
 
 /* line 11, ../sass/modules/_slider.scss */
 .view-theater .icon-zoom {
-  /* 	display: none; */
+  -webkit-transition: opacity 0.15s ease-in;
+  -moz-transition: opacity 0.15s ease-in;
+  -o-transition: opacity 0.15s ease-in;
+  transition: opacity 0.15s ease-in;
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0;
   margin: -25px 0 0 -25px;
 }
 
-/* line 19, ../sass/modules/_slider.scss */
+/* line 20, ../sass/modules/_slider.scss */
 .view-theater li:hover .icon-zoom {
-  display: block;
+  opacity: 1;
 }
 
 /** RESET AND LAYOUT
 ===================================*/
-/* line 27, ../sass/modules/_slider.scss */
+/* line 28, ../sass/modules/_slider.scss */
 .bx-wrapper {
   position: relative;
   margin: 0 auto 60px;
@@ -744,14 +748,14 @@ input[type="submit"]:hover, button:hover {
   *zoom: 1;
 }
 
-/* line 35, ../sass/modules/_slider.scss */
+/* line 36, ../sass/modules/_slider.scss */
 .bx-wrapper img {
   max-width: 100%;
   display: block;
 }
 
 /* LOADER */
-/* line 43, ../sass/modules/_slider.scss */
+/* line 44, ../sass/modules/_slider.scss */
 .bx-wrapper .bx-loading {
   min-height: 50px;
   background: url(images/bx_loader.gif) center center no-repeat white;
@@ -764,7 +768,7 @@ input[type="submit"]:hover, button:hover {
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
-/* line 57, ../sass/modules/_slider.scss */
+/* line 58, ../sass/modules/_slider.scss */
 .bx-controls-direction [class*="bx-"] {
   position: absolute;
   top: 50%;
@@ -776,16 +780,191 @@ input[type="submit"]:hover, button:hover {
   text-indent: -9999px;
 }
 
-/* line 68, ../sass/modules/_slider.scss */
+/* line 69, ../sass/modules/_slider.scss */
 .bx-controls-direction .bx-prev {
   left: -20px;
   background-position: 0 -38px;
 }
 
-/* line 73, ../sass/modules/_slider.scss */
+/* line 74, ../sass/modules/_slider.scss */
 .bx-controls-direction .bx-next {
   right: -20px;
   background-position: 0 -65px;
+}
+
+/* line 1, ../sass/modules/_lightbox.scss */
+#lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  opacity: 0.85;
+  display: none;
+}
+
+/* line 12, ../sass/modules/_lightbox.scss */
+#lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-weight: normal;
+}
+
+/* line 23, ../sass/modules/_lightbox.scss */
+#lightbox img {
+  width: auto;
+  height: auto;
+}
+
+/* line 28, ../sass/modules/_lightbox.scss */
+#lightbox a img {
+  border: none;
+}
+
+/* line 32, ../sass/modules/_lightbox.scss */
+.lb-outerContainer {
+  position: relative;
+  background-color: white;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+/* line 41, ../sass/modules/_lightbox.scss */
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 47, ../sass/modules/_lightbox.scss */
+.lb-container {
+  padding: 10px;
+}
+
+/* line 51, ../sass/modules/_lightbox.scss */
+.lb-loader {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+/* line 61, ../sass/modules/_lightbox.scss */
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 70, ../sass/modules/_lightbox.scss */
+.lb-container > .nav {
+  left: 0;
+}
+
+/* line 74, ../sass/modules/_lightbox.scss */
+.lb-nav a {
+  outline: none;
+}
+
+/* line 78, ../sass/modules/_lightbox.scss */
+.lb-prev, .lb-next {
+  width: 49%;
+  height: 100%;
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+  display: block;
+}
+
+/* line 85, ../sass/modules/_lightbox.scss */
+.lb-prev {
+  left: 0;
+  float: left;
+}
+
+/* line 90, ../sass/modules/_lightbox.scss */
+.lb-next {
+  right: 0;
+  float: right;
+}
+
+/* line 95, ../sass/modules/_lightbox.scss */
+.lb-prev:hover {
+  background: url(../images/prev.png) left 48% no-repeat;
+}
+
+/* line 99, ../sass/modules/_lightbox.scss */
+.lb-next:hover {
+  background: url(../images/next.png) right 48% no-repeat;
+}
+
+/* line 103, ../sass/modules/_lightbox.scss */
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+}
+
+/* line 110, ../sass/modules/_lightbox.scss */
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 116, ../sass/modules/_lightbox.scss */
+.lb-data {
+  padding: 0 10px;
+  color: #bbbbbb;
+}
+
+/* line 121, ../sass/modules/_lightbox.scss */
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+/* line 128, ../sass/modules/_lightbox.scss */
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+/* line 134, ../sass/modules/_lightbox.scss */
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 11px;
+}
+
+/* line 141, ../sass/modules/_lightbox.scss */
+.lb-data .lb-close {
+  width: 35px;
+  float: right;
+  padding-bottom: 0.7em;
+  outline: none;
+}
+
+/* line 148, ../sass/modules/_lightbox.scss */
+.lb-data .lb-close:hover {
+  cursor: pointer;
 }
 
 /* line 2, ../sass/modules/_filters.scss */
@@ -1516,13 +1695,14 @@ input[type="submit"]:hover, button:hover {
   text-transform: uppercase;
 }
 
-/* line 25, ../sass/sections/_sidebar.scss */
+/** About Blocks ======================**/
+/* line 30, ../sass/sections/_sidebar.scss */
 .right-sidebar .sidebar-about-thumb {
   margin-bottom: 1em;
   border-bottom: none;
   text-align: center;
 }
-/* line 29, ../sass/sections/_sidebar.scss */
+/* line 34, ../sass/sections/_sidebar.scss */
 .right-sidebar .sidebar-about-thumb img {
   width: 166px;
   height: 166px;
@@ -1530,26 +1710,27 @@ input[type="submit"]:hover, button:hover {
   text-align: center;
 }
 
-/* line 37, ../sass/sections/_sidebar.scss */
+/* line 42, ../sass/sections/_sidebar.scss */
 .sidebar-about-content {
   margin-bottom: 1em;
   text-align: center;
 }
 
-/* line 42, ../sass/sections/_sidebar.scss */
+/* line 47, ../sass/sections/_sidebar.scss */
 .sidebar-about-content {
   margin-bottom: 2em;
   padding-bottom: 1em;
 }
 
-/* line 49, ../sass/sections/_sidebar.scss */
+/* line 52, ../sass/sections/_sidebar.scss */
 .sidebar-about-content p:first-of-type {
   margin-bottom: 1em;
   font-size: 14px;
   line-height: 21px;
 }
 
-/* line 55, ../sass/sections/_sidebar.scss */
+/** Twitter Block ===============**/
+/* line 63, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 {
   margin-bottom: 1em;
   padding-top: 1em;
@@ -1558,42 +1739,42 @@ input[type="submit"]:hover, button:hover {
   box-shadow: 0 -1px 0 #fff, 0 -2px 0 #fff, 0 -3px 0 #cfcfcf;
 }
 
-/* line 63, ../sass/sections/_sidebar.scss */
+/* line 71, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 .item-list {
   font: italic 400 1em/1.5em "proxima-nova", Arial, sans-serif;
 }
 
-/* line 67, ../sass/sections/_sidebar.scss */
+/* line 75, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 .more-link {
   display: none;
 }
 
-/* line 71, ../sass/sections/_sidebar.scss */
+/* line 79, ../sass/sections/_sidebar.scss */
 #block-block-4 {
   /* Twitter Links */
   text-align: center;
   margin-bottom: 1.5em;
 }
 
-/* line 76, ../sass/sections/_sidebar.scss */
+/* line 84, ../sass/sections/_sidebar.scss */
 #block-block-4 p {
   margin-bottom: 0.75em;
 }
 
-/* line 80, ../sass/sections/_sidebar.scss */
+/* line 88, ../sass/sections/_sidebar.scss */
 #block-block-4 .ss-icon {
   font-size: 1.3em;
   line-height: 1em;
 }
 
-/* line 85, ../sass/sections/_sidebar.scss */
+/* line 93, ../sass/sections/_sidebar.scss */
 #block-block-4 .atwit {
   font: 700 0.875em/1.5em "proxima-nova", Arial, sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
-/* line 91, ../sass/sections/_sidebar.scss */
+/* line 99, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 {
   padding: 1em 0;
   border-top: 1px solid #cfcfcf;
@@ -1601,18 +1782,18 @@ input[type="submit"]:hover, button:hover {
   box-shadow: 0 -1px 0 #fff, 0 -2px 0 #fff, 0 -3px 0 #cfcfcf, 0 1px 0 #fff, 0 2px 0 #fff, 0 3px 0 #cfcfcf;
 }
 
-/* line 98, ../sass/sections/_sidebar.scss */
+/* line 106, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 .block-title {
   text-align: center;
 }
 
-/* line 103, ../sass/sections/_sidebar.scss */
+/* line 111, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10,
 #block-webform-client-block-10 .form-item {
   position: relative;
 }
 
-/* line 107, ../sass/sections/_sidebar.scss */
+/* line 115, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 label {
   position: absolute;
   top: 0;
@@ -1621,41 +1802,41 @@ input[type="submit"]:hover, button:hover {
   line-height: 2.5em;
 }
 
-/* line 115, ../sass/sections/_sidebar.scss */
+/* line 123, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 .description {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 121, ../sass/sections/_sidebar.scss */
+/* line 129, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 textarea {
   height: 138px;
   background: #e4e4e4;
   border: none;
 }
 
-/* line 127, ../sass/sections/_sidebar.scss */
+/* line 135, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 .form-text {
   margin-bottom: 1em;
   background: #e4e4e4;
   border: none;
 }
 
-/* line 133, ../sass/sections/_sidebar.scss */
+/* line 141, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 .webform-component-textarea label:after {
   content: " (300 char. max)";
   font-size: 0.75em;
 }
 
-/* line 138, ../sass/sections/_sidebar.scss */
+/* line 146, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 #edit-actions {
   position: absolute;
   right: 0;
   bottom: 1em;
 }
 
-/* line 144, ../sass/sections/_sidebar.scss */
+/* line 152, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 input[type="submit"] {
   text-transform: uppercase;
   font-size: 0.75em;

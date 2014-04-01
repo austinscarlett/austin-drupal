@@ -63,8 +63,8 @@ lightbox = new Lightbox options
   LightboxOptions = (function() {
 
     function LightboxOptions() {
-      this.fileLoadingImage = '/sites/all/themes/austin/images/loading.gif';
-      this.fileCloseImage = '/sites/all/themes/austin/images/close.png';
+      this.fileLoadingImage = '/sites/all/themes/austin/assets/images/loading.gif';
+      this.fileCloseImage = '/sites/all/themes/austin/assets/images/close.png';
       this.resizeDuration = 700;
       this.fadeDuration = 500;
       this.labelImage = "Image";
