@@ -1,0 +1,77 @@
+
+.page-node-4 .page-title {
+	display: none;
+}
+
+.page-node-4 .top {
+	position: relative;
+	height: 353px;
+	margin-top: 80px;
+}
+
+.page-node-4 .top img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.page-node-4 .top .block-title {
+	position: relative;
+	z-index: 99;
+	text-align: center;
+	color: #fff;
+	font-size: 4em;
+	line-height: 5em;
+	text-shadow: 0 0 8px rgba(0,0,0,0.95);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+
+.page-node-4 .body {
+	padding-top: 1em;
+	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid rgba(#fff, 0.4);
+	font: italic 1.625em/1.385em $bodoni;
+	text-align: center;
+}
+
+.page-node-4 .content .block {
+	padding: 2em 0;
+	text-align: center;
+	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid rgba(#fff, 0.4);
+}
+
+.page-node-4 .content .block-title {
+	margin-bottom: 0.667em;
+	color: $red;
+	font: italic 400 2.25em/1em $bodoni;
+}
+
+.page-node-4 .content .block ul {
+	overflow: hidden;
+}
+
+.page-node-4 .content .block li {
+	float: left;
+	width: 358px;
+}
+
+.page-node-4 .content .block li:nth-child(2n+1) {
+	margin-right: 1em;
+}
+
+.page-node-4 .content .block p {
+	margin-bottom: 1em;
+	padding: 0 0.5em;
+}
+
+.page-node-4 .content .block img {
+	box-shadow: 1px 1px 0 #cecece, -1px -1px 0 #cecece, -1px 1px 0 #cecece, 1px -1px 0 #cecece;
+	border: 3px solid #efebe2;
+}
+
+#block-block-13 li {
+	margin-bottom: 1em;
+}
