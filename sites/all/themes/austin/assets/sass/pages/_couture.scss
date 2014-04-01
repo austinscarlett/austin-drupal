@@ -26,7 +26,6 @@
 	text-transform: uppercase;
 }
 
-
 .page-node-4 .body {
     @include border-bottom;
 	padding-top: 1em;
@@ -41,9 +40,9 @@
 }
 
 .page-node-4 .content .block-title {
-	margin-bottom: 0.667em;
-	color: $red;
+	margin-bottom: 24px;
 	font: italic 400 2.25em/1em $bodoni;
+	text-transform: none;
 }
 
 .page-node-4 .content .block ul {

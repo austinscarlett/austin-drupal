@@ -25,6 +25,11 @@ h2 {
 }
 
 h3 {
+    font-size: 21px;
+    line-height: 1.25em;
+    font-weight: $bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 em {
@@ -33,28 +38,6 @@ em {
 
 strong {
     font-weight: $bold;
-}
-
-.title-bar {
-    padding: $base*3 0 $base;
-}
-
-.page-title {
-	margin-bottom: 0.25em;
-	text-align: center;
-}
-
-.post-title {
-/*     font: $book 48px/1.1em $bodoni;         */
-    font-size: 48px;
-    line-height: 1.1em;
-    letter-spacing: 2px;
-    text-transform: none;
-}
-
-.block-page-content p,
-.body p {
-	margin-bottom: 1em;
 }
 
 a {
@@ -69,6 +52,28 @@ a {
 
 /** COMMON TYPE STYLES
 ========================================================****/
+
+.title-bar {
+    padding: $base*3 0 $base;
+}
+
+.page-title {
+	margin-bottom: 0.25em;
+	text-align: center;
+}
+
+.post-title {
+/*  font: $book 48px/1.1em $bodoni */
+    font-size: 48px;
+    line-height: 1.1em;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+.block-page-content p,
+.body p {
+	margin-bottom: 1em;
+}
 
 .category {
     position: relative;

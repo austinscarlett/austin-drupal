@@ -41,18 +41,3 @@
     font-weight: $bold;
     text-transform: uppercase;
 }
-
-.view-blog .social-links {
-    @include border-bottom;
-    padding-bottom: 18px;
-    text-align: center;
-    li {
-        display: inline-block;
-        padding: 0 10px;
-    }
-    .ss-icon {
-        color: $grey;
-        font-size: 20px;
-        line-height: 1;
-    }
-}
