@@ -23,52 +23,43 @@
 	position: relative;
 	z-index: 99;
 	float: right;
-	padding-top: 5px;
+	padding-top: 32px;
 }
 
 .main-nav li {
-	float: left;
-	min-height: 56px;
-	padding: 0 20px;
-	border-left: 2px dotted #272727;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 60px;
+    &:first-of-type {
+        margin-left: 0;
+    }
 }
 
 .main-nav a {
-	display: block;
 	color: #efebe2;
-	font: $semi 0.813em/4.25em $proxima;
+	font: $semi 0.813em/1em $proxima;
 	text-transform: uppercase;
-}
-
-.menu-208 a:before {
-	content: "the Art of ";
-}
-
-.menu-209 a:before {
-	content: "the World of ";
-}
-
-.main-nav .menu-208 a,
-.main-nav .menu-209 a {
-	line-height: 1em;
-	&:before {
-    	display: block;
-    	padding-top: 16px;
-    	font: $book italic 16px/1.5em $bodoni;
-    	text-align: center;
-    	text-transform: none;
+	&:hover, &.active {
+    	color: $red;
 	}
 }
 
-.main-nav a:hover,
-.main-nav .active {
-	color: #dc0032;
+.menu-208 a:before {
+	content: "the Art of";
+}
+
+.menu-209 a:before {
+	content: "the World of";
+}
+
+.main-nav .menu-208 a:before,
+.main-nav .menu-209 a:before {
+    display: block;
+    font: $book italic 16px/1em $bodoni;
+    text-align: center;
+    text-transform: none;
 }
 
 .main-nav .first {
 	border: none;
-}
-
-.main-nav .last {
-    display: none;
 }

@@ -602,6 +602,11 @@ input[type="submit"]:hover, button:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+/* line 10, ../sass/global/_buttons.scss */
+.btn:hover {
+  color: #da0b38;
+  border-color: #da0b38;
+}
 
 /* Modules */
 /* line 1, ../sass/modules/_tabs.scss */
@@ -1461,64 +1466,53 @@ input[type="submit"]:hover, button:hover {
   position: relative;
   z-index: 99;
   float: right;
-  padding-top: 5px;
+  padding-top: 32px;
 }
 
 /* line 29, ../sass/sections/_header.scss */
 .main-nav li {
-  float: left;
-  min-height: 56px;
-  padding: 0 20px;
-  border-left: 2px dotted #272727;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 60px;
+}
+/* line 33, ../sass/sections/_header.scss */
+.main-nav li:first-of-type {
+  margin-left: 0;
 }
 
-/* line 36, ../sass/sections/_header.scss */
+/* line 38, ../sass/sections/_header.scss */
 .main-nav a {
-  display: block;
   color: #efebe2;
-  font: 600 0.813em/4.25em "proxima-nova", Helvetica, arial, sans-serif;
+  font: 600 0.813em/1em "proxima-nova", Helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
-
-/* line 43, ../sass/sections/_header.scss */
-.menu-208 a:before {
-  content: "the Art of ";
+/* line 42, ../sass/sections/_header.scss */
+.main-nav a:hover, .main-nav a.active {
+  color: #da0b38;
 }
 
 /* line 47, ../sass/sections/_header.scss */
-.menu-209 a:before {
-  content: "the World of ";
+.menu-208 a:before {
+  content: "the Art of";
 }
 
-/* line 52, ../sass/sections/_header.scss */
-.main-nav .menu-208 a,
-.main-nav .menu-209 a {
-  line-height: 1em;
+/* line 51, ../sass/sections/_header.scss */
+.menu-209 a:before {
+  content: "the World of";
 }
-/* line 54, ../sass/sections/_header.scss */
+
+/* line 56, ../sass/sections/_header.scss */
 .main-nav .menu-208 a:before,
 .main-nav .menu-209 a:before {
   display: block;
-  padding-top: 16px;
-  font: 400 italic 16px/1.5em "ltc-bodoni-175", Georgia, serif;
+  font: 400 italic 16px/1em "ltc-bodoni-175", Georgia, serif;
   text-align: center;
   text-transform: none;
 }
 
-/* line 64, ../sass/sections/_header.scss */
-.main-nav a:hover,
-.main-nav .active {
-  color: #dc0032;
-}
-
-/* line 68, ../sass/sections/_header.scss */
+/* line 63, ../sass/sections/_header.scss */
 .main-nav .first {
   border: none;
-}
-
-/* line 72, ../sass/sections/_header.scss */
-.main-nav .last {
-  display: none;
 }
 
 /* line 2, ../sass/sections/_footer.scss */
