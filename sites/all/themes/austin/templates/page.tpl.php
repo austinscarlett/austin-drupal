@@ -66,9 +66,9 @@
     <div class="wrapper">
 
         <?php if ($show_messages && $messages): ?>
-        	<div id="console"><div class="wrapper">
+        	<div id="console" class="console">
         	<?php if ($show_messages && $messages): print $messages; endif; ?>
-        	</div></div>
+        	</div>
         <?php endif; ?>
 
     	<?php if ($page['sidebar_first']): ?>

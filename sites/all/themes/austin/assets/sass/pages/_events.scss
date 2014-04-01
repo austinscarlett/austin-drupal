@@ -1,0 +1,181 @@
+
+.page-node-3 .view-events .views-row {
+	float: left;
+	width: 228px;
+	margin: 0 24px 1em 0;
+	border: 1px solid #cfcfcf;
+	text-align: center;
+	min-height: 282px;
+}
+
+.page-node-3 .view-events .attachment .views-row {
+	width: 480px;
+}
+
+.page-node-3 .view-events .date,
+.page-node-3 .view-events .views-field-field-dates {
+	color: #dc0032;
+	font-style: italic;
+}
+
+.page-node-3 .view-events .location {
+	font-size: 0.875em;
+	font-style: italic;
+}
+
+.page-node-3 .view-events .attachment .views-field-field-image {
+	float: left;
+	width: 240px;
+}
+
+.page-node-3 .view-events .attachment .views-field-nothing {
+	float: right;
+	width: 238px;
+	padding: 0 9px;
+	text-align: center;
+}
+
+.page-node-3 .view-events .attachment h2 {
+	margin: 1.5em 0;
+	font-size: 0.875em;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.page-node-3 .view-events .attachment h3,
+.page-node-3 .view-events .views-field-title {
+	padding: 0 10px;
+	font: italic 400 1.125em/1em "adobe-caslon-pro", Georgia, serif;
+}
+
+.page-node-3 .view-events .attachment .location {
+	margin-bottom: 0.5em;
+}
+
+.page-node-3 .view-events .attachment .teaser {
+	font-size: 0.875em;
+}
+
+.page-node-3 .view-events .views-field-field-image {
+	margin-bottom: 1em;
+}
+
+.page-node-3 .view-events .attachment .views-field-field-image {
+	margin-bottom: 0;
+}
+
+
+/** EVENT NODE PAGE **/
+
+.event-image {
+	position: relative;
+	border: 3px solid #fff;
+}
+
+.event-image .social-links {
+	position: absolute;
+	right: 10px;
+	bottom: 12px;
+}
+
+.event-image .ss-icon {
+	float: left;
+	margin-right: 10px;
+}
+
+.event-image .ss-icon a {
+	padding: 5px 7px 0;
+	background: $red;
+	border-radius: 17px;
+	color: #fff;
+	font-size: 1.25em;
+	line-height: 30px;
+}
+
+.event-image .ss-icon a:hover {
+	background: #000;
+}
+
+.event-info .date {
+	margin-bottom: 1em;
+	color: $red;
+}
+
+.event-info .location {
+	margin-bottom: 1em;
+}
+
+.event-info .location h3 {
+	font-weight: $bold;
+	text-transform: uppercase;
+}
+
+.directions a,
+.mark-calendar a {
+    color: $lt-grey;
+	font-weight: $bold;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.directions a:hover,
+.mark-calendar a:hover {
+	color: $red;
+}
+
+.directions [class*="icon-"] {
+    vertical-align: -2px;
+    margin: 0 8px 0 2px;
+}
+
+.mark-calendar [class*="icon-"] {
+    vertical-align: -1px;
+    margin-right: 8px;
+}
+
+.directions {
+    @include border-top;
+	padding: 1em 0 0.5em;
+}
+
+.mark-calendar {
+    @include border-bottom;
+	margin-bottom: 2em;
+	padding: 0.5em 0 1em;
+}
+
+.apt-form .description {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.apt-form .webform-component-textfield,
+.apt-form .webform-component-email {
+	float: left;
+	clear: left;
+	width: 40%;
+	margin-bottom: 10px;
+}
+
+.apt-form .webform-component-textarea {
+	float: right;
+	width: 58%;
+}
+
+.apt-form textarea {
+	height: 138px;
+}
+
+.apt-form #edit-actions {
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+}
+
+.apt-form input[type="submit"] {
+	text-transform: uppercase;
+	font-size: 0.75em;
+}
+

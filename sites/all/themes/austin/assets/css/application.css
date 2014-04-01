@@ -135,14 +135,19 @@ h2 {
   text-align: center;
 }
 
-/* line 41, ../sass/global/_typography.scss */
+/* line 39, ../sass/global/_typography.scss */
+.post-title {
+  font: 400 45px/1.1em "ltc-bodoni-175", Georgia, serif;
+}
+
+/* line 45, ../sass/global/_typography.scss */
 .block-page-content p,
 .views-field-body p,
 .body p {
   margin-bottom: 1em;
 }
 
-/* line 45, ../sass/global/_typography.scss */
+/* line 49, ../sass/global/_typography.scss */
 a {
   -webkit-transition: color 0.15s ease-in;
   -moz-transition: color 0.15s ease-in;
@@ -151,43 +156,22 @@ a {
   color: #da0b38;
   text-decoration: none;
 }
-/* line 49, ../sass/global/_typography.scss */
+/* line 53, ../sass/global/_typography.scss */
 a:hover {
   color: #fff;
 }
 
 /** COMMON TYPE STYLES
 ========================================================****/
-/* line 60, ../sass/global/_typography.scss */
-.red-ital,
-.view-blog .views-field-created,
-.views-field-field-publication {
-  color: #dc0032;
-  font-style: italic;
-  letter-spacing: 0.1em;
-  text-align: center;
-}
-
-/* line 68, ../sass/global/_typography.scss */
-.views-field-title .post-title,
-.node-type-events .post-title {
-  color: #dc0032;
-  font-family: "adobe-caslon-pro", Georgia, serif;
-  font-style: italic;
-  line-height: 1.25em;
-  letter-spacing: 0.1em;
-  text-align: center;
-}
-
-/* line 77, ../sass/global/_typography.scss */
+/* line 62, ../sass/global/_typography.scss */
 .views-field-title a .post-title:hover {
   color: #323232;
 }
 
-/* line 81, ../sass/global/_typography.scss */
+/* line 66, ../sass/global/_typography.scss */
 .read-more {
-  font: 700 0.875em/1em "proxima-nova", Arial, sans-serif;
-  letter-spacing: 0.1em;
+  font: 700 0.875em/1em "proxima-nova", Helvetica, arial, sans-serif;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -243,7 +227,7 @@ body.front {
 /* line 2, ../sass/global/_icons.scss */
 [class*="icon-"] {
   display: inline-block;
-  background: url('../images/sprite.svg?1396307869') no-repeat 0 0;
+  background: url('../images/sprite.svg?1396374496') no-repeat 0 0;
 }
 
 /* line 7, ../sass/global/_icons.scss */
@@ -266,13 +250,47 @@ body.front {
   background-position: 0 -91px;
 }
 
-/* line 2, ../sass/global/_forms.scss */
-.webform-client-form,
-.form-item {
-  position: relative;
+/* line 24, ../sass/global/_icons.scss */
+.icon-calendar {
+  width: 14px;
+  height: 14px;
+  background-position: 0 -149px;
 }
 
-/* line 10, ../sass/global/_forms.scss */
+/* line 2, ../sass/global/_forms.scss */
+.webform-client-form {
+  *zoom: 1;
+  position: relative;
+}
+/* line 2, ../sass/global/_mixins.scss */
+.webform-client-form:before, .webform-client-form:after {
+  content: " ";
+  display: block;
+}
+/* line 6, ../sass/global/_mixins.scss */
+.webform-client-form:after {
+  clear: both;
+}
+
+/* line 7, ../sass/global/_forms.scss */
+.form-item {
+  position: relative;
+  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* line 13, ../sass/global/_forms.scss */
+label {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 27, ../sass/global/_forms.scss */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -287,7 +305,12 @@ textarea {
   font-family: Georgia, serif;
 }
 
-/* line 20, ../sass/global/_forms.scss */
+/* line 37, ../sass/global/_forms.scss */
+textarea {
+  resize: none;
+}
+
+/* line 41, ../sass/global/_forms.scss */
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -299,7 +322,7 @@ select {
   text-overflow: "";
 }
 
-/* line 30, ../sass/global/_forms.scss */
+/* line 51, ../sass/global/_forms.scss */
 .webform-component-select:before,
 .form-type-select:before {
   content: "";
@@ -314,7 +337,7 @@ select {
   border-top: 5px solid #da0b38;
 }
 
-/* line 43, ../sass/global/_forms.scss */
+/* line 64, ../sass/global/_forms.scss */
 input[type="submit"] {
   -webkit-transition: background 0.15s ease-in;
   -moz-transition: background 0.15s ease-in;
@@ -328,12 +351,12 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
-/* line 53, ../sass/global/_forms.scss */
+/* line 74, ../sass/global/_forms.scss */
 input[type="submit"]:hover {
   background: #ff003a;
 }
 
-/* line 57, ../sass/global/_forms.scss */
+/* line 78, ../sass/global/_forms.scss */
 .not-front.page-node-done #content {
   width: 100%;
   padding: 4em 0;
@@ -342,32 +365,34 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-/* line 65, ../sass/global/_forms.scss */
+/* line 86, ../sass/global/_forms.scss */
 .node-webform .webform-component {
   margin-bottom: 1em;
 }
 
-/* line 69, ../sass/global/_forms.scss */
+/* line 90, ../sass/global/_forms.scss */
 .page-node-done .links {
   display: none;
 }
 
-/* line 73, ../sass/global/_forms.scss */
+/* line 94, ../sass/global/_forms.scss */
 .description {
   font-size: 0.75em;
 }
 
-/* line 77, ../sass/global/_forms.scss */
+/* line 98, ../sass/global/_forms.scss */
 #user-login .form-item {
   margin-bottom: 1em;
 }
 
-/* line 81, ../sass/global/_forms.scss */
-.form-item input.error, .form-item textarea.error, .form-item select.error {
-  border: 1px solid #dc0032;
+/* line 104, ../sass/global/_forms.scss */
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 1px solid #da0b38;
 }
 
-/* line 86, ../sass/global/_forms.scss */
+/* line 109, ../sass/global/_forms.scss */
 .messages.error,
 .form-item label.error {
   display: none;
@@ -633,35 +658,21 @@ input[type="submit"]:hover, button:hover {
   background: #aaa;
 }
 
-/* line 1, ../sass/modules/_contact-form.scss */
-.contact-form {
-  position: relative;
-}
-/* line 3, ../sass/modules/_contact-form.scss */
-.contact-form .form-item {
-  border: 1px solid #fff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-/* line 9, ../sass/modules/_contact-form.scss */
+/* line 2, ../sass/modules/_contact-form.scss */
 .contact-form label {
   position: absolute;
   top: 3px;
   left: 10px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
-/* line 19, ../sass/modules/_contact-form.scss */
+/* line 8, ../sass/modules/_contact-form.scss */
 .contact-form .description {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 27, ../sass/modules/_contact-form.scss */
+/* line 16, ../sass/modules/_contact-form.scss */
 .contact-form .webform-component-textfield,
 .contact-form .webform-component-email,
 .contact-form .webform-component-select {
@@ -669,43 +680,43 @@ input[type="submit"]:hover, button:hover {
   margin-bottom: 10px;
 }
 
-/* line 32, ../sass/modules/_contact-form.scss */
+/* line 21, ../sass/modules/_contact-form.scss */
 .contact-form .webform-component-textfield {
   width: 190px;
   margin-right: 10px;
 }
 
-/* line 37, ../sass/modules/_contact-form.scss */
+/* line 26, ../sass/modules/_contact-form.scss */
 .contact-form .webform-component-email {
   width: 190px;
   margin-right: 10px;
 }
 
-/* line 42, ../sass/modules/_contact-form.scss */
+/* line 31, ../sass/modules/_contact-form.scss */
 .contact-form .webform-component-select {
   width: 152px;
 }
 
-/* line 46, ../sass/modules/_contact-form.scss */
+/* line 35, ../sass/modules/_contact-form.scss */
 .contact-form .webform-component-textarea {
   clear: both;
   width: 100%;
 }
 
-/* line 51, ../sass/modules/_contact-form.scss */
+/* line 40, ../sass/modules/_contact-form.scss */
 .contact-form textarea {
   height: 138px;
   resize: none;
 }
 
-/* line 56, ../sass/modules/_contact-form.scss */
+/* line 45, ../sass/modules/_contact-form.scss */
 .contact-form .form-actions {
   position: absolute;
   right: 5px;
   bottom: 5px;
 }
 
-/* line 62, ../sass/modules/_contact-form.scss */
+/* line 51, ../sass/modules/_contact-form.scss */
 .contact-form input[type="submit"] {
   text-transform: uppercase;
   font-size: 0.875em;
@@ -781,7 +792,7 @@ input[type="submit"]:hover, button:hover {
   width: 12px;
   height: 22px;
   margin-top: -11px;
-  background: url('../images/sprite.svg?1396307869');
+  background: url('../images/sprite.svg?1396374496');
   text-indent: -9999px;
 }
 
@@ -1040,95 +1051,6 @@ input[type="submit"]:hover, button:hover {
   text-transform: uppercase;
 }
 
-/* line 2, ../sass/pages/_couture.scss */
-.page-node-4 .page-title {
-  display: none;
-}
-
-/* line 6, ../sass/pages/_couture.scss */
-.page-node-4 .top {
-  position: relative;
-  height: 353px;
-  margin-top: 80px;
-}
-
-/* line 12, ../sass/pages/_couture.scss */
-.page-node-4 .top img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* line 18, ../sass/pages/_couture.scss */
-.page-node-4 .top .block-title {
-  position: relative;
-  z-index: 99;
-  text-align: center;
-  color: #fff;
-  font-size: 4em;
-  line-height: 5em;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.95);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-/* line 31, ../sass/pages/_couture.scss */
-.page-node-4 .body {
-  padding-top: 1em;
-  border-bottom: 1px solid #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  font: italic 1.625em/1.385em "ltc-bodoni-175", Georgia, serif;
-  text-align: center;
-}
-
-/* line 39, ../sass/pages/_couture.scss */
-.page-node-4 .content .block {
-  padding: 2em 0;
-  text-align: center;
-  border-bottom: 1px solid #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-/* line 46, ../sass/pages/_couture.scss */
-.page-node-4 .content .block-title {
-  margin-bottom: 0.667em;
-  color: #da0b38;
-  font: italic 400 2.25em/1em "ltc-bodoni-175", Georgia, serif;
-}
-
-/* line 52, ../sass/pages/_couture.scss */
-.page-node-4 .content .block ul {
-  overflow: hidden;
-}
-
-/* line 56, ../sass/pages/_couture.scss */
-.page-node-4 .content .block li {
-  float: left;
-  width: 358px;
-}
-
-/* line 61, ../sass/pages/_couture.scss */
-.page-node-4 .content .block li:nth-child(2n+1) {
-  margin-right: 1em;
-}
-
-/* line 65, ../sass/pages/_couture.scss */
-.page-node-4 .content .block p {
-  margin-bottom: 1em;
-  padding: 0 0.5em;
-}
-
-/* line 70, ../sass/pages/_couture.scss */
-.page-node-4 .content .block img {
-  box-shadow: 1px 1px 0 #cecece, -1px -1px 0 #cecece, -1px 1px 0 #cecece, 1px -1px 0 #cecece;
-  border: 3px solid #efebe2;
-}
-
-/* line 75, ../sass/pages/_couture.scss */
-#block-block-13 li {
-  margin-bottom: 1em;
-}
-
 /* line 2, ../sass/pages/_collection.scss */
 #block-views-gowns-block-2 {
   margin: 0 -18px;
@@ -1282,11 +1204,6 @@ input[type="submit"]:hover, button:hover {
 }
 
 /* line 124, ../sass/pages/_collection.scss */
-.gown-info .post-title {
-  font: 400 45px/1.25em "ltc-bodoni-175", Georgia, serif;
-}
-
-/* line 128, ../sass/pages/_collection.scss */
 .gown-info .thumbs {
   margin-bottom: 1em;
   padding: 1em 0 0.5em;
@@ -1294,7 +1211,7 @@ input[type="submit"]:hover, button:hover {
   border-bottom: 1px solid #CFCFCF;
 }
 
-/* line 135, ../sass/pages/_collection.scss */
+/* line 131, ../sass/pages/_collection.scss */
 .gown-info .thumbs li {
   float: left;
   margin: 0 14px 14px 0;
@@ -1302,18 +1219,18 @@ input[type="submit"]:hover, button:hover {
   border: 3px solid #efebe2;
 }
 
-/* line 142, ../sass/pages/_collection.scss */
+/* line 138, ../sass/pages/_collection.scss */
 .gown-info .thumbs li:nth-child(3n) {
   margin-right: 0;
 }
 
-/* line 146, ../sass/pages/_collection.scss */
+/* line 142, ../sass/pages/_collection.scss */
 .gown-info .ss-icon {
   float: left;
   margin-right: 10px;
 }
 
-/* line 151, ../sass/pages/_collection.scss */
+/* line 147, ../sass/pages/_collection.scss */
 .gown-info .ss-icon a {
   padding: 5px 7px 0;
   background: #dc0032;
@@ -1323,23 +1240,322 @@ input[type="submit"]:hover, button:hover {
   line-height: 30px;
 }
 
-/* line 160, ../sass/pages/_collection.scss */
+/* line 156, ../sass/pages/_collection.scss */
 .gown-info .ss-icon a:hover {
   background: #323232;
 }
 
-/* line 164, ../sass/pages/_collection.scss */
+/* line 160, ../sass/pages/_collection.scss */
 .gown-info .share {
   margin-bottom: 2em;
 }
 
-/* line 168, ../sass/pages/_collection.scss */
+/* line 164, ../sass/pages/_collection.scss */
 .gown-info .share h3 {
   margin-bottom: 1em;
   font-size: 0.875em;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+/* line 2, ../sass/pages/_events.scss */
+.page-node-3 .view-events .views-row {
+  float: left;
+  width: 228px;
+  margin: 0 24px 1em 0;
+  border: 1px solid #cfcfcf;
+  text-align: center;
+  min-height: 282px;
+}
+
+/* line 11, ../sass/pages/_events.scss */
+.page-node-3 .view-events .attachment .views-row {
+  width: 480px;
+}
+
+/* line 16, ../sass/pages/_events.scss */
+.page-node-3 .view-events .date,
+.page-node-3 .view-events .views-field-field-dates {
+  color: #dc0032;
+  font-style: italic;
+}
+
+/* line 21, ../sass/pages/_events.scss */
+.page-node-3 .view-events .location {
+  font-size: 0.875em;
+  font-style: italic;
+}
+
+/* line 26, ../sass/pages/_events.scss */
+.page-node-3 .view-events .attachment .views-field-field-image {
+  float: left;
+  width: 240px;
+}
+
+/* line 31, ../sass/pages/_events.scss */
+.page-node-3 .view-events .attachment .views-field-nothing {
+  float: right;
+  width: 238px;
+  padding: 0 9px;
+  text-align: center;
+}
+
+/* line 38, ../sass/pages/_events.scss */
+.page-node-3 .view-events .attachment h2 {
+  margin: 1.5em 0;
+  font-size: 0.875em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* line 47, ../sass/pages/_events.scss */
+.page-node-3 .view-events .attachment h3,
+.page-node-3 .view-events .views-field-title {
+  padding: 0 10px;
+  font: italic 400 1.125em/1em "adobe-caslon-pro", Georgia, serif;
+}
+
+/* line 52, ../sass/pages/_events.scss */
+.page-node-3 .view-events .attachment .location {
+  margin-bottom: 0.5em;
+}
+
+/* line 56, ../sass/pages/_events.scss */
+.page-node-3 .view-events .attachment .teaser {
+  font-size: 0.875em;
+}
+
+/* line 60, ../sass/pages/_events.scss */
+.page-node-3 .view-events .views-field-field-image {
+  margin-bottom: 1em;
+}
+
+/* line 64, ../sass/pages/_events.scss */
+.page-node-3 .view-events .attachment .views-field-field-image {
+  margin-bottom: 0;
+}
+
+/** EVENT NODE PAGE **/
+/* line 71, ../sass/pages/_events.scss */
+.event-image {
+  position: relative;
+  border: 3px solid #fff;
+}
+
+/* line 76, ../sass/pages/_events.scss */
+.event-image .social-links {
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+}
+
+/* line 82, ../sass/pages/_events.scss */
+.event-image .ss-icon {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 87, ../sass/pages/_events.scss */
+.event-image .ss-icon a {
+  padding: 5px 7px 0;
+  background: #da0b38;
+  border-radius: 17px;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 30px;
+}
+
+/* line 96, ../sass/pages/_events.scss */
+.event-image .ss-icon a:hover {
+  background: #000;
+}
+
+/* line 100, ../sass/pages/_events.scss */
+.event-info .date {
+  margin-bottom: 1em;
+  color: #da0b38;
+}
+
+/* line 105, ../sass/pages/_events.scss */
+.event-info .location {
+  margin-bottom: 1em;
+}
+
+/* line 109, ../sass/pages/_events.scss */
+.event-info .location h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 115, ../sass/pages/_events.scss */
+.directions a,
+.mark-calendar a {
+  color: #d8d8d8;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* line 123, ../sass/pages/_events.scss */
+.directions a:hover,
+.mark-calendar a:hover {
+  color: #da0b38;
+}
+
+/* line 127, ../sass/pages/_events.scss */
+.directions [class*="icon-"] {
+  vertical-align: -2px;
+  margin: 0 8px 0 2px;
+}
+
+/* line 132, ../sass/pages/_events.scss */
+.mark-calendar [class*="icon-"] {
+  vertical-align: -1px;
+  margin-right: 8px;
+}
+
+/* line 137, ../sass/pages/_events.scss */
+.directions {
+  border-top: 1px solid #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 1em 0 0.5em;
+}
+
+/* line 142, ../sass/pages/_events.scss */
+.mark-calendar {
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 2em;
+  padding: 0.5em 0 1em;
+}
+
+/* line 148, ../sass/pages/_events.scss */
+.apt-form .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 155, ../sass/pages/_events.scss */
+.apt-form .webform-component-textfield,
+.apt-form .webform-component-email {
+  float: left;
+  clear: left;
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+/* line 162, ../sass/pages/_events.scss */
+.apt-form .webform-component-textarea {
+  float: right;
+  width: 58%;
+}
+
+/* line 167, ../sass/pages/_events.scss */
+.apt-form textarea {
+  height: 138px;
+}
+
+/* line 171, ../sass/pages/_events.scss */
+.apt-form #edit-actions {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+}
+
+/* line 177, ../sass/pages/_events.scss */
+.apt-form input[type="submit"] {
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+/* line 2, ../sass/pages/_couture.scss */
+.page-node-4 .page-title {
+  display: none;
+}
+
+/* line 6, ../sass/pages/_couture.scss */
+.page-node-4 .top {
+  position: relative;
+  height: 353px;
+  margin-top: 80px;
+}
+
+/* line 12, ../sass/pages/_couture.scss */
+.page-node-4 .top img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 18, ../sass/pages/_couture.scss */
+.page-node-4 .top .block-title {
+  position: relative;
+  z-index: 99;
+  text-align: center;
+  color: #fff;
+  font-size: 4em;
+  line-height: 5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* line 30, ../sass/pages/_couture.scss */
+.page-node-4 .body {
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 1em;
+  font: italic 1.625em/1.385em "ltc-bodoni-175", Georgia, serif;
+  text-align: center;
+}
+
+/* line 37, ../sass/pages/_couture.scss */
+.page-node-4 .content .block {
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 2em 0;
+  text-align: center;
+}
+
+/* line 43, ../sass/pages/_couture.scss */
+.page-node-4 .content .block-title {
+  margin-bottom: 0.667em;
+  color: #da0b38;
+  font: italic 400 2.25em/1em "ltc-bodoni-175", Georgia, serif;
+}
+
+/* line 49, ../sass/pages/_couture.scss */
+.page-node-4 .content .block ul {
+  overflow: hidden;
+}
+
+/* line 53, ../sass/pages/_couture.scss */
+.page-node-4 .content .block li {
+  float: left;
+  width: 358px;
+}
+
+/* line 58, ../sass/pages/_couture.scss */
+.page-node-4 .content .block li:nth-child(2n+1) {
+  margin-right: 1em;
+}
+
+/* line 62, ../sass/pages/_couture.scss */
+.page-node-4 .content .block p {
+  margin-bottom: 1em;
+  padding: 0 0.5em;
+}
+
+/* line 67, ../sass/pages/_couture.scss */
+.page-node-4 .content .block img {
+  border: 3px solid #fff;
+}
+
+/* line 71, ../sass/pages/_couture.scss */
+#block-block-13 li {
+  margin-bottom: 1em;
 }
 
 /* line 1, ../sass/pages/_blog.scss */
@@ -1426,20 +1642,21 @@ input[type="submit"]:hover, button:hover {
 
 /* line 64, ../sass/pages/_blog.scss */
 .view-blog .social-links {
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 18px;
   text-align: center;
 }
 /* line 68, ../sass/pages/_blog.scss */
 .view-blog .social-links li {
-  background: #000;
   display: inline-block;
   padding: 0 10px;
 }
-/* line 73, ../sass/pages/_blog.scss */
+/* line 72, ../sass/pages/_blog.scss */
 .view-blog .social-links .ss-icon {
   color: #9e9e9e;
   font-size: 20px;
+  line-height: 1;
 }
 
 /* line 2, ../sass/pages/_stores.scss */
@@ -1655,36 +1872,41 @@ input[type="submit"]:hover, button:hover {
   margin-bottom: 12px;
 }
 /* line 43, ../sass/sections/_footer.scss */
+.footer .mailing-list .form-item {
+  border: none;
+}
+/* line 46, ../sass/sections/_footer.scss */
 .footer .mailing-list label {
   position: absolute;
   top: 6px;
   left: 0;
   font: italic 400 18px/1 "ltc-bodoni-175", Georgia, serif;
+  text-transform: none;
 }
-/* line 49, ../sass/sections/_footer.scss */
+/* line 53, ../sass/sections/_footer.scss */
 .footer .mailing-list .form-text {
   padding-left: 0;
   width: 206px;
   background: none;
   border-bottom: 1px solid #fff;
 }
-/* line 55, ../sass/sections/_footer.scss */
+/* line 59, ../sass/sections/_footer.scss */
 .footer .mailing-list .form-actions {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-/* line 62, ../sass/sections/_footer.scss */
+/* line 66, ../sass/sections/_footer.scss */
 .footer .contact-form {
   margin-right: 0;
 }
-/* line 64, ../sass/sections/_footer.scss */
+/* line 68, ../sass/sections/_footer.scss */
 .footer .contact-form .webform-client-form {
   padding-top: 4px;
 }
 
-/* line 69, ../sass/sections/_footer.scss */
+/* line 73, ../sass/sections/_footer.scss */
 .footer .copyright {
   clear: both;
   padding: 1em 0;
@@ -1692,20 +1914,20 @@ input[type="submit"]:hover, button:hover {
   font-size: 0.75em;
 }
 
-/* line 76, ../sass/sections/_footer.scss */
+/* line 80, ../sass/sections/_footer.scss */
 .footer a {
   color: #ececec;
   font: 400 12px/26px "proxima-nova", Arial, sans-serif;
   text-transform: uppercase;
 }
 
-/* line 82, ../sass/sections/_footer.scss */
+/* line 86, ../sass/sections/_footer.scss */
 .footer .ss-icon {
   float: left;
   margin-right: 10px;
 }
 
-/* line 87, ../sass/sections/_footer.scss */
+/* line 91, ../sass/sections/_footer.scss */
 .footer .ss-icon a {
   padding: 5px 7px 0;
   background: #dc0032;
@@ -1715,12 +1937,12 @@ input[type="submit"]:hover, button:hover {
   line-height: 30px;
 }
 
-/* line 96, ../sass/sections/_footer.scss */
+/* line 100, ../sass/sections/_footer.scss */
 .footer .mail-list .webform-component {
   float: left;
 }
 
-/* line 100, ../sass/sections/_footer.scss */
+/* line 104, ../sass/sections/_footer.scss */
 .footer .mail-list .form-actions {
   float: right;
   position: relative;
@@ -1729,17 +1951,17 @@ input[type="submit"]:hover, button:hover {
   padding-top: 10px;
 }
 
-/* line 108, ../sass/sections/_footer.scss */
+/* line 112, ../sass/sections/_footer.scss */
 .footer .mail-list label {
   color: #b0b0b0;
 }
 
-/* line 112, ../sass/sections/_footer.scss */
+/* line 116, ../sass/sections/_footer.scss */
 .footer .mail-list label span {
   font-style: italic;
 }
 
-/* line 116, ../sass/sections/_footer.scss */
+/* line 120, ../sass/sections/_footer.scss */
 .footer .mail-list input[type="email"] {
   position: relative;
   z-index: 99;
@@ -1750,13 +1972,14 @@ input[type="submit"]:hover, button:hover {
   color: #b0b0b0;
 }
 
-/* line 126, ../sass/sections/_footer.scss */
+/* line 130, ../sass/sections/_footer.scss */
 .footer .mail-list input[type="submit"] {
   width: 40px;
 }
 
 /* line 1, ../sass/sections/_sidebar.scss */
 .right-sidebar .block {
+  border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -1819,42 +2042,42 @@ input[type="submit"]:hover, button:hover {
 /** Twitter Block ===============**/
 /* line 63, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 {
+  border-top: 1px solid #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
   margin-bottom: 1em;
   padding-top: 1em;
   text-align: center;
-  border-top: 1px solid #cfcfcf;
-  box-shadow: 0 -1px 0 #fff, 0 -2px 0 #fff, 0 -3px 0 #cfcfcf;
 }
 
-/* line 71, ../sass/sections/_sidebar.scss */
+/* line 70, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 .item-list {
   font: italic 400 1em/1.5em "proxima-nova", Arial, sans-serif;
 }
 
-/* line 75, ../sass/sections/_sidebar.scss */
+/* line 74, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 .more-link {
   display: none;
 }
 
-/* line 79, ../sass/sections/_sidebar.scss */
+/* line 78, ../sass/sections/_sidebar.scss */
 #block-block-4 {
   /* Twitter Links */
   text-align: center;
   margin-bottom: 1.5em;
 }
 
-/* line 84, ../sass/sections/_sidebar.scss */
+/* line 83, ../sass/sections/_sidebar.scss */
 #block-block-4 p {
   margin-bottom: 0.75em;
 }
 
-/* line 88, ../sass/sections/_sidebar.scss */
+/* line 87, ../sass/sections/_sidebar.scss */
 #block-block-4 .ss-icon {
   font-size: 1.3em;
   line-height: 1em;
 }
 
-/* line 93, ../sass/sections/_sidebar.scss */
+/* line 92, ../sass/sections/_sidebar.scss */
 #block-block-4 .atwit {
   font: 700 0.875em/1.5em "proxima-nova", Arial, sans-serif;
   letter-spacing: 0.1em;
@@ -1862,46 +2085,40 @@ input[type="submit"]:hover, button:hover {
 }
 
 /** Request From ===============**/
-/* line 102, ../sass/sections/_sidebar.scss */
+/* line 101, ../sass/sections/_sidebar.scss */
 .right-sidebar .request-form {
   border-bottom: none;
 }
 
-/* line 106, ../sass/sections/_sidebar.scss */
+/* line 105, ../sass/sections/_sidebar.scss */
 .request-form {
   position: relative;
 }
-/* line 108, ../sass/sections/_sidebar.scss */
+/* line 107, ../sass/sections/_sidebar.scss */
 .request-form .form-item {
   margin-bottom: 1em;
-  border: 1px solid #fff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-/* line 115, ../sass/sections/_sidebar.scss */
+/* line 112, ../sass/sections/_sidebar.scss */
 .request-form label {
   position: absolute;
   top: 3px;
   left: 10px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
-/* line 126, ../sass/sections/_sidebar.scss */
+/* line 119, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 textarea {
   height: 138px;
 }
 
-/* line 130, ../sass/sections/_sidebar.scss */
+/* line 123, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 #edit-actions {
   position: absolute;
   right: 5px;
   bottom: 5px;
 }
 
-/* line 136, ../sass/sections/_sidebar.scss */
+/* line 129, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 input[type="submit"] {
   text-transform: uppercase;
   font-size: 0.75em;

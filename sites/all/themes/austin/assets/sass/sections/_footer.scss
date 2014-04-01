@@ -39,12 +39,16 @@
 .footer .mailing-list {
     p {
         margin-bottom: 12px;
-    } 
+    }
+    .form-item {
+        border: none;
+    }
     label {
         position: absolute;
         top: 6px;
         left: 0;
         font: italic $book 18px/1 $bodoni;
+        text-transform: none;
     }
     .form-text {
         padding-left: 0;

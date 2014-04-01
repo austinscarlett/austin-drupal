@@ -1,6 +1,23 @@
-.webform-client-form,
+
+.webform-client-form {
+    @include cf;
+    position: relative;
+}
+
 .form-item {
     position: relative;
+	border: 1px solid #fff;
+	border: 1px solid rgba(#fff, 0.4);
+}
+
+label {
+	position: absolute;
+	top: 3px;
+	left: 10px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: $bold;
+	text-transform: uppercase;    
 }
 
 input[type="text"],
@@ -15,6 +32,10 @@ textarea {
 	color: #fff;
 	font-size: 1em;
 	font-family: Georgia, serif;
+}
+
+textarea {
+    resize: none;
 }
 
 select {
@@ -78,8 +99,10 @@ input[type="submit"]:hover {
 	margin-bottom: 1em;
 }
 
-.form-item input.error, .form-item textarea.error, .form-item select.error {
-	border: 1px solid #dc0032;
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+	border: 1px solid $red;
 }
 
 .messages.error,
