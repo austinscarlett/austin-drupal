@@ -1,12 +1,10 @@
 
 .view-stores .views-row {
     @include cf;
+    @include border-bottom;
     padding: 12px 0;
-    border-bottom: 1px solid $grey;
-    border-bottom: 1px solid rgba(#fff, 0.4);
     &:first-of-type {
-        border-top: 1px solid $grey;
-        border-top: 1px solid rgba(#fff, 0.4);
+        @include border-top;
     }
 }
 
