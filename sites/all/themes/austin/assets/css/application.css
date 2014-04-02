@@ -1154,14 +1154,14 @@ input[type="submit"]:hover, button:hover {
 }
 /* line 24, ../sass/pages/_collection.scss */
 #block-views-gowns-block-2 .views-row a .view-gown .title-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 /* line 30, ../sass/pages/_collection.scss */
 #block-views-gowns-block-2 .views-row a .view-gown .title {
@@ -1171,13 +1171,17 @@ input[type="submit"]:hover, button:hover {
 }
 /* line 35, ../sass/pages/_collection.scss */
 #block-views-gowns-block-2 .views-row a .view-gown .btn {
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
   width: 120px;
   padding: 0;
   border-width: 1px;
   font-size: 12px;
 }
 
-/* line 43, ../sass/pages/_collection.scss */
+/* line 44, ../sass/pages/_collection.scss */
 #block-views-gowns-block-2 .views-row a:hover .view-gown {
   opacity: 1;
 }

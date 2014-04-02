@@ -22,10 +22,10 @@
     background: rgba(#000, 0.6);
     text-align: center;
     .title-btn {
+        @include translate(-50%, -50%);
         position: absolute;
         top: 50%;
         left: 50%;
-        @include translate(-50%, -50%);
     }
     .title {
         margin-bottom: $base;
@@ -33,6 +33,7 @@
         font: $book 28px/1 $bodoni;        
     }
     .btn {
+        @include single-transition(all, 0.15s, ease-in);
         width: 120px;
         padding: 0;
         border-width: 1px;
