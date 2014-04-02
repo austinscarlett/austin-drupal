@@ -18,6 +18,10 @@
     font-weight: $bold;
     letter-spacing: 1px;
     text-transform: uppercase;
+    &:hover {
+        background: #fff;
+        color: $red;
+    }
 }
 
 
@@ -38,21 +42,15 @@
 }
 
 .sidebar-about-content {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
 	text-align: center;
+    p:first-of-type {
+    	margin-bottom: 1em;
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
-
-.sidebar-about-content {
-	margin-bottom: 2em;
-	padding-bottom: 1em;
-}
-
-.sidebar-about-content p:first-of-type {
-	margin-bottom: 1em;
-    font-size: 14px;
-    line-height: 21px;
-}
-
 
 
 
@@ -73,24 +71,22 @@
 	display: none;
 }
 
-#block-block-4 { /* Twitter Links */
-	text-align: center;
+.sidebar-twitter {
 	margin-bottom: 1.5em;
+	padding-bottom: 0.75em;
+	text-align: center;
+    p {
+    	margin-bottom: 0.75em;
+    }
 }
 
-#block-block-4 p {
-	margin-bottom: 0.75em;
-}
-
-#block-block-4 .ss-icon {
+.sidebar-twitter .ss-icon {
+    color: #fff;
 	font-size: 1.3em;
 	line-height: 1em;
-}
-
-#block-block-4 .atwit {
-	font: 700 0.875em/1.5em "proxima-nova", Arial, sans-serif;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
+	&:hover {
+    	color: $red;
+	}
 }
 
 
