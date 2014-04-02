@@ -3,7 +3,7 @@ body {
     color: #fff;
 	font: $book 1em/1.5em $proxima;
 	&.front {
-    	background: #000;
+    	background: fixed $bg-body-home no-repeat center top #000;
 	}
 }
 
@@ -17,6 +17,10 @@ body {
     width: 1212px;
     padding: $base 36px;
     background: rgba(#000, 0.7);
+}
+
+.front .main .wrapper {
+    background: no-repeat;
 }
 
 .page-node-4 .content,

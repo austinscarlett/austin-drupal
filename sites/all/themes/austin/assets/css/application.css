@@ -230,13 +230,13 @@ a:hover {
 /* $sprite: image-url("sprite.svg"); */
 /* line 1, ../sass/global/_base.scss */
 body {
-  background: fixed url('../images/bg-body-int.jpg?1396021925') no-repeat center top black;
+  background: fixed url('../images/bg-body-int.jpg?1396475874') no-repeat center top black;
   color: #fff;
   font: 400 1em/1.5em "proxima-nova", Helvetica, arial, sans-serif;
 }
 /* line 5, ../sass/global/_base.scss */
 body.front {
-  background: #000;
+  background: fixed url('../images/bg-body-home.jpg?1396475928') no-repeat center top black;
 }
 
 /* line 10, ../sass/global/_base.scss */
@@ -262,7 +262,12 @@ body.front {
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 25, ../sass/global/_base.scss */
+/* line 22, ../sass/global/_base.scss */
+.front .main .wrapper {
+  background: no-repeat;
+}
+
+/* line 29, ../sass/global/_base.scss */
 .page-node-4 .content,
 .page-node-5 .content,
 .node-type-blog-post .content,
@@ -271,7 +276,7 @@ body.front {
   width: 846px;
 }
 
-/* line 30, ../sass/global/_base.scss */
+/* line 34, ../sass/global/_base.scss */
 .right-sidebar {
   float: right;
   width: 228px;
