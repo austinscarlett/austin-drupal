@@ -68,26 +68,30 @@
 
 .gown-nav a {
 	display: block;
-	padding: 5px 30px;
-	background: url(../images/sprite.png) no-repeat -489px -169px;
-	font-family: "proxima-nova",Arial,sans-serif;
-    font-size: 1.125em;
+    font-size: 18px;
+    line-height: 1.75em;
     font-weight: 700;
-    letter-spacing: 0.2em;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    [class*="icon-"] {
+        vertical-align: -5px;
+    }
 }
 
 .gown-nav .next {
 	float: right;
-	padding-left: 20px;
+	padding: 4px 20px 2px 30px;
 	border-left: 1px solid #c6c6c6;
 }
 
 .gown-nav .prev {
 	float: left;
-	padding-right: 20px;
+	padding: 4px 30px 2px 20px;
 	background-position: -579px -234px;
 	border-right: 1px solid #c6c6c6;
+	[class*="icon-"] {
+    	margin-right: 3px;
+	}
 }
 
 .gown-images {

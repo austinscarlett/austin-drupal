@@ -49,8 +49,8 @@
 ?>			
 <?php if(isset($node) && $node->type == "gown"): ?>
 <div class="gown-nav clearfix">
-	<?php print bx_prev_link($node->nid, 'gowns', 'Previous'); ?>
-	<?php print bx_next_link($node->nid, 'gowns', 'Next'); ?>
+	<?php print bx_prev_link($node->nid, 'gowns', '<span class="icon-prev"></span> Previous'); ?>
+	<?php print bx_next_link($node->nid, 'gowns', 'Next <span class="icon-next"></span>'); ?>
 </div>
 <?php endif; ?>
 			
