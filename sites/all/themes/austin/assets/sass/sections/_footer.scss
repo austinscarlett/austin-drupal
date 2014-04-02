@@ -78,9 +78,12 @@
 }
 
 .footer a {
-	color: #ececec;
+    color: #fff;
 	font: 400 12px/26px "proxima-nova", Arial, sans-serif;
 	text-transform: uppercase;
+	&:hover {
+    	color: $red;
+	}
 }
 
 .footer .ss-icon {

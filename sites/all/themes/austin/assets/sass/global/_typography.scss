@@ -60,6 +60,14 @@ a {
 .page-title {
 	margin-bottom: 0.25em;
 	text-align: center;
+	&:after {
+    	content: "";
+    	display: block;
+    	width: 100px;
+    	height: 2px;
+    	margin: $base auto;
+    	background: $red;
+	}
 }
 
 .post-title {

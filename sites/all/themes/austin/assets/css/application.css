@@ -169,8 +169,17 @@ a:hover {
   margin-bottom: 0.25em;
   text-align: center;
 }
+/* line 63, ../sass/global/_typography.scss */
+.page-title:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 24px auto;
+  background: #da0b38;
+}
 
-/* line 65, ../sass/global/_typography.scss */
+/* line 73, ../sass/global/_typography.scss */
 .post-title {
   /*  font: $book 48px/1.1em $bodoni */
   font-size: 48px;
@@ -179,13 +188,13 @@ a:hover {
   text-transform: none;
 }
 
-/* line 74, ../sass/global/_typography.scss */
+/* line 82, ../sass/global/_typography.scss */
 .block-page-content p,
 .body p {
   margin-bottom: 1em;
 }
 
-/* line 78, ../sass/global/_typography.scss */
+/* line 86, ../sass/global/_typography.scss */
 .category {
   position: relative;
   margin-bottom: 32px;
@@ -194,7 +203,7 @@ a:hover {
   letter-spacing: 2px;
   text-align: center;
 }
-/* line 85, ../sass/global/_typography.scss */
+/* line 93, ../sass/global/_typography.scss */
 .category:after {
   content: "";
   position: absolute;
@@ -206,12 +215,12 @@ a:hover {
   background: #da0b38;
 }
 
-/* line 97, ../sass/global/_typography.scss */
+/* line 105, ../sass/global/_typography.scss */
 .views-field-title a .post-title:hover {
   color: #323232;
 }
 
-/* line 101, ../sass/global/_typography.scss */
+/* line 109, ../sass/global/_typography.scss */
 .read-more {
   font: 700 0.875em/1em "proxima-nova", Helvetica, arial, sans-serif;
   letter-spacing: 1px;
@@ -1187,7 +1196,7 @@ input[type="submit"]:hover, button:hover {
 }
 
 /** GOWN PROFILE ======================**/
-/* line 51, ../sass/pages/_collection.scss */
+/* line 52, ../sass/pages/_collection.scss */
 .node-type-gown .content {
   *zoom: 1;
   float: none;
@@ -1203,12 +1212,12 @@ input[type="submit"]:hover, button:hover {
   clear: both;
 }
 
-/* line 57, ../sass/pages/_collection.scss */
+/* line 58, ../sass/pages/_collection.scss */
 .node-type-gown .main {
   min-height: 800px;
 }
 
-/* line 61, ../sass/pages/_collection.scss */
+/* line 62, ../sass/pages/_collection.scss */
 .gown-nav {
   max-width: 1212px;
   margin: 0 auto 1em;
@@ -1216,7 +1225,7 @@ input[type="submit"]:hover, button:hover {
   border-bottom: 1px solid #c6c6c6;
 }
 
-/* line 68, ../sass/pages/_collection.scss */
+/* line 69, ../sass/pages/_collection.scss */
 .gown-nav a {
   display: block;
   padding: 5px 30px;
@@ -1228,14 +1237,14 @@ input[type="submit"]:hover, button:hover {
   text-transform: uppercase;
 }
 
-/* line 79, ../sass/pages/_collection.scss */
+/* line 80, ../sass/pages/_collection.scss */
 .gown-nav .next {
   float: right;
   padding-left: 20px;
   border-left: 1px solid #c6c6c6;
 }
 
-/* line 85, ../sass/pages/_collection.scss */
+/* line 86, ../sass/pages/_collection.scss */
 .gown-nav .prev {
   float: left;
   padding-right: 20px;
@@ -1243,18 +1252,18 @@ input[type="submit"]:hover, button:hover {
   border-right: 1px solid #c6c6c6;
 }
 
-/* line 92, ../sass/pages/_collection.scss */
+/* line 93, ../sass/pages/_collection.scss */
 .gown-images {
   position: relative;
   min-height: 760px;
 }
 
-/* line 97, ../sass/pages/_collection.scss */
+/* line 98, ../sass/pages/_collection.scss */
 .gown-info {
   margin-right: 0;
 }
 
-/* line 101, ../sass/pages/_collection.scss */
+/* line 102, ../sass/pages/_collection.scss */
 .zoom-label {
   position: absolute;
   right: 3px;
@@ -1266,21 +1275,21 @@ input[type="submit"]:hover, button:hover {
   z-index: 99;
 }
 
-/* line 112, ../sass/pages/_collection.scss */
+/* line 113, ../sass/pages/_collection.scss */
 .gown-images li {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 118, ../sass/pages/_collection.scss */
+/* line 119, ../sass/pages/_collection.scss */
 .gown-images img {
   max-width: 480px;
   box-shadow: 1px 1px 0 #cecece, -1px -1px 0 #cecece, -1px 1px 0 #cecece, 1px -1px 0 #cecece;
   border: 3px solid #efebe2;
 }
 
-/* line 124, ../sass/pages/_collection.scss */
+/* line 125, ../sass/pages/_collection.scss */
 .gown-info .thumbs {
   margin-bottom: 1em;
   padding: 1em 0 0.5em;
@@ -1288,7 +1297,7 @@ input[type="submit"]:hover, button:hover {
   border-bottom: 1px solid #CFCFCF;
 }
 
-/* line 131, ../sass/pages/_collection.scss */
+/* line 132, ../sass/pages/_collection.scss */
 .gown-info .thumbs li {
   float: left;
   margin: 0 14px 14px 0;
@@ -1296,18 +1305,18 @@ input[type="submit"]:hover, button:hover {
   border: 3px solid #efebe2;
 }
 
-/* line 138, ../sass/pages/_collection.scss */
+/* line 139, ../sass/pages/_collection.scss */
 .gown-info .thumbs li:nth-child(3n) {
   margin-right: 0;
 }
 
-/* line 142, ../sass/pages/_collection.scss */
+/* line 143, ../sass/pages/_collection.scss */
 .gown-info .ss-icon {
   float: left;
   margin-right: 10px;
 }
 
-/* line 147, ../sass/pages/_collection.scss */
+/* line 148, ../sass/pages/_collection.scss */
 .gown-info .ss-icon a {
   padding: 5px 7px 0;
   background: #dc0032;
@@ -1317,17 +1326,17 @@ input[type="submit"]:hover, button:hover {
   line-height: 30px;
 }
 
-/* line 156, ../sass/pages/_collection.scss */
+/* line 157, ../sass/pages/_collection.scss */
 .gown-info .ss-icon a:hover {
   background: #323232;
 }
 
-/* line 160, ../sass/pages/_collection.scss */
+/* line 161, ../sass/pages/_collection.scss */
 .gown-info .share {
   margin-bottom: 2em;
 }
 
-/* line 164, ../sass/pages/_collection.scss */
+/* line 165, ../sass/pages/_collection.scss */
 .gown-info .share h3 {
   margin-bottom: 1em;
   font-size: 0.875em;
@@ -1548,26 +1557,21 @@ input[type="submit"]:hover, button:hover {
   font-size: 0.75em;
 }
 
-/* line 2, ../sass/pages/_couture.scss */
-.page-node-4 .page-title {
-  display: none;
-}
-
-/* line 6, ../sass/pages/_couture.scss */
+/* line 3, ../sass/pages/_couture.scss */
 .page-node-4 .top {
   position: relative;
   height: 353px;
   margin-top: 80px;
 }
 
-/* line 12, ../sass/pages/_couture.scss */
+/* line 9, ../sass/pages/_couture.scss */
 .page-node-4 .top img {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 18, ../sass/pages/_couture.scss */
+/* line 15, ../sass/pages/_couture.scss */
 .page-node-4 .top .block-title {
   position: relative;
   z-index: 99;
@@ -1579,7 +1583,7 @@ input[type="submit"]:hover, button:hover {
   text-transform: uppercase;
 }
 
-/* line 29, ../sass/pages/_couture.scss */
+/* line 26, ../sass/pages/_couture.scss */
 .page-node-4 .body {
   border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -1588,7 +1592,7 @@ input[type="submit"]:hover, button:hover {
   text-align: center;
 }
 
-/* line 36, ../sass/pages/_couture.scss */
+/* line 33, ../sass/pages/_couture.scss */
 .page-node-4 .content .block {
   border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -1596,41 +1600,41 @@ input[type="submit"]:hover, button:hover {
   text-align: center;
 }
 
-/* line 42, ../sass/pages/_couture.scss */
+/* line 39, ../sass/pages/_couture.scss */
 .page-node-4 .content .block-title {
   margin-bottom: 24px;
   font: italic 400 2.25em/1em "ltc-bodoni-175", Georgia, serif;
   text-transform: none;
 }
 
-/* line 48, ../sass/pages/_couture.scss */
+/* line 45, ../sass/pages/_couture.scss */
 .page-node-4 .content .block ul {
   overflow: hidden;
 }
 
-/* line 52, ../sass/pages/_couture.scss */
+/* line 49, ../sass/pages/_couture.scss */
 .page-node-4 .content .block li {
   float: left;
   width: 358px;
 }
 
-/* line 57, ../sass/pages/_couture.scss */
+/* line 54, ../sass/pages/_couture.scss */
 .page-node-4 .content .block li:nth-child(2n+1) {
   margin-right: 1em;
 }
 
-/* line 61, ../sass/pages/_couture.scss */
+/* line 58, ../sass/pages/_couture.scss */
 .page-node-4 .content .block p {
   margin-bottom: 1em;
   padding: 0 0.5em;
 }
 
-/* line 66, ../sass/pages/_couture.scss */
+/* line 63, ../sass/pages/_couture.scss */
 .page-node-4 .content .block img {
   border: 3px solid #fff;
 }
 
-/* line 70, ../sass/pages/_couture.scss */
+/* line 67, ../sass/pages/_couture.scss */
 #block-block-13 li {
   margin-bottom: 1em;
 }
@@ -2081,18 +2085,22 @@ input[type="submit"]:hover, button:hover {
 
 /* line 80, ../sass/sections/_footer.scss */
 .footer a {
-  color: #ececec;
+  color: #fff;
   font: 400 12px/26px "proxima-nova", Arial, sans-serif;
   text-transform: uppercase;
 }
+/* line 84, ../sass/sections/_footer.scss */
+.footer a:hover {
+  color: #da0b38;
+}
 
-/* line 86, ../sass/sections/_footer.scss */
+/* line 89, ../sass/sections/_footer.scss */
 .footer .ss-icon {
   float: left;
   margin-right: 10px;
 }
 
-/* line 91, ../sass/sections/_footer.scss */
+/* line 94, ../sass/sections/_footer.scss */
 .footer .ss-icon a {
   padding: 5px 7px 0;
   background: #dc0032;
@@ -2102,12 +2110,12 @@ input[type="submit"]:hover, button:hover {
   line-height: 30px;
 }
 
-/* line 100, ../sass/sections/_footer.scss */
+/* line 103, ../sass/sections/_footer.scss */
 .footer .mail-list .webform-component {
   float: left;
 }
 
-/* line 104, ../sass/sections/_footer.scss */
+/* line 107, ../sass/sections/_footer.scss */
 .footer .mail-list .form-actions {
   float: right;
   position: relative;
@@ -2116,17 +2124,17 @@ input[type="submit"]:hover, button:hover {
   padding-top: 10px;
 }
 
-/* line 112, ../sass/sections/_footer.scss */
+/* line 115, ../sass/sections/_footer.scss */
 .footer .mail-list label {
   color: #b0b0b0;
 }
 
-/* line 116, ../sass/sections/_footer.scss */
+/* line 119, ../sass/sections/_footer.scss */
 .footer .mail-list label span {
   font-style: italic;
 }
 
-/* line 120, ../sass/sections/_footer.scss */
+/* line 123, ../sass/sections/_footer.scss */
 .footer .mail-list input[type="email"] {
   position: relative;
   z-index: 99;
@@ -2137,7 +2145,7 @@ input[type="submit"]:hover, button:hover {
   color: #b0b0b0;
 }
 
-/* line 130, ../sass/sections/_footer.scss */
+/* line 133, ../sass/sections/_footer.scss */
 .footer .mail-list input[type="submit"] {
   width: 40px;
 }
