@@ -1,5 +1,6 @@
 .share-links {
     @include border-bottom;
+    clear: both;
     padding-bottom: 18px;
     text-align: center;
     li {

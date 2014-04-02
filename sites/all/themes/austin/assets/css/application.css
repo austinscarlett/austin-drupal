@@ -161,7 +161,7 @@ a:hover {
 ========================================================****/
 /* line 56, ../sass/global/_typography.scss */
 .title-bar {
-  padding: 72px 0 24px;
+  padding: 72px 0 0;
 }
 
 /* line 60, ../sass/global/_typography.scss */
@@ -175,7 +175,7 @@ a:hover {
   display: block;
   width: 100px;
   height: 2px;
-  margin: 24px auto;
+  margin: 24px auto 32px;
   background: #da0b38;
 }
 
@@ -798,15 +798,16 @@ input[type="submit"]:hover, button:hover {
 .share-links {
   border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  clear: both;
   padding-bottom: 18px;
   text-align: center;
 }
-/* line 5, ../sass/modules/_share-links.scss */
+/* line 6, ../sass/modules/_share-links.scss */
 .share-links li {
   display: inline-block;
   padding: 0 10px;
 }
-/* line 9, ../sass/modules/_share-links.scss */
+/* line 10, ../sass/modules/_share-links.scss */
 .share-links .ss-icon {
   color: #9e9e9e;
   font-size: 20px;
@@ -1577,21 +1578,21 @@ input[type="submit"]:hover, button:hover {
   font-size: 0.75em;
 }
 
-/* line 3, ../sass/pages/_couture.scss */
+/* line 2, ../sass/pages/_couture.scss */
 .page-node-4 .top {
   position: relative;
   height: 353px;
   margin-top: 80px;
 }
 
-/* line 9, ../sass/pages/_couture.scss */
+/* line 8, ../sass/pages/_couture.scss */
 .page-node-4 .top img {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 15, ../sass/pages/_couture.scss */
+/* line 14, ../sass/pages/_couture.scss */
 .page-node-4 .top .block-title {
   position: relative;
   z-index: 99;
@@ -1603,7 +1604,7 @@ input[type="submit"]:hover, button:hover {
   text-transform: uppercase;
 }
 
-/* line 26, ../sass/pages/_couture.scss */
+/* line 25, ../sass/pages/_couture.scss */
 .page-node-4 .body {
   border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -1612,49 +1613,53 @@ input[type="submit"]:hover, button:hover {
   text-align: center;
 }
 
-/* line 33, ../sass/pages/_couture.scss */
+/* line 32, ../sass/pages/_couture.scss */
 .page-node-4 .content .block {
   border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 2em 0;
+  padding: 1.5em 0 2em;
   text-align: center;
 }
+/* line 36, ../sass/pages/_couture.scss */
+.page-node-4 .content .block:last-child {
+  border-bottom: none;
+}
 
-/* line 39, ../sass/pages/_couture.scss */
+/* line 41, ../sass/pages/_couture.scss */
 .page-node-4 .content .block-title {
   margin-bottom: 24px;
   font: italic 400 2.25em/1em "ltc-bodoni-175", Georgia, serif;
   text-transform: none;
 }
 
-/* line 45, ../sass/pages/_couture.scss */
+/* line 47, ../sass/pages/_couture.scss */
 .page-node-4 .content .block ul {
   overflow: hidden;
 }
 
-/* line 49, ../sass/pages/_couture.scss */
+/* line 51, ../sass/pages/_couture.scss */
 .page-node-4 .content .block li {
   float: left;
   width: 358px;
 }
 
-/* line 54, ../sass/pages/_couture.scss */
+/* line 56, ../sass/pages/_couture.scss */
 .page-node-4 .content .block li:nth-child(2n+1) {
   margin-right: 1em;
 }
 
-/* line 58, ../sass/pages/_couture.scss */
+/* line 60, ../sass/pages/_couture.scss */
 .page-node-4 .content .block p {
   margin-bottom: 1em;
   padding: 0 0.5em;
 }
 
-/* line 63, ../sass/pages/_couture.scss */
+/* line 65, ../sass/pages/_couture.scss */
 .page-node-4 .content .block img {
   border: 3px solid #fff;
 }
 
-/* line 67, ../sass/pages/_couture.scss */
+/* line 69, ../sass/pages/_couture.scss */
 #block-block-13 li {
   margin-bottom: 1em;
 }

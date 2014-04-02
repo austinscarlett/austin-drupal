@@ -1,5 +1,4 @@
 
-
 .page-node-4 .top {
 	position: relative;
 	height: 353px;
@@ -32,8 +31,11 @@
 
 .page-node-4 .content .block {
     @include border-bottom;
-	padding: 2em 0;
+	padding: 1.5em 0 2em;
 	text-align: center;
+	&:last-child {
+    	border-bottom: none;
+	}
 }
 
 .page-node-4 .content .block-title {
