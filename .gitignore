@@ -8,3 +8,8 @@ sites/*/files
 sites/*/private
 
 sites/all/themes/austin/.sass-cache
+
+.DS_Store
+
+*.tar.gz
+*.sql
