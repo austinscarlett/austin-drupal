@@ -1,5 +1,5 @@
 .header {
-	height: 70px;
+	height: 140px;
 	.wrapper {
     	position: relative;
 	}
@@ -7,7 +7,7 @@
 
 .logo {
 	position: absolute;
-	top: 0;
+	top: 16px;
 	left: -2px;
 	z-index: 99;
     a {
@@ -29,7 +29,7 @@
 	position: relative;
 	z-index: 99;
 	float: right;
-	padding-top: 32px;
+	padding-top: 46px;
 }
 
 .main-nav li {

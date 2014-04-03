@@ -1,4 +1,11 @@
-.page-node-5 .page-title:before {
+
+.page-node-5 .title-bar,
+.node-type-blog-post .title-bar {
+    padding-top: 28px;
+}
+
+.page-node-5 .page-title:before,
+.node-type-blog-post .page-title:before {
 	content: "the World of";
 	display: block;	
 	margin-bottom: 16px;

@@ -1121,7 +1121,7 @@ input[type="submit"]:hover, button:hover {
 /* line 2, ../sass/pages/_home.scss */
 .front .content {
   width: 588px;
-  margin: 96px 0;
+  margin: 190px 0 120px;
   padding-left: 98px;
 }
 
@@ -1132,7 +1132,7 @@ input[type="submit"]:hover, button:hover {
 }
 /* line 13, ../sass/pages/_home.scss */
 .front .body p {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   font-size: 15px;
   line-height: 24px;
 }
@@ -1669,8 +1669,15 @@ input[type="submit"]:hover, button:hover {
   margin-bottom: 1em;
 }
 
-/* line 1, ../sass/pages/_blog.scss */
-.page-node-5 .page-title:before {
+/* line 3, ../sass/pages/_blog.scss */
+.page-node-5 .title-bar,
+.node-type-blog-post .title-bar {
+  padding-top: 28px;
+}
+
+/* line 8, ../sass/pages/_blog.scss */
+.page-node-5 .page-title:before,
+.node-type-blog-post .page-title:before {
   content: "the World of";
   display: block;
   margin-bottom: 16px;
@@ -1678,29 +1685,29 @@ input[type="submit"]:hover, button:hover {
   text-transform: none;
 }
 
-/* line 9, ../sass/pages/_blog.scss */
+/* line 16, ../sass/pages/_blog.scss */
 .view-blog .views-row {
   margin-bottom: 2em;
   padding-bottom: 1em;
 }
 
-/* line 14, ../sass/pages/_blog.scss */
+/* line 21, ../sass/pages/_blog.scss */
 .view-blog .post-title {
   margin-bottom: 48px;
   text-align: center;
   letter-spacing: 2px;
   text-transform: none;
 }
-/* line 19, ../sass/pages/_blog.scss */
+/* line 26, ../sass/pages/_blog.scss */
 .view-blog .post-title a {
   color: #fff;
 }
-/* line 21, ../sass/pages/_blog.scss */
+/* line 28, ../sass/pages/_blog.scss */
 .view-blog .post-title a:hover {
   color: #da0b38;
 }
 
-/* line 27, ../sass/pages/_blog.scss */
+/* line 34, ../sass/pages/_blog.scss */
 .view-blog .post-content {
   *zoom: 1;
   margin-bottom: 24px;
@@ -1715,14 +1722,14 @@ input[type="submit"]:hover, button:hover {
   clear: both;
 }
 
-/* line 32, ../sass/pages/_blog.scss */
+/* line 39, ../sass/pages/_blog.scss */
 .view-blog .image {
   float: left;
   margin: 0 1.5em 1em 0;
   border: 3px solid #efebe2;
 }
 
-/* line 38, ../sass/pages/_blog.scss */
+/* line 45, ../sass/pages/_blog.scss */
 .view-blog .post-date {
   color: #9e9e9e;
   font-size: 14px;
@@ -1730,7 +1737,7 @@ input[type="submit"]:hover, button:hover {
   text-transform: uppercase;
 }
 
-/* line 45, ../sass/pages/_blog.scss */
+/* line 52, ../sass/pages/_blog.scss */
 .view-blog .body img {
   display: block;
   float: left;
@@ -1940,7 +1947,7 @@ input[type="submit"]:hover, button:hover {
 /* Sections */
 /* line 1, ../sass/sections/_header.scss */
 .header {
-  height: 70px;
+  height: 140px;
 }
 /* line 3, ../sass/sections/_header.scss */
 .header .wrapper {
@@ -1950,7 +1957,7 @@ input[type="submit"]:hover, button:hover {
 /* line 8, ../sass/sections/_header.scss */
 .logo {
   position: absolute;
-  top: 0;
+  top: 16px;
   left: -2px;
   z-index: 99;
 }
@@ -1975,7 +1982,7 @@ input[type="submit"]:hover, button:hover {
   position: relative;
   z-index: 99;
   float: right;
-  padding-top: 32px;
+  padding-top: 46px;
 }
 
 /* line 35, ../sass/sections/_header.scss */

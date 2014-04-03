@@ -29,7 +29,7 @@
 	<?php
 			}
 			elseif ($node->type == 'blog_post') { ?>
-				<h1 class="page-title"><span>The World of</span> Austin Scarlett</h1>
+				<h1 class="page-title">Austin Scarlett</h1>
 	<?php
 			}
 			elseif ($node->type == 'article') { ?>
