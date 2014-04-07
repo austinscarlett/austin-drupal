@@ -115,8 +115,7 @@ a {
 
 .read-more a {
     color: $red;
-	font: 700 14px/1em $proxima;
-	letter-spacing: 1px;
+    font-size: 14px;
 	text-transform: uppercase;
 	&:hover {
     	color: #fff;
