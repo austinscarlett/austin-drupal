@@ -11,7 +11,6 @@
 
 .right-sidebar p:last-of-type a {
     display: inline-block;
-    color: #fff;
     padding: 3px 20px;
     border: 2px solid #fff;
     font-size: 12px;
@@ -20,7 +19,6 @@
     text-transform: uppercase;
     &:hover {
         background: #fff;
-        color: $red;
     }
 }
 

@@ -40,6 +40,8 @@ textarea {
 
 select {
     @include appearance(none);
+    position: relative;
+    z-index: 20;
 	color: #fff;
 	font: $semi 14px/1em $proxima;
 	text-transform: uppercase;
@@ -53,7 +55,7 @@ select {
     position: absolute;
     top: 12px;
     right: 10px;
-    z-index: 99;
+    z-index: 10;
     width: 0;
     height: 0;
     border-left: 5px solid transparent;

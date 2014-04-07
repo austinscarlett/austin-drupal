@@ -79,26 +79,8 @@
 }
 
 .footer a {
-    color: #fff;
 	font: 400 12px/26px "proxima-nova", Arial, sans-serif;
 	text-transform: uppercase;
-	&:hover {
-    	color: $red;
-	}
-}
-
-.footer .ss-icon {
-	float: left;
-	margin-right: 10px;
-}
-
-.footer .ss-icon a {
-	padding: 5px 7px 0;
-	background: #dc0032;
-	border-radius: 17px;
-	color: #fff;
-	font-size: 1.25em;
-	line-height: 30px;
 }
 
 .footer .mail-list .webform-component {
@@ -114,10 +96,6 @@
 }
 
 .footer .mail-list label {
-	color: #b0b0b0;
-}
-
-.footer .mail-list label span {
 	font-style: italic;
 }
 

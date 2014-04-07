@@ -149,12 +149,12 @@ a {
   -moz-transition: all 0.15s ease-in;
   -o-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
-  color: #da0b38;
+  color: #fff;
   text-decoration: none;
 }
 /* line 47, ../sass/global/_typography.scss */
 a:hover {
-  color: #fff;
+  color: #da0b38;
 }
 
 /** COMMON TYPE STYLES
@@ -195,6 +195,15 @@ a:hover {
 }
 
 /* line 86, ../sass/global/_typography.scss */
+.body a {
+  color: #da0b38;
+}
+/* line 88, ../sass/global/_typography.scss */
+.body a:hover {
+  color: #fff;
+}
+
+/* line 93, ../sass/global/_typography.scss */
 .category {
   position: relative;
   margin-bottom: 32px;
@@ -203,7 +212,7 @@ a:hover {
   letter-spacing: 2px;
   text-align: center;
 }
-/* line 93, ../sass/global/_typography.scss */
+/* line 100, ../sass/global/_typography.scss */
 .category:after {
   content: "";
   position: absolute;
@@ -215,16 +224,21 @@ a:hover {
   background: #da0b38;
 }
 
-/* line 105, ../sass/global/_typography.scss */
+/* line 112, ../sass/global/_typography.scss */
 .views-field-title a .post-title:hover {
   color: #323232;
 }
 
-/* line 109, ../sass/global/_typography.scss */
-.read-more {
-  font: 700 0.875em/1em "proxima-nova", Helvetica, arial, sans-serif;
+/* line 116, ../sass/global/_typography.scss */
+.read-more a {
+  color: #da0b38;
+  font: 700 14px/1em "proxima-nova", Helvetica, arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+/* line 121, ../sass/global/_typography.scss */
+.read-more a:hover {
+  color: #fff;
 }
 
 /* $sprite: image-url("sprite.svg"); */
@@ -387,6 +401,8 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  position: relative;
+  z-index: 20;
   color: #fff;
   font: 600 14px/1em "proxima-nova", Helvetica, arial, sans-serif;
   text-transform: uppercase;
@@ -394,14 +410,14 @@ select {
   text-overflow: "";
 }
 
-/* line 51, ../sass/global/_forms.scss */
+/* line 53, ../sass/global/_forms.scss */
 .webform-component-select:before,
 .form-type-select:before {
   content: "";
   position: absolute;
   top: 12px;
   right: 10px;
-  z-index: 99;
+  z-index: 10;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -409,7 +425,7 @@ select {
   border-top: 5px solid #da0b38;
 }
 
-/* line 64, ../sass/global/_forms.scss */
+/* line 66, ../sass/global/_forms.scss */
 input[type="submit"] {
   -webkit-transition: background 0.15s ease-in;
   -moz-transition: background 0.15s ease-in;
@@ -423,12 +439,12 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
-/* line 74, ../sass/global/_forms.scss */
+/* line 76, ../sass/global/_forms.scss */
 input[type="submit"]:hover {
   background: #ff003a;
 }
 
-/* line 78, ../sass/global/_forms.scss */
+/* line 80, ../sass/global/_forms.scss */
 .not-front.page-node-done #content {
   width: 100%;
   padding: 4em 0;
@@ -437,34 +453,34 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-/* line 86, ../sass/global/_forms.scss */
+/* line 88, ../sass/global/_forms.scss */
 .node-webform .webform-component {
   margin-bottom: 1em;
 }
 
-/* line 90, ../sass/global/_forms.scss */
+/* line 92, ../sass/global/_forms.scss */
 .page-node-done .links {
   display: none;
 }
 
-/* line 94, ../sass/global/_forms.scss */
+/* line 96, ../sass/global/_forms.scss */
 .description {
   font-size: 0.75em;
 }
 
-/* line 98, ../sass/global/_forms.scss */
+/* line 100, ../sass/global/_forms.scss */
 #user-login .form-item {
   margin-bottom: 1em;
 }
 
-/* line 104, ../sass/global/_forms.scss */
+/* line 106, ../sass/global/_forms.scss */
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #da0b38;
 }
 
-/* line 109, ../sass/global/_forms.scss */
+/* line 111, ../sass/global/_forms.scss */
 .messages.error,
 .form-item label.error {
   display: none;
@@ -696,17 +712,15 @@ input[type="submit"]:hover, button:hover {
 /* line 2, ../sass/global/_buttons.scss */
 .btn {
   display: inline-block;
-  color: #fff;
   padding: 5px 10px;
   border: 2px solid #fff;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* line 10, ../sass/global/_buttons.scss */
+/* line 9, ../sass/global/_buttons.scss */
 .btn:hover {
   background: #fff;
-  color: #da0b38;
 }
 
 /* Modules */
@@ -1750,7 +1764,7 @@ input[type="submit"]:hover, button:hover {
   *zoom: 1;
   border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 12px 0;
+  padding: 16px 0;
 }
 /* line 2, ../sass/global/_mixins.scss */
 .view-stores .views-row:before, .view-stores .views-row:after {
@@ -1998,26 +2012,21 @@ input[type="submit"]:hover, button:hover {
 
 /* line 44, ../sass/sections/_header.scss */
 .main-nav a {
-  color: #efebe2;
   font: 600 0.813em/1em "proxima-nova", Helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
-/* line 48, ../sass/sections/_header.scss */
-.main-nav a:hover, .main-nav a.active {
-  color: #da0b38;
-}
 
-/* line 53, ../sass/sections/_header.scss */
+/* line 49, ../sass/sections/_header.scss */
 .menu-208 a:before {
   content: "the Art of";
 }
 
-/* line 57, ../sass/sections/_header.scss */
+/* line 53, ../sass/sections/_header.scss */
 .menu-209 a:before {
   content: "the World of";
 }
 
-/* line 62, ../sass/sections/_header.scss */
+/* line 58, ../sass/sections/_header.scss */
 .main-nav .menu-208 a:before,
 .main-nav .menu-209 a:before {
   display: block;
@@ -2026,7 +2035,7 @@ input[type="submit"]:hover, button:hover {
   text-transform: none;
 }
 
-/* line 69, ../sass/sections/_header.scss */
+/* line 65, ../sass/sections/_header.scss */
 .main-nav .first {
   border: none;
 }
@@ -2127,37 +2136,16 @@ input[type="submit"]:hover, button:hover {
 
 /* line 81, ../sass/sections/_footer.scss */
 .footer a {
-  color: #fff;
   font: 400 12px/26px "proxima-nova", Arial, sans-serif;
   text-transform: uppercase;
 }
-/* line 85, ../sass/sections/_footer.scss */
-.footer a:hover {
-  color: #da0b38;
-}
 
-/* line 90, ../sass/sections/_footer.scss */
-.footer .ss-icon {
-  float: left;
-  margin-right: 10px;
-}
-
-/* line 95, ../sass/sections/_footer.scss */
-.footer .ss-icon a {
-  padding: 5px 7px 0;
-  background: #dc0032;
-  border-radius: 17px;
-  color: #fff;
-  font-size: 1.25em;
-  line-height: 30px;
-}
-
-/* line 104, ../sass/sections/_footer.scss */
+/* line 86, ../sass/sections/_footer.scss */
 .footer .mail-list .webform-component {
   float: left;
 }
 
-/* line 108, ../sass/sections/_footer.scss */
+/* line 90, ../sass/sections/_footer.scss */
 .footer .mail-list .form-actions {
   float: right;
   position: relative;
@@ -2166,17 +2154,12 @@ input[type="submit"]:hover, button:hover {
   padding-top: 10px;
 }
 
-/* line 116, ../sass/sections/_footer.scss */
+/* line 98, ../sass/sections/_footer.scss */
 .footer .mail-list label {
-  color: #b0b0b0;
-}
-
-/* line 120, ../sass/sections/_footer.scss */
-.footer .mail-list label span {
   font-style: italic;
 }
 
-/* line 124, ../sass/sections/_footer.scss */
+/* line 102, ../sass/sections/_footer.scss */
 .footer .mail-list input[type="email"] {
   position: relative;
   z-index: 99;
@@ -2187,7 +2170,7 @@ input[type="submit"]:hover, button:hover {
   color: #b0b0b0;
 }
 
-/* line 134, ../sass/sections/_footer.scss */
+/* line 112, ../sass/sections/_footer.scss */
 .footer .mail-list input[type="submit"] {
   width: 40px;
 }
@@ -2209,7 +2192,6 @@ input[type="submit"]:hover, button:hover {
 /* line 12, ../sass/sections/_sidebar.scss */
 .right-sidebar p:last-of-type a {
   display: inline-block;
-  color: #fff;
   padding: 3px 20px;
   border: 2px solid #fff;
   font-size: 12px;
@@ -2217,20 +2199,19 @@ input[type="submit"]:hover, button:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* line 21, ../sass/sections/_sidebar.scss */
+/* line 20, ../sass/sections/_sidebar.scss */
 .right-sidebar p:last-of-type a:hover {
   background: #fff;
-  color: #da0b38;
 }
 
 /** About Blocks ======================**/
-/* line 32, ../sass/sections/_sidebar.scss */
+/* line 30, ../sass/sections/_sidebar.scss */
 .right-sidebar .sidebar-about-thumb {
   margin-bottom: 1em;
   border-bottom: none;
   text-align: center;
 }
-/* line 36, ../sass/sections/_sidebar.scss */
+/* line 34, ../sass/sections/_sidebar.scss */
 .right-sidebar .sidebar-about-thumb img {
   width: 166px;
   height: 166px;
@@ -2238,13 +2219,13 @@ input[type="submit"]:hover, button:hover {
   text-align: center;
 }
 
-/* line 44, ../sass/sections/_sidebar.scss */
+/* line 42, ../sass/sections/_sidebar.scss */
 .sidebar-about-content {
   margin-bottom: 1.5em;
   padding-bottom: 1.5em;
   text-align: center;
 }
-/* line 48, ../sass/sections/_sidebar.scss */
+/* line 46, ../sass/sections/_sidebar.scss */
 .sidebar-about-content p:first-of-type {
   margin-bottom: 1em;
   font-size: 14px;
@@ -2252,7 +2233,7 @@ input[type="submit"]:hover, button:hover {
 }
 
 /** Twitter Block ===============**/
-/* line 59, ../sass/sections/_sidebar.scss */
+/* line 57, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 {
   border-top: 1px solid #fff;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -2261,73 +2242,73 @@ input[type="submit"]:hover, button:hover {
   text-align: center;
 }
 
-/* line 66, ../sass/sections/_sidebar.scss */
+/* line 64, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 .item-list {
   font: italic 400 1em/1.5em "proxima-nova", Arial, sans-serif;
 }
 
-/* line 70, ../sass/sections/_sidebar.scss */
+/* line 68, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 .more-link {
   display: none;
 }
 
-/* line 74, ../sass/sections/_sidebar.scss */
+/* line 72, ../sass/sections/_sidebar.scss */
 .sidebar-twitter {
   margin-bottom: 1.5em;
   padding-bottom: 0.75em;
   text-align: center;
 }
-/* line 78, ../sass/sections/_sidebar.scss */
+/* line 76, ../sass/sections/_sidebar.scss */
 .sidebar-twitter p {
   margin-bottom: 0.75em;
 }
 
-/* line 83, ../sass/sections/_sidebar.scss */
+/* line 81, ../sass/sections/_sidebar.scss */
 .sidebar-twitter .ss-icon {
   color: #fff;
   font-size: 1.3em;
   line-height: 1em;
 }
-/* line 87, ../sass/sections/_sidebar.scss */
+/* line 85, ../sass/sections/_sidebar.scss */
 .sidebar-twitter .ss-icon:hover {
   color: #da0b38;
 }
 
 /** Request From ===============**/
-/* line 95, ../sass/sections/_sidebar.scss */
+/* line 93, ../sass/sections/_sidebar.scss */
 .right-sidebar .request-form {
   border-bottom: none;
 }
 
-/* line 99, ../sass/sections/_sidebar.scss */
+/* line 97, ../sass/sections/_sidebar.scss */
 .request-form {
   position: relative;
 }
-/* line 101, ../sass/sections/_sidebar.scss */
+/* line 99, ../sass/sections/_sidebar.scss */
 .request-form .form-item {
   margin-bottom: 1em;
 }
 
-/* line 106, ../sass/sections/_sidebar.scss */
+/* line 104, ../sass/sections/_sidebar.scss */
 .request-form label {
   position: absolute;
   top: 3px;
   left: 10px;
 }
 
-/* line 113, ../sass/sections/_sidebar.scss */
+/* line 111, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 textarea {
   height: 138px;
 }
 
-/* line 117, ../sass/sections/_sidebar.scss */
+/* line 115, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 #edit-actions {
   position: absolute;
   right: 5px;
   bottom: 5px;
 }
 
-/* line 123, ../sass/sections/_sidebar.scss */
+/* line 121, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 input[type="submit"] {
   text-transform: uppercase;
   font-size: 0.75em;

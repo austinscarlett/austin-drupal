@@ -42,12 +42,8 @@
 }
 
 .main-nav a {
-	color: #efebe2;
 	font: $semi 0.813em/1em $proxima;
 	text-transform: uppercase;
-	&:hover, &.active {
-    	color: $red;
-	}
 }
 
 .menu-208 a:before {
