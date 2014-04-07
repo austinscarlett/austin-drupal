@@ -230,13 +230,13 @@ a:hover {
 /* $sprite: image-url("sprite.svg"); */
 /* line 1, ../sass/global/_base.scss */
 body {
-  background: fixed url('../images/bg-body-int.jpg?1396475874') no-repeat center top black;
+  background: url('../images/bg-body-int.jpg?1396475874') no-repeat center top black;
   color: #fff;
   font: 400 1em/1.5em "proxima-nova", Helvetica, arial, sans-serif;
 }
 /* line 5, ../sass/global/_base.scss */
 body.front {
-  background: fixed url('../images/bg-body-home.jpg?1396475928') no-repeat center top black;
+  background: url('../images/bg-body-home.jpg?1396475928') no-repeat center top black;
 }
 
 /* line 10, ../sass/global/_base.scss */
@@ -2033,10 +2033,15 @@ input[type="submit"]:hover, button:hover {
 
 /* line 2, ../sass/sections/_footer.scss */
 .footer {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, transparent), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(transparent, #000000);
+  background: -moz-linear-gradient(transparent, #000000);
+  background: -o-linear-gradient(transparent, #000000);
+  background: linear-gradient(transparent, #000000);
   padding-top: 24px;
 }
 
-/* line 6, ../sass/sections/_footer.scss */
+/* line 7, ../sass/sections/_footer.scss */
 .footer .block-title {
   position: relative;
   margin-bottom: 38px;
@@ -2046,7 +2051,7 @@ input[type="submit"]:hover, button:hover {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-/* line 14, ../sass/sections/_footer.scss */
+/* line 15, ../sass/sections/_footer.scss */
 .footer .block-title:before {
   content: "";
   position: absolute;
@@ -2057,12 +2062,12 @@ input[type="submit"]:hover, button:hover {
   background: #da0b38;
 }
 
-/* line 25, ../sass/sections/_footer.scss */
+/* line 26, ../sass/sections/_footer.scss */
 .footer .social-links {
   position: relative;
   margin-bottom: 36px;
 }
-/* line 28, ../sass/sections/_footer.scss */
+/* line 29, ../sass/sections/_footer.scss */
 .footer .social-links:before {
   content: "";
   position: absolute;
@@ -2073,15 +2078,15 @@ input[type="submit"]:hover, button:hover {
   background: #da0b38;
 }
 
-/* line 40, ../sass/sections/_footer.scss */
+/* line 41, ../sass/sections/_footer.scss */
 .footer .mailing-list p {
   margin-bottom: 12px;
 }
-/* line 43, ../sass/sections/_footer.scss */
+/* line 44, ../sass/sections/_footer.scss */
 .footer .mailing-list .form-item {
   border: none;
 }
-/* line 46, ../sass/sections/_footer.scss */
+/* line 47, ../sass/sections/_footer.scss */
 .footer .mailing-list label {
   position: absolute;
   top: 6px;
@@ -2089,30 +2094,30 @@ input[type="submit"]:hover, button:hover {
   font: italic 400 18px/1 "ltc-bodoni-175", Georgia, serif;
   text-transform: none;
 }
-/* line 53, ../sass/sections/_footer.scss */
+/* line 54, ../sass/sections/_footer.scss */
 .footer .mailing-list .form-text {
   padding-left: 0;
   width: 206px;
   background: none;
   border-bottom: 1px solid #fff;
 }
-/* line 59, ../sass/sections/_footer.scss */
+/* line 60, ../sass/sections/_footer.scss */
 .footer .mailing-list .form-actions {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-/* line 66, ../sass/sections/_footer.scss */
+/* line 67, ../sass/sections/_footer.scss */
 .footer .contact-form {
   margin-right: 0;
 }
-/* line 68, ../sass/sections/_footer.scss */
+/* line 69, ../sass/sections/_footer.scss */
 .footer .contact-form .webform-client-form {
   padding-top: 4px;
 }
 
-/* line 73, ../sass/sections/_footer.scss */
+/* line 74, ../sass/sections/_footer.scss */
 .footer .copyright {
   clear: both;
   padding: 1em 0;
@@ -2120,24 +2125,24 @@ input[type="submit"]:hover, button:hover {
   font-size: 0.75em;
 }
 
-/* line 80, ../sass/sections/_footer.scss */
+/* line 81, ../sass/sections/_footer.scss */
 .footer a {
   color: #fff;
   font: 400 12px/26px "proxima-nova", Arial, sans-serif;
   text-transform: uppercase;
 }
-/* line 84, ../sass/sections/_footer.scss */
+/* line 85, ../sass/sections/_footer.scss */
 .footer a:hover {
   color: #da0b38;
 }
 
-/* line 89, ../sass/sections/_footer.scss */
+/* line 90, ../sass/sections/_footer.scss */
 .footer .ss-icon {
   float: left;
   margin-right: 10px;
 }
 
-/* line 94, ../sass/sections/_footer.scss */
+/* line 95, ../sass/sections/_footer.scss */
 .footer .ss-icon a {
   padding: 5px 7px 0;
   background: #dc0032;
@@ -2147,12 +2152,12 @@ input[type="submit"]:hover, button:hover {
   line-height: 30px;
 }
 
-/* line 103, ../sass/sections/_footer.scss */
+/* line 104, ../sass/sections/_footer.scss */
 .footer .mail-list .webform-component {
   float: left;
 }
 
-/* line 107, ../sass/sections/_footer.scss */
+/* line 108, ../sass/sections/_footer.scss */
 .footer .mail-list .form-actions {
   float: right;
   position: relative;
@@ -2161,17 +2166,17 @@ input[type="submit"]:hover, button:hover {
   padding-top: 10px;
 }
 
-/* line 115, ../sass/sections/_footer.scss */
+/* line 116, ../sass/sections/_footer.scss */
 .footer .mail-list label {
   color: #b0b0b0;
 }
 
-/* line 119, ../sass/sections/_footer.scss */
+/* line 120, ../sass/sections/_footer.scss */
 .footer .mail-list label span {
   font-style: italic;
 }
 
-/* line 123, ../sass/sections/_footer.scss */
+/* line 124, ../sass/sections/_footer.scss */
 .footer .mail-list input[type="email"] {
   position: relative;
   z-index: 99;
@@ -2182,7 +2187,7 @@ input[type="submit"]:hover, button:hover {
   color: #b0b0b0;
 }
 
-/* line 133, ../sass/sections/_footer.scss */
+/* line 134, ../sass/sections/_footer.scss */
 .footer .mail-list input[type="submit"] {
   width: 40px;
 }

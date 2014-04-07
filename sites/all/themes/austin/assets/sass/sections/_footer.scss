@@ -1,5 +1,6 @@
 
 .footer {
+    @include background( linear-gradient(color-stops( transparent, #000 )) );
     padding-top: $base;
 }
 
