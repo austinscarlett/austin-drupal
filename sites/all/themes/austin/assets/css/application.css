@@ -130,20 +130,19 @@ h3 {
   line-height: 1.25em;
   font-weight: 600;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
-/* line 35, ../sass/global/_typography.scss */
+/* line 34, ../sass/global/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 39, ../sass/global/_typography.scss */
+/* line 38, ../sass/global/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 43, ../sass/global/_typography.scss */
+/* line 42, ../sass/global/_typography.scss */
 a {
   -webkit-transition: all 0.15s ease-in;
   -moz-transition: all 0.15s ease-in;
@@ -152,24 +151,24 @@ a {
   color: #fff;
   text-decoration: none;
 }
-/* line 47, ../sass/global/_typography.scss */
+/* line 46, ../sass/global/_typography.scss */
 a:hover {
   color: #da0b38;
 }
 
 /** COMMON TYPE STYLES
 ========================================================****/
-/* line 56, ../sass/global/_typography.scss */
+/* line 55, ../sass/global/_typography.scss */
 .title-bar {
   padding: 72px 0 0;
 }
 
-/* line 60, ../sass/global/_typography.scss */
+/* line 59, ../sass/global/_typography.scss */
 .page-title {
   margin-bottom: 0.25em;
   text-align: center;
 }
-/* line 63, ../sass/global/_typography.scss */
+/* line 62, ../sass/global/_typography.scss */
 .page-title:after {
   content: "";
   display: block;
@@ -179,7 +178,7 @@ a:hover {
   background: #da0b38;
 }
 
-/* line 73, ../sass/global/_typography.scss */
+/* line 72, ../sass/global/_typography.scss */
 .post-title {
   /*  font: $book 48px/1.1em $bodoni */
   font-size: 48px;
@@ -188,22 +187,22 @@ a:hover {
   text-transform: none;
 }
 
-/* line 82, ../sass/global/_typography.scss */
+/* line 81, ../sass/global/_typography.scss */
 .block-page-content p,
 .body p {
   margin-bottom: 1em;
 }
 
-/* line 86, ../sass/global/_typography.scss */
+/* line 85, ../sass/global/_typography.scss */
 .body a {
   color: #da0b38;
 }
-/* line 88, ../sass/global/_typography.scss */
+/* line 87, ../sass/global/_typography.scss */
 .body a:hover {
   color: #fff;
 }
 
-/* line 93, ../sass/global/_typography.scss */
+/* line 92, ../sass/global/_typography.scss */
 .category {
   position: relative;
   margin-bottom: 32px;
@@ -212,7 +211,7 @@ a:hover {
   letter-spacing: 2px;
   text-align: center;
 }
-/* line 100, ../sass/global/_typography.scss */
+/* line 99, ../sass/global/_typography.scss */
 .category:after {
   content: "";
   position: absolute;
@@ -224,18 +223,18 @@ a:hover {
   background: #da0b38;
 }
 
-/* line 112, ../sass/global/_typography.scss */
+/* line 111, ../sass/global/_typography.scss */
 .views-field-title a .post-title:hover {
   color: #323232;
 }
 
-/* line 116, ../sass/global/_typography.scss */
+/* line 115, ../sass/global/_typography.scss */
 .read-more a {
   color: #da0b38;
   font-size: 14px;
   text-transform: uppercase;
 }
-/* line 120, ../sass/global/_typography.scss */
+/* line 119, ../sass/global/_typography.scss */
 .read-more a:hover {
   color: #fff;
 }
@@ -1220,16 +1219,21 @@ input[type="submit"]:hover, button:hover {
   width: 120px;
   padding: 0;
   border-width: 1px;
+  color: #fff;
   font-size: 12px;
 }
+/* line 42, ../sass/pages/_collection.scss */
+#block-views-gowns-block-2 .views-row a .view-gown .btn:hover {
+  color: #da0b38;
+}
 
-/* line 44, ../sass/pages/_collection.scss */
+/* line 48, ../sass/pages/_collection.scss */
 #block-views-gowns-block-2 .views-row a:hover .view-gown {
   opacity: 1;
 }
 
 /** GOWN PROFILE ======================**/
-/* line 52, ../sass/pages/_collection.scss */
+/* line 56, ../sass/pages/_collection.scss */
 .node-type-gown .content {
   *zoom: 1;
   float: none;
@@ -1245,12 +1249,12 @@ input[type="submit"]:hover, button:hover {
   clear: both;
 }
 
-/* line 58, ../sass/pages/_collection.scss */
+/* line 62, ../sass/pages/_collection.scss */
 .node-type-gown .main {
   min-height: 800px;
 }
 
-/* line 62, ../sass/pages/_collection.scss */
+/* line 66, ../sass/pages/_collection.scss */
 .gown-nav {
   max-width: 1212px;
   margin: 0 auto 1em;
@@ -1258,51 +1262,52 @@ input[type="submit"]:hover, button:hover {
   border-bottom: 1px solid #c6c6c6;
 }
 
-/* line 69, ../sass/pages/_collection.scss */
+/* line 73, ../sass/pages/_collection.scss */
 .gown-nav a {
   display: block;
+  color: #da0b38;
   font-size: 18px;
   line-height: 1.75em;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-/* line 76, ../sass/pages/_collection.scss */
+/* line 81, ../sass/pages/_collection.scss */
 .gown-nav a [class*="icon-"] {
   vertical-align: -5px;
 }
 
-/* line 81, ../sass/pages/_collection.scss */
+/* line 86, ../sass/pages/_collection.scss */
 .gown-nav .next {
   float: right;
   padding: 4px 20px 2px 30px;
   border-left: 1px solid #c6c6c6;
 }
 
-/* line 87, ../sass/pages/_collection.scss */
+/* line 92, ../sass/pages/_collection.scss */
 .gown-nav .prev {
   float: left;
   padding: 4px 30px 2px 20px;
   background-position: -579px -234px;
   border-right: 1px solid #c6c6c6;
 }
-/* line 92, ../sass/pages/_collection.scss */
+/* line 97, ../sass/pages/_collection.scss */
 .gown-nav .prev [class*="icon-"] {
   margin-right: 3px;
 }
 
-/* line 97, ../sass/pages/_collection.scss */
+/* line 102, ../sass/pages/_collection.scss */
 .gown-images {
   position: relative;
   min-height: 760px;
 }
 
-/* line 102, ../sass/pages/_collection.scss */
+/* line 107, ../sass/pages/_collection.scss */
 .gown-info {
   margin-right: 0;
 }
 
-/* line 106, ../sass/pages/_collection.scss */
+/* line 111, ../sass/pages/_collection.scss */
 .zoom-label {
   position: absolute;
   right: 3px;
@@ -1314,21 +1319,21 @@ input[type="submit"]:hover, button:hover {
   z-index: 99;
 }
 
-/* line 117, ../sass/pages/_collection.scss */
+/* line 122, ../sass/pages/_collection.scss */
 .gown-images li {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 123, ../sass/pages/_collection.scss */
+/* line 128, ../sass/pages/_collection.scss */
 .gown-images img {
   max-width: 480px;
   box-shadow: 1px 1px 0 #cecece, -1px -1px 0 #cecece, -1px 1px 0 #cecece, 1px -1px 0 #cecece;
   border: 3px solid #efebe2;
 }
 
-/* line 129, ../sass/pages/_collection.scss */
+/* line 134, ../sass/pages/_collection.scss */
 .gown-info .thumbs {
   margin-bottom: 1em;
   padding: 1em 0 0.5em;
@@ -1336,7 +1341,7 @@ input[type="submit"]:hover, button:hover {
   border-bottom: 1px solid #CFCFCF;
 }
 
-/* line 136, ../sass/pages/_collection.scss */
+/* line 141, ../sass/pages/_collection.scss */
 .gown-info .thumbs li {
   float: left;
   margin: 0 14px 14px 0;
@@ -1344,18 +1349,18 @@ input[type="submit"]:hover, button:hover {
   border: 3px solid #efebe2;
 }
 
-/* line 143, ../sass/pages/_collection.scss */
+/* line 148, ../sass/pages/_collection.scss */
 .gown-info .thumbs li:nth-child(3n) {
   margin-right: 0;
 }
 
-/* line 147, ../sass/pages/_collection.scss */
+/* line 152, ../sass/pages/_collection.scss */
 .gown-info .ss-icon {
   float: left;
   margin-right: 10px;
 }
 
-/* line 152, ../sass/pages/_collection.scss */
+/* line 157, ../sass/pages/_collection.scss */
 .gown-info .ss-icon a {
   padding: 5px 7px 0;
   background: #dc0032;
@@ -1365,17 +1370,17 @@ input[type="submit"]:hover, button:hover {
   line-height: 30px;
 }
 
-/* line 161, ../sass/pages/_collection.scss */
+/* line 166, ../sass/pages/_collection.scss */
 .gown-info .ss-icon a:hover {
   background: #323232;
 }
 
-/* line 165, ../sass/pages/_collection.scss */
+/* line 170, ../sass/pages/_collection.scss */
 .gown-info .share {
   margin-bottom: 2em;
 }
 
-/* line 169, ../sass/pages/_collection.scss */
+/* line 174, ../sass/pages/_collection.scss */
 .gown-info .share h3 {
   margin-bottom: 1em;
   font-size: 0.875em;
@@ -1385,104 +1390,94 @@ input[type="submit"]:hover, button:hover {
 }
 
 /* line 2, ../sass/pages/_events.scss */
-.page-node-3 .view-events .views-row {
+.events-list .views-row {
   float: left;
-  width: 228px;
+  width: 258px;
   margin: 0 24px 1em 0;
   border: 1px solid #cfcfcf;
   text-align: center;
-  min-height: 282px;
+  min-height: 302px;
+}
+/* line 9, ../sass/pages/_events.scss */
+.events-list .views-row .image {
+  margin-bottom: 16px;
+}
+/* line 12, ../sass/pages/_events.scss */
+.events-list .views-row h3 {
+  font-size: 18px;
 }
 
-/* line 11, ../sass/pages/_events.scss */
-.page-node-3 .view-events .attachment .views-row {
-  width: 480px;
+/* line 17, ../sass/pages/_events.scss */
+.events-list .attachment .views-row {
+  width: 552px;
 }
-
-/* line 16, ../sass/pages/_events.scss */
-.page-node-3 .view-events .date,
-.page-node-3 .view-events .views-field-field-dates {
-  color: #dc0032;
-  font-style: italic;
-}
-
-/* line 21, ../sass/pages/_events.scss */
-.page-node-3 .view-events .location {
-  font-size: 0.875em;
-  font-style: italic;
-}
-
-/* line 26, ../sass/pages/_events.scss */
-.page-node-3 .view-events .attachment .views-field-field-image {
+/* line 19, ../sass/pages/_events.scss */
+.events-list .attachment .views-row .image {
   float: left;
-  width: 240px;
+  width: 258px;
+  margin-bottom: 0;
+}
+/* line 24, ../sass/pages/_events.scss */
+.events-list .attachment .views-row h3 {
+  font-size: 21px;
 }
 
-/* line 31, ../sass/pages/_events.scss */
-.page-node-3 .view-events .attachment .views-field-nothing {
-  float: right;
-  width: 238px;
-  padding: 0 9px;
+/* line 29, ../sass/pages/_events.scss */
+.events-list .attachment .event-info {
+  float: left;
+  width: 292px;
+  padding: 48px 10px 0;
   text-align: center;
 }
+/* line 34, ../sass/pages/_events.scss */
+.events-list .attachment .event-info .category:after {
+  width: 48px;
+  margin-left: -24px;
+}
 
-/* line 38, ../sass/pages/_events.scss */
-.page-node-3 .view-events .attachment h2 {
-  margin: 1.5em 0;
-  font-size: 0.875em;
-  font-weight: 700;
-  letter-spacing: 0.2em;
+/* line 40, ../sass/pages/_events.scss */
+.events-list .event-date {
+  margin-bottom: 12px;
+  color: #676767;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
 /* line 47, ../sass/pages/_events.scss */
-.page-node-3 .view-events .attachment h3,
-.page-node-3 .view-events .views-field-title {
-  padding: 0 10px;
-  font: italic 400 1.125em/1em "adobe-caslon-pro", Georgia, serif;
+.events-list .event-location {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
-/* line 52, ../sass/pages/_events.scss */
-.page-node-3 .view-events .attachment .location {
-  margin-bottom: 0.5em;
-}
-
-/* line 56, ../sass/pages/_events.scss */
-.page-node-3 .view-events .attachment .teaser {
-  font-size: 0.875em;
-}
-
-/* line 60, ../sass/pages/_events.scss */
-.page-node-3 .view-events .views-field-field-image {
-  margin-bottom: 1em;
-}
-
-/* line 64, ../sass/pages/_events.scss */
-.page-node-3 .view-events .attachment .views-field-field-image {
-  margin-bottom: 0;
+/* line 53, ../sass/pages/_events.scss */
+.events-list .event-address {
+  color: #676767;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 /** EVENT NODE PAGE **/
-/* line 71, ../sass/pages/_events.scss */
+/* line 64, ../sass/pages/_events.scss */
 .event-image {
   position: relative;
   border: 3px solid #fff;
 }
 
-/* line 76, ../sass/pages/_events.scss */
+/* line 69, ../sass/pages/_events.scss */
 .event-image .social-links {
   position: absolute;
   right: 10px;
   bottom: 12px;
 }
 
-/* line 82, ../sass/pages/_events.scss */
+/* line 75, ../sass/pages/_events.scss */
 .event-image .ss-icon {
   float: left;
   margin-right: 10px;
 }
 
-/* line 87, ../sass/pages/_events.scss */
+/* line 80, ../sass/pages/_events.scss */
 .event-image .ss-icon a {
   padding: 5px 7px 0;
   background: #da0b38;
@@ -1492,29 +1487,32 @@ input[type="submit"]:hover, button:hover {
   line-height: 30px;
 }
 
-/* line 96, ../sass/pages/_events.scss */
+/* line 89, ../sass/pages/_events.scss */
 .event-image .ss-icon a:hover {
   background: #000;
 }
 
-/* line 100, ../sass/pages/_events.scss */
-.event-info .date {
+/* line 93, ../sass/pages/_events.scss */
+.event-info .event-date {
   margin-bottom: 1em;
-  color: #da0b38;
-}
-
-/* line 105, ../sass/pages/_events.scss */
-.event-info .location {
-  margin-bottom: 1em;
-}
-
-/* line 109, ../sass/pages/_events.scss */
-.event-info .location h3 {
-  font-weight: 700;
+  color: #676767;
   text-transform: uppercase;
 }
 
-/* line 115, ../sass/pages/_events.scss */
+/* line 99, ../sass/pages/_events.scss */
+.event-info .event-location {
+  margin-bottom: 1em;
+}
+/* line 101, ../sass/pages/_events.scss */
+.event-info .event-location h3 {
+  text-transform: uppercase;
+}
+/* line 104, ../sass/pages/_events.scss */
+.event-info .event-location .address, .event-info .event-location .city-state {
+  color: #676767;
+}
+
+/* line 110, ../sass/pages/_events.scss */
 .directions a,
 .mark-calendar a {
   color: #d8d8d8;
@@ -1523,32 +1521,32 @@ input[type="submit"]:hover, button:hover {
   text-transform: uppercase;
 }
 
-/* line 123, ../sass/pages/_events.scss */
+/* line 118, ../sass/pages/_events.scss */
 .directions a:hover,
 .mark-calendar a:hover {
   color: #da0b38;
 }
 
-/* line 127, ../sass/pages/_events.scss */
+/* line 122, ../sass/pages/_events.scss */
 .directions [class*="icon-"] {
   vertical-align: -2px;
   margin: 0 8px 0 2px;
 }
 
-/* line 132, ../sass/pages/_events.scss */
+/* line 127, ../sass/pages/_events.scss */
 .mark-calendar [class*="icon-"] {
   vertical-align: -1px;
   margin-right: 8px;
 }
 
-/* line 137, ../sass/pages/_events.scss */
+/* line 132, ../sass/pages/_events.scss */
 .directions {
   border-top: 1px solid #fff;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   padding: 1em 0 0.5em;
 }
 
-/* line 142, ../sass/pages/_events.scss */
+/* line 137, ../sass/pages/_events.scss */
 .mark-calendar {
   border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -1556,14 +1554,14 @@ input[type="submit"]:hover, button:hover {
   padding: 0.5em 0 1em;
 }
 
-/* line 148, ../sass/pages/_events.scss */
+/* line 143, ../sass/pages/_events.scss */
 .apt-form .description {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 155, ../sass/pages/_events.scss */
+/* line 150, ../sass/pages/_events.scss */
 .apt-form .webform-component-textfield,
 .apt-form .webform-component-email {
   float: left;
@@ -1572,25 +1570,25 @@ input[type="submit"]:hover, button:hover {
   margin-bottom: 10px;
 }
 
-/* line 162, ../sass/pages/_events.scss */
+/* line 157, ../sass/pages/_events.scss */
 .apt-form .webform-component-textarea {
   float: right;
   width: 58%;
 }
 
-/* line 167, ../sass/pages/_events.scss */
+/* line 162, ../sass/pages/_events.scss */
 .apt-form textarea {
   height: 138px;
 }
 
-/* line 171, ../sass/pages/_events.scss */
+/* line 166, ../sass/pages/_events.scss */
 .apt-form #edit-actions {
   position: absolute;
   right: 5px;
   bottom: 10px;
 }
 
-/* line 177, ../sass/pages/_events.scss */
+/* line 172, ../sass/pages/_events.scss */
 .apt-form input[type="submit"] {
   text-transform: uppercase;
   font-size: 0.75em;
@@ -2197,9 +2195,10 @@ input[type="submit"]:hover, button:hover {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+  text-transform: uppercase;
 }
 
-/* line 12, ../sass/sections/_sidebar.scss */
+/* line 13, ../sass/sections/_sidebar.scss */
 .right-sidebar p:last-of-type a {
   display: inline-block;
   padding: 3px 20px;
@@ -2209,19 +2208,19 @@ input[type="submit"]:hover, button:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* line 20, ../sass/sections/_sidebar.scss */
+/* line 21, ../sass/sections/_sidebar.scss */
 .right-sidebar p:last-of-type a:hover {
   background: #fff;
 }
 
 /** About Blocks ======================**/
-/* line 30, ../sass/sections/_sidebar.scss */
+/* line 31, ../sass/sections/_sidebar.scss */
 .right-sidebar .sidebar-about-thumb {
   margin-bottom: 1em;
   border-bottom: none;
   text-align: center;
 }
-/* line 34, ../sass/sections/_sidebar.scss */
+/* line 35, ../sass/sections/_sidebar.scss */
 .right-sidebar .sidebar-about-thumb img {
   width: 166px;
   height: 166px;
@@ -2229,13 +2228,13 @@ input[type="submit"]:hover, button:hover {
   text-align: center;
 }
 
-/* line 42, ../sass/sections/_sidebar.scss */
+/* line 43, ../sass/sections/_sidebar.scss */
 .sidebar-about-content {
   margin-bottom: 1.5em;
   padding-bottom: 1.5em;
   text-align: center;
 }
-/* line 46, ../sass/sections/_sidebar.scss */
+/* line 47, ../sass/sections/_sidebar.scss */
 .sidebar-about-content p:first-of-type {
   margin-bottom: 1em;
   font-size: 14px;
@@ -2243,7 +2242,7 @@ input[type="submit"]:hover, button:hover {
 }
 
 /** Twitter Block ===============**/
-/* line 57, ../sass/sections/_sidebar.scss */
+/* line 58, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 {
   border-top: 1px solid #fff;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -2252,73 +2251,73 @@ input[type="submit"]:hover, button:hover {
   text-align: center;
 }
 
-/* line 64, ../sass/sections/_sidebar.scss */
+/* line 65, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 .item-list {
   font: italic 400 1em/1.5em "proxima-nova", Arial, sans-serif;
 }
 
-/* line 68, ../sass/sections/_sidebar.scss */
+/* line 69, ../sass/sections/_sidebar.scss */
 #block-aggregator-feed-1 .more-link {
   display: none;
 }
 
-/* line 72, ../sass/sections/_sidebar.scss */
+/* line 73, ../sass/sections/_sidebar.scss */
 .sidebar-twitter {
   margin-bottom: 1.5em;
   padding-bottom: 0.75em;
   text-align: center;
 }
-/* line 76, ../sass/sections/_sidebar.scss */
+/* line 77, ../sass/sections/_sidebar.scss */
 .sidebar-twitter p {
   margin-bottom: 0.75em;
 }
 
-/* line 81, ../sass/sections/_sidebar.scss */
+/* line 82, ../sass/sections/_sidebar.scss */
 .sidebar-twitter .ss-icon {
   color: #fff;
   font-size: 1.3em;
   line-height: 1em;
 }
-/* line 85, ../sass/sections/_sidebar.scss */
+/* line 86, ../sass/sections/_sidebar.scss */
 .sidebar-twitter .ss-icon:hover {
   color: #da0b38;
 }
 
 /** Request From ===============**/
-/* line 93, ../sass/sections/_sidebar.scss */
+/* line 94, ../sass/sections/_sidebar.scss */
 .right-sidebar .request-form {
   border-bottom: none;
 }
 
-/* line 97, ../sass/sections/_sidebar.scss */
+/* line 98, ../sass/sections/_sidebar.scss */
 .request-form {
   position: relative;
 }
-/* line 99, ../sass/sections/_sidebar.scss */
+/* line 100, ../sass/sections/_sidebar.scss */
 .request-form .form-item {
   margin-bottom: 1em;
 }
 
-/* line 104, ../sass/sections/_sidebar.scss */
+/* line 105, ../sass/sections/_sidebar.scss */
 .request-form label {
   position: absolute;
   top: 3px;
   left: 10px;
 }
 
-/* line 111, ../sass/sections/_sidebar.scss */
+/* line 112, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 textarea {
   height: 138px;
 }
 
-/* line 115, ../sass/sections/_sidebar.scss */
+/* line 116, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 #edit-actions {
   position: absolute;
   right: 5px;
   bottom: 5px;
 }
 
-/* line 121, ../sass/sections/_sidebar.scss */
+/* line 122, ../sass/sections/_sidebar.scss */
 #block-webform-client-block-10 input[type="submit"] {
   text-transform: uppercase;
   font-size: 0.75em;

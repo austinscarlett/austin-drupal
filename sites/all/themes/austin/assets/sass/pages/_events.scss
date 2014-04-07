@@ -1,69 +1,62 @@
 
-.page-node-3 .view-events .views-row {
+.events-list .views-row {
 	float: left;
-	width: 228px;
+	width: 258px;
 	margin: 0 24px 1em 0;
 	border: 1px solid #cfcfcf;
 	text-align: center;
-	min-height: 282px;
+	min-height: 302px;
+	.image {
+    	margin-bottom: 16px;
+	}
+	h3 {
+    	font-size: 18px;
+	}
 }
 
-.page-node-3 .view-events .attachment .views-row {
-	width: 480px;
+.events-list .attachment .views-row {
+	width: 552px;
+    .image {
+    	float: left;
+    	width: 258px;
+    	margin-bottom: 0;
+    }
+    h3 {
+        font-size: 21px;
+    }
 }
 
-.page-node-3 .view-events .date,
-.page-node-3 .view-events .views-field-field-dates {
-	color: #dc0032;
-	font-style: italic;
-}
-
-.page-node-3 .view-events .location {
-	font-size: 0.875em;
-	font-style: italic;
-}
-
-.page-node-3 .view-events .attachment .views-field-field-image {
+.events-list  .attachment .event-info {
 	float: left;
-	width: 240px;
-}
-
-.page-node-3 .view-events .attachment .views-field-nothing {
-	float: right;
-	width: 238px;
-	padding: 0 9px;
+	width: 292px;
+	padding: 48px 10px 0;
 	text-align: center;
+	.category:after {
+    	width: 48px;
+    	margin-left: -24px;
+	}
 }
 
-.page-node-3 .view-events .attachment h2 {
-	margin: 1.5em 0;
-	font-size: 0.875em;
-	font-weight: 700;
-	letter-spacing: 0.2em;
+.events-list .event-date {
+    margin-bottom: 12px;
+	color: $dk-grey;
+	font-size: 14px;
 	text-transform: uppercase;
 }
 
-.page-node-3 .view-events .attachment h3,
-.page-node-3 .view-events .views-field-title {
-	padding: 0 10px;
-	font: italic 400 1.125em/1em "adobe-caslon-pro", Georgia, serif;
+.events-list .event-location {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
 }
 
-.page-node-3 .view-events .attachment .location {
-	margin-bottom: 0.5em;
+.events-list .event-address {
+    color: $dk-grey;
+    font-size: 14px;
+    line-height: 20px;
 }
 
-.page-node-3 .view-events .attachment .teaser {
-	font-size: 0.875em;
-}
 
-.page-node-3 .view-events .views-field-field-image {
-	margin-bottom: 1em;
-}
-
-.page-node-3 .view-events .attachment .views-field-field-image {
-	margin-bottom: 0;
-}
 
 
 /** EVENT NODE PAGE **/
@@ -97,18 +90,20 @@
 	background: #000;
 }
 
-.event-info .date {
+.event-info .event-date {
 	margin-bottom: 1em;
-	color: $red;
-}
-
-.event-info .location {
-	margin-bottom: 1em;
-}
-
-.event-info .location h3 {
-	font-weight: $bold;
+	color: $dk-grey;
 	text-transform: uppercase;
+}
+
+.event-info .event-location {
+	margin-bottom: 1em;
+    h3 {
+    	text-transform: uppercase;
+    }
+    .address, .city-state {
+        color: $dk-grey;
+    }
 }
 
 .directions a,

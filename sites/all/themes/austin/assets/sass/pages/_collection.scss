@@ -37,7 +37,11 @@
         width: 120px;
         padding: 0;
         border-width: 1px;
+        color: #fff;
         font-size: 12px;
+        &:hover {
+            color: $red;
+        }
     }
 }
 
@@ -68,6 +72,7 @@
 
 .gown-nav a {
 	display: block;
+	color: $red;
     font-size: 18px;
     line-height: 1.75em;
     font-weight: 700;

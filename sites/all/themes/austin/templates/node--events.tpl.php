@@ -16,7 +16,7 @@
     
     	<h2 class="post-title"><?php print $title ?></h2>
     	
-    	<div class="date">		
+    	<div class="event-date">		
             <?php
             if (isset($node->field_dates['und'][0]['value2']) && ($node->field_dates['und'][0]['value2'] != $node->field_dates['und'][0]['value'])):
             	print date("F d, Y", strtotime($node->field_dates['und'][0]['value'])) . t(' to ') . date("F d, Y", strtotime($node->field_dates['und'][0]['value2']));
@@ -25,7 +25,7 @@
             endif;
             ?>
     	</div>
-    	<div class="location">
+    	<div class="event-location">
     		<h3><?php print $node->field_location['und'][0]['value']; ?></h3>
     		<div class="address"><?php print $node->field_address['und'][0]['value']; ?></div>
     		<div class="city-state"><?php print $node->field_city['und'][0]['value']; ?>, <?php print $node->field_state['und'][0]['value']; ?> <?php print $node->field_zip['und'][0]['value']; ?></div>
