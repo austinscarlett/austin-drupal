@@ -1633,7 +1633,7 @@ input[type="submit"]:hover, button:hover {
 .page-node-4 .content .block {
   border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 32px 0 42px;
+  padding: 32px 0 24px;
   text-align: center;
 }
 /* line 36, ../sass/pages/_couture.scss */
@@ -1670,24 +1670,25 @@ input[type="submit"]:hover, button:hover {
 .page-node-4 .content .block li {
   float: left;
   width: 48%;
+  margin-bottom: 24px;
 }
-/* line 66, ../sass/pages/_couture.scss */
+/* line 67, ../sass/pages/_couture.scss */
 .page-node-4 .content .block li img {
   width: 100% !important;
   height: auto !important;
 }
-/* line 70, ../sass/pages/_couture.scss */
+/* line 71, ../sass/pages/_couture.scss */
 .page-node-4 .content .block li:nth-child(2n+1) {
   margin-right: 4%;
 }
 
-/* line 75, ../sass/pages/_couture.scss */
+/* line 76, ../sass/pages/_couture.scss */
 .page-node-4 .content .block p {
   margin-bottom: 1em;
   padding: 0 0.5em;
 }
 
-/* line 80, ../sass/pages/_couture.scss */
+/* line 81, ../sass/pages/_couture.scss */
 .page-node-4 .content .block img {
   border: 3px solid #fff;
 }
