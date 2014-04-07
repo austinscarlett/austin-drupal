@@ -1624,8 +1624,8 @@ input[type="submit"]:hover, button:hover {
 .page-node-4 .body {
   border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  padding-top: 1em;
-  font: italic 1.625em/1.385em "ltc-bodoni-175", Georgia, serif;
+  padding: 16px 24px 24px;
+  font: italic 21px/34px "proxima-nova", Helvetica, arial, sans-serif;
   text-align: center;
 }
 
@@ -1633,7 +1633,7 @@ input[type="submit"]:hover, button:hover {
 .page-node-4 .content .block {
   border-bottom: 1px solid #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 1.5em 0 2em;
+  padding: 32px 0 42px;
   text-align: center;
 }
 /* line 36, ../sass/pages/_couture.scss */
@@ -1643,41 +1643,53 @@ input[type="submit"]:hover, button:hover {
 
 /* line 41, ../sass/pages/_couture.scss */
 .page-node-4 .content .block-title {
-  margin-bottom: 24px;
-  font: italic 400 2.25em/1em "ltc-bodoni-175", Georgia, serif;
+  position: relative;
+  margin-bottom: 42px;
+  font: italic 400 34px/1em "ltc-bodoni-175", Georgia, serif;
   text-transform: none;
 }
+/* line 46, ../sass/pages/_couture.scss */
+.page-node-4 .content .block-title:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -21px;
+  width: 54px;
+  height: 1px;
+  margin-left: -27px;
+  background: #da0b38;
+}
 
-/* line 47, ../sass/pages/_couture.scss */
+/* line 58, ../sass/pages/_couture.scss */
 .page-node-4 .content .block ul {
   overflow: hidden;
+  padding-top: 16px;
 }
 
-/* line 51, ../sass/pages/_couture.scss */
+/* line 63, ../sass/pages/_couture.scss */
 .page-node-4 .content .block li {
   float: left;
-  width: 358px;
+  width: 48%;
 }
-
-/* line 56, ../sass/pages/_couture.scss */
+/* line 66, ../sass/pages/_couture.scss */
+.page-node-4 .content .block li img {
+  width: 100% !important;
+  height: auto !important;
+}
+/* line 70, ../sass/pages/_couture.scss */
 .page-node-4 .content .block li:nth-child(2n+1) {
-  margin-right: 1em;
+  margin-right: 4%;
 }
 
-/* line 60, ../sass/pages/_couture.scss */
+/* line 75, ../sass/pages/_couture.scss */
 .page-node-4 .content .block p {
   margin-bottom: 1em;
   padding: 0 0.5em;
 }
 
-/* line 65, ../sass/pages/_couture.scss */
+/* line 80, ../sass/pages/_couture.scss */
 .page-node-4 .content .block img {
   border: 3px solid #fff;
-}
-
-/* line 69, ../sass/pages/_couture.scss */
-#block-block-13 li {
-  margin-bottom: 1em;
 }
 
 /* line 3, ../sass/pages/_blog.scss */

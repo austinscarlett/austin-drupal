@@ -24,14 +24,14 @@
 
 .page-node-4 .body {
     @include border-bottom;
-	padding-top: 1em;
-	font: italic 1.625em/1.385em $bodoni;
+	padding: 16px 24px $base;
+	font: italic 21px/34px $proxima;
 	text-align: center;
 }
 
 .page-node-4 .content .block {
     @include border-bottom;
-	padding: 1.5em 0 2em;
+	padding: 32px 0 42px;
 	text-align: center;
 	&:last-child {
     	border-bottom: none;
@@ -39,22 +39,37 @@
 }
 
 .page-node-4 .content .block-title {
-	margin-bottom: 24px;
-	font: italic 400 2.25em/1em $bodoni;
+    position: relative;
+	margin-bottom: 42px;
+	font: italic 400 34px/1em $bodoni;
 	text-transform: none;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -21px;
+        width: 54px;
+        height: 1px;
+        margin-left: -27px;
+        background: $red;
+    }
 }
 
 .page-node-4 .content .block ul {
 	overflow: hidden;
+	padding-top: 16px;
 }
 
 .page-node-4 .content .block li {
 	float: left;
-	width: 358px;
-}
-
-.page-node-4 .content .block li:nth-child(2n+1) {
-	margin-right: 1em;
+	width: 48%;
+	img {
+    	width: 100% !important;
+    	height: auto !important;
+	}
+    &:nth-child(2n+1) {
+    	margin-right: 4%;
+    }
 }
 
 .page-node-4 .content .block p {
@@ -64,8 +79,4 @@
 
 .page-node-4 .content .block img {
 	border: 3px solid #fff;
-}
-
-#block-block-13 li {
-	margin-bottom: 1em;
 }
