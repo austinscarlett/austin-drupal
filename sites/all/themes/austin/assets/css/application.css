@@ -1493,22 +1493,22 @@ input[type="submit"]:hover, button:hover {
 }
 
 /* line 93, ../sass/pages/_events.scss */
-.event-info .event-date {
+.node-type-events .event-info .event-date {
   margin-bottom: 1em;
   color: #676767;
   text-transform: uppercase;
 }
 
 /* line 99, ../sass/pages/_events.scss */
-.event-info .event-location {
+.node-type-events .event-info .event-location {
   margin-bottom: 1em;
 }
 /* line 101, ../sass/pages/_events.scss */
-.event-info .event-location h3 {
+.node-type-events .event-info .event-location h3 {
   text-transform: uppercase;
 }
 /* line 104, ../sass/pages/_events.scss */
-.event-info .event-location .address, .event-info .event-location .city-state {
+.node-type-events .event-info .event-location .address, .node-type-events .event-info .event-location .city-state {
   color: #676767;
 }
 
