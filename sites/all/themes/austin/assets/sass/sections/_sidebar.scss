@@ -10,6 +10,10 @@
     text-transform: uppercase;
 }
 
+.right-sidebar p {
+    letter-spacing: 0.01em;
+}
+
 .right-sidebar p:last-of-type a {
     display: inline-block;
     padding: 3px 20px;

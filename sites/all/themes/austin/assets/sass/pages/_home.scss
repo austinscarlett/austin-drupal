@@ -2,18 +2,20 @@
 .front .content {
     width: 588px;
     margin: 190px 0 $base*5;
-    padding-left: 98px
+    padding-left: 98px;
 }
 
 .front .body {
     h1 {
         margin-bottom: 12px;
         font-size: 42px;
+        letter-spacing: 0.09em;
     }
     p {
         margin-bottom: 32px;
         font-size: 15px;
         line-height: 24px;
+        letter-spacing: 0.03em;
     }
     a {
         display: inline-block;
