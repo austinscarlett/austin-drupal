@@ -43,10 +43,13 @@ select {
     position: relative;
     z-index: 20;
 	color: #fff;
-	font: $semi 14px/1em $proxima;
+	font: $bold 14px/1em $proxima;
 	text-transform: uppercase;
     text-indent: 0.01px;
     text-overflow: "";
+    option {
+        background: #000;
+    }
 }
 
 .webform-component-select:before,

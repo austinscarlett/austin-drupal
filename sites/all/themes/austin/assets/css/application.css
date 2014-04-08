@@ -402,13 +402,17 @@ select {
   position: relative;
   z-index: 20;
   color: #fff;
-  font: 600 14px/1em "proxima-nova", Helvetica, arial, sans-serif;
+  font: 700 14px/1em "proxima-nova", Helvetica, arial, sans-serif;
   text-transform: uppercase;
   text-indent: 0.01px;
   text-overflow: "";
 }
+/* line 50, ../sass/global/_forms.scss */
+select option {
+  background: #000;
+}
 
-/* line 53, ../sass/global/_forms.scss */
+/* line 56, ../sass/global/_forms.scss */
 .webform-component-select:before,
 .form-type-select:before {
   content: "";
@@ -423,7 +427,7 @@ select {
   border-top: 5px solid #da0b38;
 }
 
-/* line 66, ../sass/global/_forms.scss */
+/* line 69, ../sass/global/_forms.scss */
 input[type="submit"] {
   -webkit-transition: background 0.15s ease-in;
   -moz-transition: background 0.15s ease-in;
@@ -437,12 +441,12 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
-/* line 76, ../sass/global/_forms.scss */
+/* line 79, ../sass/global/_forms.scss */
 input[type="submit"]:hover {
   background: #ff003a;
 }
 
-/* line 80, ../sass/global/_forms.scss */
+/* line 83, ../sass/global/_forms.scss */
 .not-front.page-node-done #content {
   width: 100%;
   padding: 4em 0;
@@ -451,34 +455,34 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-/* line 88, ../sass/global/_forms.scss */
+/* line 91, ../sass/global/_forms.scss */
 .node-webform .webform-component {
   margin-bottom: 1em;
 }
 
-/* line 92, ../sass/global/_forms.scss */
+/* line 95, ../sass/global/_forms.scss */
 .page-node-done .links {
   display: none;
 }
 
-/* line 96, ../sass/global/_forms.scss */
+/* line 99, ../sass/global/_forms.scss */
 .description {
   font-size: 0.75em;
 }
 
-/* line 100, ../sass/global/_forms.scss */
+/* line 103, ../sass/global/_forms.scss */
 #user-login .form-item {
   margin-bottom: 1em;
 }
 
-/* line 106, ../sass/global/_forms.scss */
+/* line 109, ../sass/global/_forms.scss */
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #da0b38;
 }
 
-/* line 111, ../sass/global/_forms.scss */
+/* line 114, ../sass/global/_forms.scss */
 .messages.error,
 .form-item label.error {
   display: none;
@@ -2039,12 +2043,12 @@ input[type="submit"]:hover, button:hover {
 
 /* line 49, ../sass/sections/_header.scss */
 .menu-208 a:before {
-  content: "the Art of";
+  content: "the Art of ";
 }
 
 /* line 53, ../sass/sections/_header.scss */
 .menu-209 a:before {
-  content: "the World of";
+  content: "the World of ";
 }
 
 /* line 58, ../sass/sections/_header.scss */
