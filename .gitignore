@@ -15,7 +15,6 @@ sites/all/themes/austin/.sass-cache
 
 *.tar.gz
 *.sql
-.gitignore
 CHANGELOG.txt
 COPYRIGHT.txt
 INSTALL.mysql.txt
