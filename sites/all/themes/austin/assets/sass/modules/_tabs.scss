@@ -4,6 +4,9 @@
     li {
 	    display: inline-block;
 	    margin: 0 0.5em;
+        &:last-child {
+            display: none;
+        }
     }
 }
 

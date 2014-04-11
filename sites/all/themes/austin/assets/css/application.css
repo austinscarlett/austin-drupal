@@ -247,13 +247,13 @@ a:hover {
 /* $sprite: image-url("sprite.svg"); */
 /* line 1, ../sass/global/_base.scss */
 body {
-  background: url('../images/bg-body-int.jpg?1396475874') no-repeat center top black;
+  background: url('../images/bg-body-int.jpg?1397237589') no-repeat center top black;
   color: #fff;
   font: 400 1em/1.5em "proxima-nova", Helvetica, arial, sans-serif;
 }
 /* line 5, ../sass/global/_base.scss */
 body.front {
-  background: url('../images/bg-body-home.jpg?1396475928') no-repeat center top black;
+  background: url('../images/bg-body-home.jpg?1397237589') no-repeat center top black;
 }
 
 /* line 10, ../sass/global/_base.scss */
@@ -302,7 +302,7 @@ body.front {
 /* line 2, ../sass/global/_icons.scss */
 [class*="icon-"] {
   display: inline-block;
-  background: url('../images/sprite.svg?1396374496') no-repeat 0 0;
+  background: url('../images/sprite.svg?1397237589') no-repeat 0 0;
 }
 
 /* line 7, ../sass/global/_icons.scss */
@@ -391,7 +391,7 @@ textarea {
   border: none;
   color: #fff;
   font-size: 1em;
-  font-family: Georgia, serif;
+  font-family: "proxima-nova", Helvetica, arial, sans-serif;
 }
 
 /* line 37, ../sass/global/_forms.scss */
@@ -741,8 +741,12 @@ input[type="submit"]:hover, button:hover {
   display: inline-block;
   margin: 0 0.5em;
 }
+/* line 7, ../sass/modules/_tabs.scss */
+.tabs li:last-child {
+  display: none;
+}
 
-/* line 10, ../sass/modules/_tabs.scss */
+/* line 13, ../sass/modules/_tabs.scss */
 .tabs a {
   display: inline-block;
   padding: 5px 10px;
@@ -750,7 +754,7 @@ input[type="submit"]:hover, button:hover {
   border-radius: 5px;
   color: #fff;
 }
-/* line 16, ../sass/modules/_tabs.scss */
+/* line 19, ../sass/modules/_tabs.scss */
 .tabs a:hover {
   background: #aaa;
 }
@@ -909,7 +913,7 @@ input[type="submit"]:hover, button:hover {
   width: 12px;
   height: 22px;
   margin-top: -11px;
-  background: url('../images/sprite.svg?1396374496');
+  background: url('../images/sprite.svg?1397237589');
   text-indent: -9999px;
 }
 
@@ -2018,7 +2022,7 @@ input[type="submit"]:hover, button:hover {
   display: block;
   width: 220px;
   height: 121px;
-  background: url('../images/logos.svg?1396980795') no-repeat 0 -192px;
+  background: url('../images/logos.svg?1397237589') no-repeat 0 -192px;
   text-indent: -9999em;
 }
 
