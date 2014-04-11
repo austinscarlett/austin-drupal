@@ -9,6 +9,7 @@ sites/*/private
 
 sites/all/themes/austin/.sass-cache
 
+.htaccess
 .DS_Store
 ._*
 
