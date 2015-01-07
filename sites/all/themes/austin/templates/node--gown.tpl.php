@@ -29,11 +29,19 @@
 	<div class="share">
 		<h3>Share this Gown</h3>
 		<ul>
-			<li class="ss-social ss-icon"><a href="" target="_blank">twitter</a></li>
-			<li class="ss-social ss-icon"><a href="" target="_blank">facebook</a></li>
+			<li class="ss-social ss-icon">
+			  <a href="http://twitter.com/share?text=Austin Scarlett - <?php print $title ?>" target="_blank">twitter</a>
+      </li>
+			<li class="ss-social ss-icon">
+			  <a href="http://www.facebook.com/sharer/sharer.php?u=http://www.austinscarlett.com/<?php print drupal_lookup_path('alias',"node/".$node->nid) ?>" target="_blank">facebook</a>
+      </li>
 			<li class="ss-icon">
-				<a href="mailto:?subject=<?php print $title ?>body=http://www.austinscarlett.com/events/<?php print drupal_lookup_path('alias',"node/".$node->nid) ?>" target="_blank" >email</a>
+				<a href="mailto:?subject=<?php print $title ?>body=http://www.austinscarlett.com/<?php print drupal_lookup_path('alias',"node/".$node->nid) ?>" target="_blank" >email</a>
 			</li>
+			<li>
+        <a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-shape="round" data-pin-height="32"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" /></a>
+        <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+      </li>
 		</ul>
 	</div>
 
