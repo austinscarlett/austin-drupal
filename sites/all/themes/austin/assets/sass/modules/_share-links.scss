@@ -1,15 +1,17 @@
 .share-links {
-    @include border-bottom;
-    clear: both;
-    padding-bottom: 18px;
-    text-align: center;
-    li {
-        display: inline-block;
-        padding: 0 10px;
-    }
-    .ss-icon {
-        color: $grey;
-        font-size: 20px;
-        line-height: 1;
-    }
+  @include border-bottom;
+  clear: both;
+  padding-bottom: 18px;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  .ss-icon {
+    color: $grey;
+    font-size: 20px;
+    line-height: 1;
+  }
 }

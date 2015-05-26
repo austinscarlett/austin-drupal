@@ -1,100 +1,104 @@
 
 .press-list .views-row {
-	float: left;
-    width: 552px;
-    margin: 0 $gutter 3em 0;
-    &:nth-child(2n) {
-        margin-right: 0;
-    }
-    &:nth-child(2n+1) {
-        clear: left;
-    }
+  float: left;
+  width: 552px;
+  margin: 0 $gutter 3em 0;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(2n+1) {
+    clear: left;
+  }
 }
 
 .press-list .attachment {
-    @include border-bottom;
-    margin-bottom: 2em;
-	padding-bottom: 2em;
-	.views-row {
-    	width: 100%;
-    	margin: 0;
-	}
-	.image {
-    	width: 454px;
-    	margin-right: $gutter;
-    	border: 2px solid #fff;
-	}
-	.post-info {
-	    float: left;
-    	width: 650px;
-	}
-	h3 {
-    	font-size: 30px;
-    	font-weight: 300;
-	}
-    .publication {
-    	margin-bottom: 12px;
-    }
-    .body {
-        font-size: 16px;
-        line-height: 24px;
-    }
+  @include border-bottom;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+}
+
+.press-list .attachment .views-row {
+  width: 100%;
+  margin: 0;
+}
+
+.press-list .attachment .image {
+  width: 454px;
+  margin-right: $gutter;
+  border: 2px solid #fff;
+}
+
+.press-list .attachment .post-info {
+  float: left;
+  width: 650px;
+}
+
+.press-list .attachment h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.press-list .attachment .publication {
+  margin-bottom: 12px;
+}
+
+.press-list .attachment .body {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .press-list .image {
-	float: left;
-	width: 160px;
-	margin-right: 18px;
+  float: left;
+  width: 160px;
+  margin-right: 18px;
 }
-
-/*
-.press-list .post-info {
-    float: left;
-    width: 374px;
-}
-*/
 
 .press-list h3 {
-	font-size: 18px;
-	text-transform: none;
-	a {
-    	color: #fff;
-    	&:hover {
-        	color: $red;
-    	}
-	}
+  font-size: 18px;
+  text-transform: none;
+}
+
+.press-list h3 a {
+  color: #fff;
+
+  &:hover {
+    color: $gold;
+  }
 }
 
 .press-list .publication {
-    margin-bottom: 8px;
-    color: $dk-grey;
-    font-size: 14px;
-    text-transform: uppercase;
+  margin-bottom: 8px;
+  color: $dk-grey;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .press-list .body {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.01em;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
 }
 
 .views-field-field-article-link a {
-	position: relative;
-	z-index: 99;
-	padding: 0 10px 0 12px;
-	color: #fff;
-	background: #fff;
-	&:hover {
-    	color: $red;
-    }
+  position: relative;
+  z-index: 99;
+  padding: 0 10px 0 12px;
+  color: #fff;
+  background: #fff;
+
+  &:hover {
+    color: $gold;
+  }
 }
 
 .node-type-article .post-title {
-    margin-bottom: 12px;
-    text-align: center;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 .article-link {
-    margin-bottom: 1em;
-    text-align: center;
+  margin-bottom: 1em;
+  text-align: center;
 }

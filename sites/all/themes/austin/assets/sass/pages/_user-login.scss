@@ -1,16 +1,19 @@
 
 #user-login {
-    width: 360px;
-    margin: 0 auto 4em;
-    .form-item {
-        border: none;
-    }
-    label {
-        position: static;
-        top: auto;
-        left: auto;
-    }
-    .form-text {
-        border: 1px solid #fff;
-    }
+  width: 360px;
+  margin: 0 auto 4em;
+
+  .form-item {
+    border: none;
+  }
+
+  label {
+    position: static;
+    top: auto;
+    left: auto;
+  }
+
+  .form-text {
+    border: 1px solid #fff;
+  }
 }

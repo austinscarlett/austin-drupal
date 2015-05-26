@@ -1,34 +1,35 @@
 
 .front .content {
-    width: 588px;
-    margin: 190px 0 $base*5;
-    padding-left: 98px;
+  width: 588px;
+  margin: 190px 0 $base*5;
+  padding-left: 98px;
 }
 
-.front .body {
-    h1 {
-        margin-bottom: 12px;
-        font-size: 42px;
-        letter-spacing: 0.09em;
-    }
-    p {
-        margin-bottom: 32px;
-        font-size: 15px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-    }
-    a {
-        display: inline-block;
-        color: #fff;
-        padding: 10px 30px;
-        background: transparent;
-        border: 2px solid #fff;
-        font-weight: $bold;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        &:hover {
-            background: #fff;
-            color: $red;
-        }
-    }
+.front .body h1 {
+  margin-bottom: 12px;
+  font-size: 42px;
+  letter-spacing: 0.09em;
+}
+
+.front .body p {
+  margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.front .body a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 30px;
+  background: transparent;
+  border: 2px solid #fff;
+  font-weight: $bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #fff;
+    color: $gold;
+  }
 }

@@ -1,55 +1,58 @@
 
 .view-stores .views-row {
-    @include cf;
-    @include border-bottom;
-    padding: 16px 0;
-    &:first-of-type {
-        @include border-top;
-    }
+  @include cf;
+  @include border-bottom;
+  padding: 16px 0;
+
+  &:first-of-type {
+    @include border-top;
+  }
 }
 
 .view-stores .col {
-    float: left;
+  float: left;
 }
 
 .view-stores .store-title {
-    width: 40%;
-    font-size: 18px;
-    font-weight: $book;
+  width: 40%;
+  font-size: 18px;
+  font-weight: $book;
 }
 
 .view-stores .store-state {
-    width: 20%;
-    min-height: 1px;
-    font-size: 14px;
-    font-weight: $bold;
-    text-transform: uppercase;    
+  width: 20%;
+  min-height: 1px;
+  font-size: 14px;
+  font-weight: $bold;
+  text-transform: uppercase;    
 }
 
 .view-stores .store-city {
-    width: 20%;
-    font-size: 14px;
-    font-weight: $bold;
-    text-transform: uppercase;    
+  width: 20%;
+  font-size: 14px;
+  font-weight: $bold;
+  text-transform: uppercase;    
 }
 
 .view-stores .store-map {
-    font-size: 14px;
-    font-weight: $bold;
-    text-transform: uppercase;
-    .icon-marker {
-        margin-left: 4px;
-        vertical-align: -3px;
-    }
+  font-size: 14px;
+  font-weight: $bold;
+  text-transform: uppercase;
+
+  .icon-marker {
+    margin-left: 4px;
+    vertical-align: -3px;
+  }
 }
 
 .view-stores .store-website {
-    float: right;
-    font-size: 14px;
-    font-weight: $bold;
-    text-transform: uppercase;    
-    .icon-visit {
-        margin-left: 4px;
-        vertical-align: -1px;
-    }
+  float: right;
+  font-size: 14px;
+  font-weight: $bold;
+  text-transform: uppercase;    
+
+  .icon-visit {
+    margin-left: 4px;
+    vertical-align: -1px;
+  }
 }

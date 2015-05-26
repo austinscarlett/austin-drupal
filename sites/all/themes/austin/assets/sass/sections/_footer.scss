@@ -1,115 +1,96 @@
 
 .footer {
-    @include background( linear-gradient(color-stops( transparent, #000 )) );
-    padding-top: $base;
-}
-
-.footer .block-title {
-    position: relative;
-    margin-bottom: 38px;
-    color: $grey;
-    font-size: 16px;
-    font-weight: $bold;
-    letter-spacing: 2px;
-	text-transform: uppercase;
-	&:before {
-    	content: "";
-    	position: absolute;
-    	left: 0;
-    	bottom: -16px;
-    	width: 40px;
-    	height: 1px;
-    	background: $red;
-	}
-}
-
-.footer .social-links {
-    position: relative;
-    margin-bottom: 36px;
-	&:before {
-    	content: "";
-    	position: absolute;
-    	left: 0;
-    	bottom: -16px;
-    	width: 40px;
-    	height: 1px;
-    	background: $red;
-	}
-}
-
-.footer .mailing-list {
-    p {
-        margin-bottom: 12px;
-    }
-    .form-item {
-        border: none;
-    }
-    label {
-        position: absolute;
-        top: 6px;
-        left: 0;
-        font: italic $book 18px/1 $bodoni;
-        text-transform: none;
-    }
-    .form-text {
-        padding-left: 0;
-        width: 206px;
-        background: none;
-        border-bottom: 1px solid #fff;
-    }
-    .form-actions {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-}
-
-.footer .contact-form {
-    margin-right: 0;
-    .webform-client-form {
-        padding-top: 4px;
-    }
-}
-
-.footer .copyright {
-	clear: both;
-	padding: 1em 0;
-	color: #727272;
-	font-size: 0.75em;
+  @include background( linear-gradient(color-stops( transparent, #000 )) );
+  padding-top: $base;
 }
 
 .footer a {
-	font: 400 12px/26px "proxima-nova", Arial, sans-serif;
-	text-transform: uppercase;
+  font: 400 12px/26px $proxima, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
-.footer .mail-list .webform-component {
-	float: left;
+.footer .block-title {
+  position: relative;
+  margin-bottom: 38px;
+  color: $grey;
+  font-size: 16px;
+  font-weight: $bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    width: 40px;
+    height: 1px;
+    background: $gold;
+  }
 }
 
-.footer .mail-list .form-actions {
-	float: right;
-	position: relative;
-	right: auto;
-	bottom: auto;
-	padding-top: 10px;
+.footer .social-links {
+  position: relative;
+  margin-bottom: 36px;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    width: 40px;
+    height: 1px;
+    background: $gold;
+  }
 }
 
-.footer .mail-list label {
-	font-style: italic;
+.footer .mailing-list p {
+  margin-bottom: 12px;
 }
 
-.footer .mail-list input[type="email"] {
-	position: relative;
-	z-index: 99;
-	width: 120px;
-	background: none;
-	border: none;
-	border-bottom: 1px solid #fff;
-	color: #b0b0b0;
+.footer .mailing-list .form-item {
+  border: none;
 }
 
-.footer .mail-list input[type="submit"] {
-	width: 40px;
+.footer .mailing-list label {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  font: italic $book 18px/1 $bodoni;
+  text-transform: none;
 }
+
+.footer .mailing-list .form-item .form-text {
+  padding-left: 0;
+  width: 206px;
+  background: none;
+  border-bottom: 1px solid #fff;
+}
+
+.footer .mailing-list .form-item .error {
+  border: none;
+  border-bottom: 1px solid #fff;  
+}
+
+.footer .mailing-list .form-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer .contact-form {
+  margin-right: 0;
+
+  .webform-client-form {
+    padding-top: 4px;
+  }
+}
+
+.footer .copyright {
+  clear: both;
+  padding: 1em 0;
+  color: #727272;
+  font-size: 0.75em;
+}
+
 
