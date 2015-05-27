@@ -147,33 +147,19 @@ strong {
   font-weight: 700;
 }
 
-/* line 46, ../sass/global/_typography.scss */
-a {
-  -moz-transition: all 0.15s ease-in;
-  -o-transition: all 0.15s ease-in;
-  -webkit-transition: all 0.15s ease-in;
-  transition: all 0.15s ease-in;
-  color: #fff;
-  text-decoration: none;
-}
-/* line 51, ../sass/global/_typography.scss */
-a:hover {
-  color: #a98b11;
-}
-
 /** COMMON TYPE STYLES
 ========================================================****/
-/* line 60, ../sass/global/_typography.scss */
+/* line 50, ../sass/global/_typography.scss */
 .title-bar {
   padding: 72px 0 0;
 }
 
-/* line 64, ../sass/global/_typography.scss */
+/* line 54, ../sass/global/_typography.scss */
 .page-title {
   margin-bottom: 0.25em;
   text-align: center;
 }
-/* line 68, ../sass/global/_typography.scss */
+/* line 58, ../sass/global/_typography.scss */
 .page-title:after {
   content: "";
   display: block;
@@ -183,7 +169,7 @@ a:hover {
   background: #a98b11;
 }
 
-/* line 78, ../sass/global/_typography.scss */
+/* line 68, ../sass/global/_typography.scss */
 .post-title {
   font-size: 48px;
   line-height: 1.1em;
@@ -191,22 +177,22 @@ a:hover {
   text-transform: none;
 }
 
-/* line 85, ../sass/global/_typography.scss */
+/* line 75, ../sass/global/_typography.scss */
 .block-page-content p,
 .body p {
   margin-bottom: 1em;
 }
 
-/* line 90, ../sass/global/_typography.scss */
+/* line 80, ../sass/global/_typography.scss */
 .body a {
   color: #a98b11;
 }
-/* line 93, ../sass/global/_typography.scss */
+/* line 83, ../sass/global/_typography.scss */
 .body a:hover {
   color: #fff;
 }
 
-/* line 98, ../sass/global/_typography.scss */
+/* line 88, ../sass/global/_typography.scss */
 .category {
   position: relative;
   margin-bottom: 32px;
@@ -215,7 +201,7 @@ a:hover {
   letter-spacing: 2px;
   text-align: center;
 }
-/* line 106, ../sass/global/_typography.scss */
+/* line 96, ../sass/global/_typography.scss */
 .category:after {
   content: "";
   position: absolute;
@@ -227,18 +213,18 @@ a:hover {
   background: #a98b11;
 }
 
-/* line 118, ../sass/global/_typography.scss */
+/* line 108, ../sass/global/_typography.scss */
 .views-field-title a .post-title:hover {
   color: #323232;
 }
 
-/* line 122, ../sass/global/_typography.scss */
+/* line 112, ../sass/global/_typography.scss */
 .read-more a {
   color: #a98b11;
   font-size: 14px;
   text-transform: uppercase;
 }
-/* line 127, ../sass/global/_typography.scss */
+/* line 117, ../sass/global/_typography.scss */
 .read-more a:hover {
   color: #fff;
 }
@@ -252,7 +238,7 @@ body {
 
 /* line 7, ../sass/global/_base.scss */
 .front {
-  background: #fff url('../images/bg-body-home.jpg?1432751722') no-repeat center 90px;
+  background: #fff url('../images/bg-body-home.jpg?1432755149') no-repeat center 90px;
 }
 
 /* line 11, ../sass/global/_base.scss */
@@ -375,14 +361,14 @@ svg:not(:root) {
 .icon-marker {
   width: 11px;
   height: 17px;
-  background: url('../images/sprite-stores.svg?1432673946') no-repeat 0 -16px;
+  background: url('../images/sprite-stores.svg?1432755149') no-repeat 0 -16px;
 }
 
 /* line 70, ../sass/global/_icons.scss */
 .icon-visit {
   width: 16px;
   height: 13px;
-  background: url('../images/sprite-stores.svg?1432673946') no-repeat;
+  background: url('../images/sprite-stores.svg?1432755149') no-repeat;
 }
 
 /* line 76, ../sass/global/_icons.scss */
@@ -622,6 +608,20 @@ input[type="submit"]:hover {
 }
 
 /* line 2, ../sass/global/_buttons.scss */
+a {
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 7, ../sass/global/_buttons.scss */
+a:hover {
+  color: #a98b11;
+}
+
+/* line 12, ../sass/global/_buttons.scss */
 .btn {
   display: inline-block;
   padding: 5px 10px;
@@ -630,7 +630,7 @@ input[type="submit"]:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* line 10, ../sass/global/_buttons.scss */
+/* line 20, ../sass/global/_buttons.scss */
 .btn:hover {
   background: #fff;
 }
@@ -1923,7 +1923,7 @@ input[type="submit"]:hover {
   display: block;
   width: 220px;
   height: 121px;
-  background: url('../images/logos.svg?1432752109') no-repeat 0 -151px;
+  background: url('../images/logos.svg?1432755149') no-repeat 0 -151px;
   text-indent: -9999em;
 }
 
@@ -2025,8 +2025,12 @@ input[type="submit"]:hover {
 .front .footer a {
   color: #2b2b2b;
 }
+/* line 19, ../sass/sections/_footer.scss */
+.front .footer a:hover {
+  color: #a98b11;
+}
 
-/* line 20, ../sass/sections/_footer.scss */
+/* line 24, ../sass/sections/_footer.scss */
 .footer .block-title {
   position: relative;
   margin-bottom: 38px;
@@ -2036,7 +2040,7 @@ input[type="submit"]:hover {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-/* line 29, ../sass/sections/_footer.scss */
+/* line 33, ../sass/sections/_footer.scss */
 .footer .block-title:before {
   content: "";
   position: absolute;
@@ -2047,12 +2051,12 @@ input[type="submit"]:hover {
   background: #a98b11;
 }
 
-/* line 40, ../sass/sections/_footer.scss */
+/* line 44, ../sass/sections/_footer.scss */
 .footer .social-links {
   position: relative;
   margin-bottom: 36px;
 }
-/* line 44, ../sass/sections/_footer.scss */
+/* line 48, ../sass/sections/_footer.scss */
 .footer .social-links:before {
   content: "";
   position: absolute;
@@ -2063,22 +2067,22 @@ input[type="submit"]:hover {
   background: #a98b11;
 }
 
-/* line 55, ../sass/sections/_footer.scss */
+/* line 59, ../sass/sections/_footer.scss */
 .footer .mailing-list p {
   margin-bottom: 12px;
 }
 
-/* line 59, ../sass/sections/_footer.scss */
+/* line 63, ../sass/sections/_footer.scss */
 .front .footer .mailing-list p {
   color: #676767;
 }
 
-/* line 63, ../sass/sections/_footer.scss */
+/* line 67, ../sass/sections/_footer.scss */
 .footer .mailing-list .form-item {
   border: none;
 }
 
-/* line 67, ../sass/sections/_footer.scss */
+/* line 71, ../sass/sections/_footer.scss */
 .footer .mailing-list label {
   position: absolute;
   top: 6px;
@@ -2087,7 +2091,7 @@ input[type="submit"]:hover {
   text-transform: none;
 }
 
-/* line 75, ../sass/sections/_footer.scss */
+/* line 79, ../sass/sections/_footer.scss */
 .footer .mailing-list .form-item .form-text {
   padding-left: 0;
   width: 206px;
@@ -2095,40 +2099,40 @@ input[type="submit"]:hover {
   border-bottom: 1px solid #fff;
 }
 
-/* line 82, ../sass/sections/_footer.scss */
+/* line 86, ../sass/sections/_footer.scss */
 .front .footer .mailing-list .form-item .form-text {
   border-color: #676767;
 }
 
-/* line 86, ../sass/sections/_footer.scss */
+/* line 90, ../sass/sections/_footer.scss */
 .footer .mailing-list .form-item .error {
   border: none;
   border-bottom: 1px solid #fff;
   box-shadow: none;
 }
 
-/* line 92, ../sass/sections/_footer.scss */
+/* line 96, ../sass/sections/_footer.scss */
 .front .footer .mailing-list .form-item .error {
   border-color: #676767;
 }
 
-/* line 96, ../sass/sections/_footer.scss */
+/* line 100, ../sass/sections/_footer.scss */
 .footer .mailing-list .form-actions {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-/* line 102, ../sass/sections/_footer.scss */
+/* line 106, ../sass/sections/_footer.scss */
 .footer .contact-form {
   margin-right: 0;
 }
-/* line 105, ../sass/sections/_footer.scss */
+/* line 109, ../sass/sections/_footer.scss */
 .footer .contact-form .webform-client-form {
   padding-top: 4px;
 }
 
-/* line 110, ../sass/sections/_footer.scss */
+/* line 114, ../sass/sections/_footer.scss */
 .footer .copyright {
   clear: both;
   padding: 1em 0;
