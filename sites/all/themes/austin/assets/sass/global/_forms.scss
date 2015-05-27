@@ -92,21 +92,6 @@ select {
   border-top: 5px solid $gold;
 }
 
-input[type="submit"] {
-  @include single-transition(background, 0.15s, ease-in);
-  height: 28px;
-	padding: 0 8px;
-	background: $gold;
-	border: none;
-	color: #fff;
-	font: $semi 1em/1 $proxima;
-	text-transform: uppercase;
-}
-
-input[type="submit"]:hover {
-	background: #be9e1a;
-}
-
 .not-front.page-node-done #content {
 	width: 100%;
 	padding: 4em 0;
@@ -129,6 +114,10 @@ input[type="submit"]:hover {
 
 #user-login .form-item {
 	margin-bottom: 1em;
+}
+
+label .form-required {
+  display: none;
 }
 
 .form-item input.error,

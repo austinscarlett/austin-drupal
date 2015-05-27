@@ -22,3 +22,17 @@ a {
   }
 }
 
+input[type="submit"] {
+  @include single-transition(background, 0.15s, ease-in);
+  height: 28px;
+	padding: 0 10px;
+	background: $gold;
+	border: none;
+	color: #fff;
+	font: $semi 1em/1 $proxima;
+	text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+	background: #be9e1a;
+}

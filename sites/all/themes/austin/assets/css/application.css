@@ -494,26 +494,6 @@ select option {
 }
 
 /* line 95, ../sass/global/_forms.scss */
-input[type="submit"] {
-  -moz-transition: background 0.15s ease-in;
-  -o-transition: background 0.15s ease-in;
-  -webkit-transition: background 0.15s ease-in;
-  transition: background 0.15s ease-in;
-  height: 28px;
-  padding: 0 8px;
-  background: #a98b11;
-  border: none;
-  color: #fff;
-  font: 600 1em/1 "proxima-nova", Helvetica, arial, sans-serif;
-  text-transform: uppercase;
-}
-
-/* line 106, ../sass/global/_forms.scss */
-input[type="submit"]:hover {
-  background: #be9e1a;
-}
-
-/* line 110, ../sass/global/_forms.scss */
 .not-front.page-node-done #content {
   width: 100%;
   padding: 4em 0;
@@ -522,27 +502,32 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-/* line 118, ../sass/global/_forms.scss */
+/* line 103, ../sass/global/_forms.scss */
 .node-webform .webform-component {
   margin-bottom: 1em;
 }
 
-/* line 122, ../sass/global/_forms.scss */
+/* line 107, ../sass/global/_forms.scss */
 .page-node-done .links {
   display: none;
 }
 
-/* line 126, ../sass/global/_forms.scss */
+/* line 111, ../sass/global/_forms.scss */
 .description {
   font-size: 0.75em;
 }
 
-/* line 130, ../sass/global/_forms.scss */
+/* line 115, ../sass/global/_forms.scss */
 #user-login .form-item {
   margin-bottom: 1em;
 }
 
-/* line 134, ../sass/global/_forms.scss */
+/* line 119, ../sass/global/_forms.scss */
+label .form-required {
+  display: none;
+}
+
+/* line 123, ../sass/global/_forms.scss */
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
@@ -550,7 +535,7 @@ input[type="submit"]:hover {
   box-shadow: 0 0 0 1px #a98b11;
 }
 
-/* line 141, ../sass/global/_forms.scss */
+/* line 130, ../sass/global/_forms.scss */
 .messages.error,
 .form-item label.error {
   display: none;
@@ -633,6 +618,26 @@ a:hover {
 /* line 20, ../sass/global/_buttons.scss */
 .btn:hover {
   background: #fff;
+}
+
+/* line 25, ../sass/global/_buttons.scss */
+input[type="submit"] {
+  -moz-transition: background 0.15s ease-in;
+  -o-transition: background 0.15s ease-in;
+  -webkit-transition: background 0.15s ease-in;
+  transition: background 0.15s ease-in;
+  height: 28px;
+  padding: 0 10px;
+  background: #a98b11;
+  border: none;
+  color: #fff;
+  font: 600 1em/1 "proxima-nova", Helvetica, arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 36, ../sass/global/_buttons.scss */
+input[type="submit"]:hover {
+  background: #be9e1a;
 }
 
 /* Modules */
