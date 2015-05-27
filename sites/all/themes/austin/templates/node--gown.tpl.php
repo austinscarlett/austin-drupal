@@ -35,11 +35,11 @@
 			<li>
 			  <a href="http://www.facebook.com/sharer/sharer.php?u=http://www.austinscarlett.com/<?php print drupal_lookup_path('alias',"node/".$node->nid) ?>" target="_blank"><svg class="icon-circle-facebook"><use xlink:href="#icon-circle-facebook" /></svg></a>
       </li>
-			<li class="ss-icon">
+			<li>
 				<a href="mailto:?subject=<?php print $title ?>body=http://www.austinscarlett.com/<?php print drupal_lookup_path('alias',"node/".$node->nid) ?>" target="_blank" ><svg class="icon-circle-email"><use xlink:href="#icon-circle-email" /></svg></a>
 			</li>
 			<li>
-        <a href="http://pinterest.com/pin/create/button/?url=<?php print drupal_lookup_path('alias',"node/".$node->nid) ?>&description=<?php print $title ?>" target="_blank"><svg class="icon-circle-pinterest"><use xlink:href="#icon-circle-pinterest" /></svg></a>
+        <a href="http://pinterest.com/pin/create/button/?url=http://www.austinscarlett.com/<?php print drupal_lookup_path('alias',"node/".$node->nid) ?>&media=<?php print render (file_create_url($node->field_image['und'][0]['uri'])); ?>&description=<?php print $title ?>" target="_blank"><svg class="icon-circle-pinterest"><use xlink:href="#icon-circle-pinterest" /></svg></a>
       </li>
 		</ul>
 	</div>
@@ -52,5 +52,3 @@
         </a>
         <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
 -->
-
-<?php // print image_style_url('image', $node->field_images['und'][0]['uri']); ?> 

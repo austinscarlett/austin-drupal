@@ -48,4 +48,3 @@
     </div>
 
 </div>
-<?php // print image_style_url('image', $node->field_images['und'][0]['uri']); ?> 
