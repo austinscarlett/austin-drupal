@@ -231,17 +231,19 @@ strong {
 
 /* line 1, ../sass/global/_base.scss */
 body {
-  background: #000 url('../images/bg-body-int.jpg?1397237589') no-repeat center top;
+  background: #000 url('../images/bg-body-int.jpg?1432760153') no-repeat center top;
+  background-size: 1730px auto;
   color: #fff;
   font: 400 1em/1.5em "proxima-nova", Helvetica, arial, sans-serif;
 }
 
-/* line 7, ../sass/global/_base.scss */
+/* line 8, ../sass/global/_base.scss */
 .front {
-  background: #fff url('../images/bg-body-home.jpg?1432755149') no-repeat center 90px;
+  background: #fff url('../images/bg-body-home.jpg?1432760133') no-repeat center 90px;
+  background-size: 1730px auto;
 }
 
-/* line 11, ../sass/global/_base.scss */
+/* line 13, ../sass/global/_base.scss */
 .wrapper {
   *zoom: 1;
   width: 1140px;
@@ -257,20 +259,20 @@ body {
   clear: both;
 }
 
-/* line 17, ../sass/global/_base.scss */
+/* line 19, ../sass/global/_base.scss */
 .main .wrapper {
   width: 1212px;
   padding: 24px 36px;
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 23, ../sass/global/_base.scss */
+/* line 25, ../sass/global/_base.scss */
 .front .main .wrapper {
   min-height: 700px;
   background: no-repeat;
 }
 
-/* line 28, ../sass/global/_base.scss */
+/* line 30, ../sass/global/_base.scss */
 .page-node-4 .content,
 .page-node-5 .content,
 .page-node-52 .content,
@@ -280,7 +282,7 @@ body {
   width: 846px;
 }
 
-/* line 37, ../sass/global/_base.scss */
+/* line 39, ../sass/global/_base.scss */
 .right-sidebar {
   float: right;
   width: 228px;

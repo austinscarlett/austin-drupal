@@ -1,11 +1,13 @@
 body {
   background: #000 $bg-body no-repeat center top;
+  background-size: 1730px auto;
   color: #fff;
 	font: $book 1em/1.5em $proxima;
 }
 
 .front {
   background: #fff $bg-body-home no-repeat center 90px;
+  background-size: 1730px auto;
 }
 
 .wrapper {
