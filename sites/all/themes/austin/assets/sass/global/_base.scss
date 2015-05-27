@@ -1,11 +1,12 @@
 body {
-  background: $bg-body no-repeat center top #000;
+  background: #000 $bg-body no-repeat center top;
   color: #fff;
 	font: $book 1em/1.5em $proxima;
+}
 
-	&.front {
-    	background: $bg-body-home no-repeat center top #000;
-	}
+.front {
+  background: #fff $bg-body-home no-repeat center top;
+  background: #fff;
 }
 
 .wrapper {
@@ -21,6 +22,7 @@ body {
 }
 
 .front .main .wrapper {
+  min-height: 700px;
   background: no-repeat;
 }
 

@@ -4,9 +4,17 @@
   padding-top: $base;
 }
 
+.front .footer {
+  @include background( linear-gradient(color-stops( transparent, #fff )) );
+}
+
 .footer a {
   font: 400 12px/26px $proxima, Arial, sans-serif;
   text-transform: uppercase;
+}
+
+.front .footer a {
+  color: $black;
 }
 
 .footer .block-title {
@@ -48,6 +56,10 @@
   margin-bottom: 12px;
 }
 
+.front .footer .mailing-list p {
+  color: $dk-grey;
+}
+
 .footer .mailing-list .form-item {
   border: none;
 }
@@ -67,14 +79,23 @@
   border-bottom: 1px solid #fff;
 }
 
+.front .footer .mailing-list .form-item .form-text {
+  border-color: $dk-grey;
+}
+
 .footer .mailing-list .form-item .error {
   border: none;
-  border-bottom: 1px solid #fff;  
+  border-bottom: 1px solid #fff;
+  box-shadow: none;
+}
+
+.front .footer .mailing-list .form-item .error {
+  border-color: $dk-grey;
 }
 
 .footer .mailing-list .form-actions {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
 }
 
@@ -92,5 +113,3 @@
   color: #727272;
   font-size: 0.75em;
 }
-
-
