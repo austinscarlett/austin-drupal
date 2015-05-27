@@ -252,7 +252,7 @@ body {
 }
 /* line 5, ../sass/global/_base.scss */
 body.front {
-  background: url('../images/bg-body-home.jpg?1397237589') no-repeat center top #000;
+  background: url('../images/bg-body-home.jpg?1432754049') no-repeat center top #000;
 }
 
 /* line 10, ../sass/global/_base.scss */
@@ -2020,7 +2020,7 @@ input[type="submit"]:hover, button:hover {
   display: block;
   width: 220px;
   height: 121px;
-  background: url('../images/logos.svg?1397237589') no-repeat 0 -192px;
+  background: url('../images/logos.svg?1432754049') no-repeat 0 -192px;
   text-indent: -9999em;
 }
 
