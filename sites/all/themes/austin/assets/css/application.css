@@ -252,11 +252,10 @@ body {
 
 /* line 7, ../sass/global/_base.scss */
 .front {
-  background: #fff url('../images/bg-body-home.jpg?1397237589') no-repeat center top;
-  background: #fff;
+  background: #fff url('../images/bg-body-home.jpg?1432751722') no-repeat center 90px;
 }
 
-/* line 12, ../sass/global/_base.scss */
+/* line 11, ../sass/global/_base.scss */
 .wrapper {
   *zoom: 1;
   width: 1140px;
@@ -272,20 +271,20 @@ body {
   clear: both;
 }
 
-/* line 18, ../sass/global/_base.scss */
+/* line 17, ../sass/global/_base.scss */
 .main .wrapper {
   width: 1212px;
   padding: 24px 36px;
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 24, ../sass/global/_base.scss */
+/* line 23, ../sass/global/_base.scss */
 .front .main .wrapper {
   min-height: 700px;
   background: no-repeat;
 }
 
-/* line 29, ../sass/global/_base.scss */
+/* line 28, ../sass/global/_base.scss */
 .page-node-4 .content,
 .page-node-5 .content,
 .page-node-52 .content,
@@ -295,7 +294,7 @@ body {
   width: 846px;
 }
 
-/* line 38, ../sass/global/_base.scss */
+/* line 37, ../sass/global/_base.scss */
 .right-sidebar {
   float: right;
   width: 228px;
@@ -1924,14 +1923,14 @@ input[type="submit"]:hover {
   display: block;
   width: 220px;
   height: 121px;
-  background: url('../images/logos.svg?1397237589') no-repeat 0 -192px;
+  background: url('../images/logos.svg?1432752109') no-repeat 0 -151px;
   text-indent: -9999em;
 }
 
 /* line 29, ../sass/sections/_header.scss */
 .front .logo a {
-  width: 335px;
-  height: 185px;
+  width: 264px;
+  height: 145px;
   background-position: 0 0;
 }
 
