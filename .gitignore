@@ -1,17 +1,16 @@
 # Ignore configuration files that may contain sensitive information.
-sites/*/*settings*.php
+sites/*/settings*.php
 
-# Ignore paths that contain generated content.
-cache/
-files/
+# Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
 
+# SASS Cache
+.sass-cache
 sites/all/themes/austin/.sass-cache
 
-.htaccess
-.DS_Store
-._*
-
-*.tar.gz
+*.log
 *.sql
+
+.htaccess
+
