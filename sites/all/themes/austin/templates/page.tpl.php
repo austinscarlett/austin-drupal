@@ -1,3 +1,5 @@
+<?PHP include('sites/all/themes/austin/partials/svg.php'); ?>
+
 <header id="header" class="header">
 	<div class="wrapper">
 	
@@ -49,8 +51,8 @@
 ?>			
 <?php if(isset($node) && $node->type == "gown"): ?>
 <div class="gown-nav clearfix">
-	<?php print bx_prev_link($node->nid, 'gowns', '<span class="icon-prev"></span> Previous'); ?>
-	<?php print bx_next_link($node->nid, 'gowns', 'Next <span class="icon-next"></span>'); ?>
+	<?php print bx_prev_link($node->nid, 'gowns', '<svg class="icon-prev"><use xlink:href="#icon-prev" /></svg> Previous'); ?>
+	<?php print bx_next_link($node->nid, 'gowns', 'Next <svg class="icon-next"><use xlink:href="#icon-next" /></svg>'); ?>
 </div>
 <?php endif; ?>
 			

@@ -1,13 +1,17 @@
 
 .webform-client-form {
-    @include cf;
-    position: relative;
+  @include cf;
+  position: relative;
 }
 
 .form-item {
-    position: relative;
+  position: relative;
 	border: 1px solid #fff;
 	border: 1px solid rgba(#fff, 0.4);
+}
+
+.front .form-item {
+  border-color: $dk-grey;
 }
 
 label {
@@ -20,11 +24,16 @@ label {
 	text-transform: uppercase;    
 }
 
+.front label {
+  color: $dk-grey;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
-select,
 textarea {
+  @include appearance(none);
+  outline: none; 
 	max-width: 100%;
 	padding: 5px 8px;
 	background: transparent;
@@ -34,50 +43,53 @@ textarea {
 	font-family: $proxima;
 }
 
+.front input[type="text"],
+.front input[type="email"],
+.front input[type="password"],
+.front textarea {
+  color: $dk-grey;
+}
+
 textarea {
-    resize: none;
+  resize: none;
 }
 
 select {
-    @include appearance(none);
-    position: relative;
-    z-index: 20;
+  @include appearance(none);
+  position: relative;
+  z-index: 20;
+	max-width: 100%;
+  height: 30px;
+	padding: 0 8px;
+	border: none;
+	background: transparent;
 	color: #fff;
-	font: $bold 14px/1em $proxima;
-	text-transform: uppercase;
-    text-indent: 0.01px;
-    text-overflow: "";
-    option {
-        background: #000;
-    }
+  font: $bold 14px/1em $proxima;
+  text-transform: uppercase;
+  text-indent: 0.01px;
+  text-overflow: "";
+
+  option {
+    background: #000;
+  }
+}
+
+.front select {
+  color: $dk-grey;
 }
 
 .webform-component-select:before,
 .form-type-select:before {
-    content: "";
-    position: absolute;
-    top: 12px;
-    right: 10px;
-    z-index: 10;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid $red;
-}
-
-input[type="submit"] {
-    @include single-transition(background, 0.15s, ease-in);
-	padding: 5px 8px;
-	background: $red;
-	border: none;
-	color: #fff;
-	font: $semi 1em/1 $proxima;
-	text-transform: uppercase;
-}
-
-input[type="submit"]:hover {
-	background: #ff003a;
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid $gold;
 }
 
 .not-front.page-node-done #content {
@@ -104,197 +116,19 @@ input[type="submit"]:hover {
 	margin-bottom: 1em;
 }
 
+label .form-required {
+  display: none;
+}
+
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
-	border: 1px solid $red;
+  border: none;
+	box-shadow:  0 0 0 1px $gold;
 }
 
 .messages.error,
 .form-item label.error {
-    display: none;
-    visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
-
-
-/*
-
-.form-block {
-    margin-bottom: $base;
-}
-
-.form-item,
-.form-item-set {
-	margin-bottom: 12px;
-	&:last-of-type {
-    	margin-bottom: 0;
-	}
-}
-
-.form-item-set .form-item {
-    margin-bottom: 0;
-}
-
-.form-two-col {
-    @include cf;
-    .form-item {
-    	float: left;
-    	width: 42%;
-    	margin-right: 4%;
-
-        @include bp-max-width($xsmall) {
-            float: none;
-            width: 100%;
-            margin-right: 0;
-        }
-    }
-}
-
-label {
-	display: block;
-	margin-bottom: 2px;
-	font-family: $proxima;
-	font-size: 16px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-select {
-	width: 100%;
-	max-width: 340px;
-	padding: 8px 12px;
-	background: rgba($lt-grey, 0.3);
-	border: 1px solid $clay;
-	border-radius: 5px;
-	font: 400 1em/1em  $proxima;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-	border: 1px solid $dk-clay;
-}
-
-textarea {
-	height: 5em;
-}
-*/
-
-
-/** Fieldset ============**/
-/*
-
-fieldset {
-    margin-bottom: $base*2;
-    &:last-of-type {
-        margin-bottom: $base;
-    }
-}
-
-fieldset .title,
-.order-summary .title {
-    padding-bottom: 12px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid $md-grey;
-    font: $book 24px/1 $proxima;
-}
-
-*/
-
-/** Checkboxes ============**/
-
-/*
-.form-checkbox {
-    position: relative;
-    margin-bottom: 0.5em;
-    input {
-        opacity: 0;
-        float: left;
-        width: 20px;
-    }
-}
-
-.form-checkbox label {
-    padding-left: 20px;
-    margin-bottom: 0;
-    cursor: pointer;
-    color: $dk-green;
-    font-family: $proxima;
-    font-size: 13px;
-    &:before {
-        content: "";
-        position: absolute;
-        top: 5px;
-        left: 0;
-        width: 13px;
-        height: 13px;
-        background: $md-grey;
-        border-radius: 3px;
-    }
-    
-    .description {
-        display: block;
-        color: $clay;
-        font-size: 12px;
-        line-height: 1;
-    }
-}
-
-.form-checkbox input[type="checkbox"]:checked + label:after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 13px;
-    height: 15px;
-    background: $checkmarks no-repeat 0 0;
-}
-
-.checkboxes input {
-    opacity: 0;
-    float: left;
-    width: 20px;
-}
-
-*/
-
-/** Radio ============**/
-
-/*
-.form-radio {
-    label, input {
-        display: inline-block;
-    }
-}
-*/
-
-
-/** Buttons ============**/
-
-/*
-input[type="submit"], button {
-	padding: 0.5em 1em 0.66em;
-	border-radius: 4px;
-	background: $red;
-	color: #fff;
-	font-size: 18px;
-	text-transform: uppercase;
-	border: none;
-	font: 400 1em/1.5em $kult;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-ms-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	cursor: pointer;
-
-    @include bp-max-width($small) {
-        width: 100%;
-    }
-}
-
-input[type="submit"]:hover, button:hover {
-	background: $dk-red;
-	color: #fff;
-}
-*/

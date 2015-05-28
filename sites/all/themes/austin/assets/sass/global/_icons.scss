@@ -1,40 +1,80 @@
 
+svg {
+/*   @include global-transition; */
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+[class^="icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*
 [class*="icon-"] {
     display: inline-block;
     background: $sprite no-repeat 0 0;
 }
+*/
 
-.icon-marker {
-    width: 11px;
-    height: 16px;
+.icon-circle-twitter {
+  width: 36px;
+  height: 36px;
+  fill: $gold;
 }
 
-.icon-visit {
-    width: 16px;
-    height: 13px;
-    background-position: 0 -19px;
+.icon-circle-facebook {
+  width: 36px;
+  height: 36px;
+  fill: $gold;
+}
+
+.icon-circle-email {
+  width: 36px;
+  height: 36px;
+  fill: $gold;
+}
+
+.icon-circle-pinterest {
+  width: 36px;
+  height: 36px;
+  fill: $gold;
 }
 
 .icon-prev {
-	width: 12px;
-	height: 22px;
-    background-position: 0 -38px;
+  width: 12px;
+  height: 22px;
+  fill: $gold;
 }
 
 .icon-next {
-	width: 12px;
-	height: 22px;
-    background-position: 0 -65px;
+  width: 12px;
+  height: 22px;
+  fill: $gold;
 }
 
 .icon-zoom {
-    width: 50px;
-    height: 50px;
-    background-position: 0 -91px;
+  width: 50px;
+  height: 50px;
+  fill: $gold;
+}
+
+.icon-marker {
+  width: 11px;
+  height: 17px;
+  background: $sprite-stores no-repeat 0 -16px;
+}
+
+.icon-visit {
+  width: 16px;
+  height: 13px;
+  background: $sprite-stores no-repeat;
 }
 
 .icon-calendar {
-    width: 14px;
-    height: 14px;
-    background-position: 0 -149px;
+  width: 14px;
+  height: 14px;
+  fill: $gold;
 }

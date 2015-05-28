@@ -1,38 +1,42 @@
 body {
-    background: $bg-body no-repeat center top #000;
-    color: #fff;
+  background: #000 $bg-body no-repeat center top;
+  background-size: 1730px auto;
+  color: #fff;
 	font: $book 1em/1.5em $proxima;
-	&.front {
-    	background: $bg-body-home no-repeat center top #000;
-	}
+}
+
+.front {
+  background: #fff $bg-body-home no-repeat center 90px;
+  background-size: 1730px auto;
 }
 
 .wrapper {
-    @include cf;
-    width: 1140px;
-    margin: 0 auto;
+  @include cf;
+  width: 1140px;
+  margin: 0 auto;
 }
 
 .main .wrapper {
-    width: 1212px;
-    padding: $base 36px;
-    background: rgba(#000, 0.7);
+  width: 1212px;
+  padding: $base 36px;
+  background: rgba(#000, 0.7);
 }
 
 .front .main .wrapper {
-    background: no-repeat;
+  min-height: 700px;
+  background: no-repeat;
 }
 
 .page-node-4 .content,
 .page-node-5 .content,
+.page-node-52 .content,
 .node-type-blog-post .content,
 .node-type-article .content {
-    float: left;
-    width: 846px;
+  float: left;
+  width: 846px;
 }
 
 .right-sidebar {
-    float: right;
+  float: right;
 	width: 228px;
 }
-

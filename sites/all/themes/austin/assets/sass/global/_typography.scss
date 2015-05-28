@@ -25,31 +25,22 @@ h2 {
 }
 
 h3 {
-    font-size: 21px;
-    line-height: 1.25em;
-    font-weight: $semi;
-    letter-spacing: 1px;
+  font-size: 21px;
+  line-height: 1.25em;
+  font-weight: $semi;
+  letter-spacing: 1px;
 }
 
 p {
-    letter-spacing: 0.017em;
+  letter-spacing: 0.017em;
 }
 
 em {
-    font-style: italic;
+  font-style: italic;
 }
 
 strong {
-    font-weight: $bold;
-}
-
-a {
-    @include single-transition(all, 0.15s, ease-in);
-	color: #fff;
-	text-decoration: none;
-    &:hover {
-    	color: $red;
-    }
+  font-weight: $bold;
 }
 
 
@@ -57,28 +48,28 @@ a {
 ========================================================****/
 
 .title-bar {
-    padding: $base*3 0 0;
+  padding: $base*3 0 0;
 }
 
 .page-title {
 	margin-bottom: 0.25em;
 	text-align: center;
+
 	&:after {
-    	content: "";
-    	display: block;
-    	width: 100px;
-    	height: 2px;
-    	margin: $base auto 32px;
-    	background: $red;
+  	content: "";
+  	display: block;
+  	width: 100px;
+  	height: 2px;
+  	margin: $base auto 32px;
+  	background: $gold;
 	}
 }
 
 .post-title {
-/*  font: $book 48px/1.1em $bodoni */
-    font-size: 48px;
-    line-height: 1.1em;
-    letter-spacing: 2px;
-    text-transform: none;
+  font-size: 48px;
+  line-height: 1.1em;
+  letter-spacing: 2px;
+  text-transform: none;
 }
 
 .block-page-content p,
@@ -87,29 +78,31 @@ a {
 }
 
 .body a {
-    color: $red;
-    &:hover {
-        color: #fff;
-    }
+  color: $gold;
+
+  &:hover {
+      color: #fff;
+  }
 }
 
 .category {
-    position: relative;
-    margin-bottom: 32px;
-    color: $grey;
-    font: italic $book 16px/1em $bodoni;
-    letter-spacing: 2px;
-    text-align: center;
-    &:after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: -16px;
-        width: 72px;
-        height: 1px;
-        margin-left: -36px;
-        background: $red;
-    }
+  position: relative;
+  margin-bottom: 32px;
+  color: $grey;
+  font: italic $book 16px/1em $bodoni;
+  letter-spacing: 2px;
+  text-align: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    width: 72px;
+    height: 1px;
+    margin-left: -36px;
+    background: $gold;
+  }
 }
 
 .views-field-title a .post-title:hover {
@@ -117,11 +110,11 @@ a {
 }
 
 .read-more a {
-    color: $red;
-    font-size: 14px;
+  color: $gold;
+  font-size: 14px;
 	text-transform: uppercase;
+
 	&:hover {
-    	color: #fff;
+  	color: #fff;
 	}
 }
-

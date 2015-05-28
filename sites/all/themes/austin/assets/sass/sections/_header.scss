@@ -1,8 +1,14 @@
 .header {
 	height: 140px;
+	
 	.wrapper {
-    	position: relative;
+  	position: relative;
 	}
+}
+
+.front .header {
+  height: 90px;
+  background: #fff;
 }
 
 .logo {
@@ -10,40 +16,54 @@
 	top: 16px;
 	left: -2px;
 	z-index: 99;
-    a {
-    	display: block;
-    	width: 220px;
-    	height: 121px;
-    	background: $logos no-repeat 0 -192px;
-    	text-indent: -9999em;
-    }
+}
+
+.logo a {
+	display: block;
+	width: 220px;
+	height: 121px;
+	background: $logos no-repeat 0 -151px;
+	text-indent: -9999em;
 }
 
 .front .logo a {
-    width: 335px;
-    height: 185px;
-    background-position: 0 0;
+  width: 264px;
+  height: 145px;
+  background-position: 0 0;
 }
 
 .main-nav {
 	position: relative;
 	z-index: 99;
 	float: right;
-	padding-top: 46px;
+	padding-top: 24px;
 }
 
 .main-nav li {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 60px;
-    &:first-of-type {
-        margin-left: 0;
-    }
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 60px;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
 }
 
 .main-nav a {
-	font: $semi 0.813em/1em $proxima;
+	font: $semi 0.875em/1em $proxima;
 	text-transform: uppercase;
+	
+	&:hover, &.active {
+  	color: $gold;
+	}
+}
+
+.front .main-nav a {
+  color: $black;
+
+	&:hover {
+  	color: $gold;
+	}
 }
 
 .menu-208 a:before {
@@ -56,10 +76,10 @@
 
 .main-nav .menu-208 a:before,
 .main-nav .menu-209 a:before {
-    display: block;
-    font: $book italic 16px/1em $bodoni;
-    text-align: center;
-    text-transform: none;
+  display: block;
+  font: $book italic 15px/1em $bodoni;
+  text-align: center;
+  text-transform: none;
 }
 
 .main-nav .first {

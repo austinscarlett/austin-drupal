@@ -23,36 +23,38 @@
 }
 
 .page-node-4 .body {
-    @include border-bottom;
+  @include border-bottom;
 	padding: 16px 24px $base;
 	font: italic 21px/34px $proxima;
 	text-align: center;
 }
 
 .page-node-4 .content .block {
-    @include border-bottom;
+  @include border-bottom;
 	padding: 32px 0 $base;
 	text-align: center;
+	
 	&:last-child {
     	border-bottom: none;
 	}
 }
 
 .page-node-4 .content .block-title {
-    position: relative;
+  position: relative;
 	margin-bottom: 42px;
 	font: italic 400 34px/1em $bodoni;
 	text-transform: none;
-    &:after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: -21px;
-        width: 54px;
-        height: 1px;
-        margin-left: -27px;
-        background: $red;
-    }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -21px;
+    width: 54px;
+    height: 1px;
+    margin-left: -27px;
+    background: $gold;
+  }
 }
 
 .page-node-4 .content .block ul {
@@ -64,13 +66,15 @@
 	float: left;
 	width: 48%;
 	margin-bottom: $base;
+	
 	img {
     	width: 100% !important;
     	height: auto !important;
 	}
-    &:nth-child(2n+1) {
-    	margin-right: 4%;
-    }
+
+  &:nth-child(2n+1) {
+  	margin-right: 4%;
+  }
 }
 
 .page-node-4 .content .block p {

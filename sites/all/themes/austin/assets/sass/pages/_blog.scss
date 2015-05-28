@@ -1,7 +1,7 @@
 
 .page-node-5 .title-bar,
 .node-type-blog-post .title-bar {
-    padding-top: 28px;
+  padding-top: 28px;
 }
 
 .page-node-5 .page-title:before,
@@ -9,8 +9,8 @@
 	content: "the World of";
 	display: block;	
 	margin-bottom: 16px;
-    font: italic $book 28px/1em $bodoni;
-    text-transform: none;
+  font: italic $book 28px/1em $bodoni;
+  text-transform: none;
 }
 
 .view-blog .views-row {
@@ -19,21 +19,23 @@
 }
 
 .view-blog .post-title {
-    margin-bottom: $base*2;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: none;
-    a {
-        color: #fff;
-        &:hover {
-            color: $red;
-        }
-    }
+  margin-bottom: $base*2;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
+.view-blog .post-title a {
+  color: #fff;
+
+  &:hover {
+    color: $gold;
+  }
 }
 
 .view-blog .post-content {
-    @include cf;
-    margin-bottom: $base;
+  @include cf;
+  margin-bottom: $base;
 }
 
 .view-blog .image {
@@ -43,15 +45,15 @@
 }
 
 .view-blog .post-date {
-    color: $grey;
-    font-size: 14px;
-    font-weight: $bold;
-    text-transform: uppercase;
+  color: $grey;
+  font-size: 14px;
+  font-weight: $bold;
+  text-transform: uppercase;
 }
 
 .view-blog .body img {
-    display: block;
-    float: left;
-    margin: 0 18px 18px 0;
-    border: 2px solid #fff;
+  display: block;
+  float: left;
+  margin: 0 18px 18px 0;
+  border: 2px solid #fff;
 }

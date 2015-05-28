@@ -9,21 +9,18 @@
     			<a href="mailto:?subject=<?php print $title ?>body=http://www.austinscarlett.com/events/<?php print drupal_lookup_path('alias',"node/".$node->nid) ?>" target="_blank" >email</a>
     		</li>
     	</ul>
-    	
     </div>
     
     <div class="col-1-2 event-info">
-    
     	<h2 class="post-title"><?php print $title ?></h2>
-    	
     	<div class="event-date">		
-            <?php
-            if (isset($node->field_dates['und'][0]['value2']) && ($node->field_dates['und'][0]['value2'] != $node->field_dates['und'][0]['value'])):
-            	print date("F d, Y", strtotime($node->field_dates['und'][0]['value'])) . t(' to ') . date("F d, Y", strtotime($node->field_dates['und'][0]['value2']));
-            else:
-            	print date("F d, Y", strtotime($node->field_dates['und'][0]['value']));
-            endif;
-            ?>
+        <?php
+        if (isset($node->field_dates['und'][0]['value2']) && ($node->field_dates['und'][0]['value2'] != $node->field_dates['und'][0]['value'])):
+        	print date("F d, Y", strtotime($node->field_dates['und'][0]['value'])) . t(' to ') . date("F d, Y", strtotime($node->field_dates['und'][0]['value2']));
+        else:
+        	print date("F d, Y", strtotime($node->field_dates['und'][0]['value']));
+        endif;
+        ?>
     	</div>
     	<div class="event-location">
     		<h3><?php print $node->field_location['und'][0]['value']; ?></h3>
@@ -39,8 +36,8 @@
     	    <a href="<?php print $node->field_map_link['und'][0]['value']; ?>" target="_blank"><span class="icon-marker"></span> Get Directions</a>
         </div>
     	<div class="mark-calendar">
-    	    <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=<?php print $title ?>&dates=<?php print date("Ymd", strtotime($node->field_dates['und'][0]['value'])) ?>/<?php print date("Ymd", strtotime($node->field_dates['und'][0]['value2'])) ?>&location=<?php print $node->field_location['und'][0]['value']; ?>" target="_blank"><span class="icon-calendar"></span> Mark Your Calendar</a>
-        </div>
+  	    <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=<?php print $title ?>&dates=<?php print date("Ymd", strtotime($node->field_dates['und'][0]['value'])) ?>/<?php print date("Ymd", strtotime($node->field_dates['und'][0]['value2'])) ?>&location=<?php print $node->field_location['und'][0]['value']; ?>" target="_blank"><svg class="icon-calendar"><use xlink:href="#icon-calendar" /></svg> Mark Your Calendar</a>
+      </div>
     	<div class="apt-form">
     	<?php
     		$block = module_invoke('webform', 'block_view', 'client-block-9');
@@ -51,4 +48,3 @@
     </div>
 
 </div>
-<?php // print image_style_url('image', $node->field_images['und'][0]['uri']); ?> 

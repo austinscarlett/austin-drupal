@@ -1,13 +1,38 @@
 
-.btn {
-    display: inline-block;
-    padding: 5px 10px;
-    border: 2px solid #fff;
-    font-weight: $bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    &:hover {
-        background: #fff;
-    }
+a {
+  @include single-transition(all, 0.15s, ease-in);
+	color: #fff;
+	text-decoration: none;
+
+  &:hover {
+  	color: $gold;
+  }
 }
 
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid #fff;
+  font-weight: $bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #fff;
+  }
+}
+
+input[type="submit"] {
+  @include single-transition(background, 0.15s, ease-in);
+  height: 28px;
+	padding: 0 10px;
+	background: $gold;
+	border: none;
+	color: #fff;
+	font: $semi 1em/1 $proxima;
+	text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+	background: #be9e1a;
+}

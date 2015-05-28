@@ -1,22 +1,26 @@
 .tabs {
 	margin: 1em 0;
 	text-align: center;
-    li {
-	    display: inline-block;
-	    margin: 0 0.5em;
-        &:last-child {
-            display: none;
-        }
-    }
 }
 
+.tabs li {
+  display: inline-block;
+  margin: 0 0.5em;
+
+  &:last-child {
+    display: none;
+  }
+}
+
+
 .tabs a {
-    display: inline-block;
+  display: inline-block;
 	padding: 5px 10px;
-	background: $red;
+	background: $gold;
 	border-radius: 5px;
 	color: #fff;
-    &:hover {
-	    background: #aaa;
-    }
+
+  &:hover {
+    background: #aaa;
+  }
 }

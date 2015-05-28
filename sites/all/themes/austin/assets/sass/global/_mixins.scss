@@ -1,20 +1,22 @@
 @mixin cf {
-    &:before, &:after {
-        content: " ";
-        display: block;
-    }
-    &:after {
-        clear: both;
-    }
-    *zoom:1;
+  &:before, &:after {
+    content: " ";
+    display: block;
+  }
+
+  &:after {
+    clear: both;
+  }
+  
+  *zoom:1;
 }
 
 @mixin border-top {
-    border-top: 1px solid #fff;
-    border-top: 1px solid rgba(#fff, 0.4);
+  border-top: 1px solid #fff;
+  border-top: 1px solid rgba(#fff, 0.4);
 }
 
 @mixin border-bottom {
-    border-bottom: 1px solid #fff;
-    border-bottom: 1px solid rgba(#fff, 0.4);
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(#fff, 0.4);
 }

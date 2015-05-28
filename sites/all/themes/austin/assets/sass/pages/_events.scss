@@ -6,24 +6,28 @@
 	border: 1px solid #cfcfcf;
 	text-align: center;
 	min-height: 302px;
+	
 	.image {
-    	margin-bottom: 16px;
+  	margin-bottom: 16px;
 	}
+
 	h3 {
-    	font-size: 18px;
+  	font-size: 18px;
 	}
 }
 
 .events-list .attachment .views-row {
 	width: 552px;
-    .image {
-    	float: left;
-    	width: 258px;
-    	margin-bottom: 0;
-    }
-    h3 {
-        font-size: 21px;
-    }
+
+  .image {
+    float: left;
+    width: 258px;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
 }
 
 .events-list  .attachment .event-info {
@@ -31,32 +35,31 @@
 	width: 292px;
 	padding: 48px 10px 0;
 	text-align: center;
+	
 	.category:after {
-    	width: 48px;
-    	margin-left: -24px;
+  	width: 48px;
+  	margin-left: -24px;
 	}
 }
 
 .events-list .event-date {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 	color: $dk-grey;
 	font-size: 14px;
 	text-transform: uppercase;
 }
 
 .events-list .event-location {
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .events-list .event-address {
-    color: $dk-grey;
-    font-size: 14px;
-    line-height: 20px;
+  color: $dk-grey;
+  font-size: 14px;
+  line-height: 20px;
 }
-
-
 
 
 /** EVENT NODE PAGE **/
@@ -79,7 +82,7 @@
 
 .event-image .ss-icon a {
 	padding: 5px 7px 0;
-	background: $red;
+	background: $gold;
 	border-radius: 17px;
 	color: #fff;
 	font-size: 1.25em;
@@ -98,17 +101,19 @@
 
 .node-type-events .event-info .event-location {
 	margin-bottom: 1em;
-    h3 {
-    	text-transform: uppercase;
-    }
-    .address, .city-state {
-        color: $dk-grey;
-    }
+
+  h3 {
+  	text-transform: uppercase;
+  }
+
+  .address, .city-state {
+    color: $dk-grey;
+  }
 }
 
 .directions a,
 .mark-calendar a {
-    color: $lt-grey;
+  color: $lt-grey;
 	font-weight: $bold;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
@@ -116,26 +121,26 @@
 
 .directions a:hover,
 .mark-calendar a:hover {
-	color: $red;
+	color: $gold;
 }
 
 .directions [class*="icon-"] {
-    vertical-align: -2px;
-    margin: 0 8px 0 2px;
+  vertical-align: -2px;
+  margin: 0 8px 0 2px;
 }
 
 .mark-calendar [class*="icon-"] {
-    vertical-align: -1px;
-    margin-right: 8px;
+  vertical-align: -1px;
+  margin-right: 8px;
 }
 
 .directions {
-    @include border-top;
+  @include border-top;
 	padding: 1em 0 0.5em;
 }
 
 .mark-calendar {
-    @include border-bottom;
+  @include border-bottom;
 	margin-bottom: 2em;
 	padding: 0.5em 0 1em;
 }
@@ -173,4 +178,3 @@
 	text-transform: uppercase;
 	font-size: 0.75em;
 }
-
